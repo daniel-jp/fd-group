@@ -348,7 +348,7 @@ function Services() {
             h={ 'full' }
           />
         </Flex>
-        <Container className='service8' visibility={'hidden'} maxW={'7xl'} zIndex={10} position={'relative'}>
+        <Container className='service8' visibility={'hidden'} maxW={'6xl'} zIndex={10} position={'relative'}>
           <Stack direction={ { base: 'column', lg: 'row' } }>
             <Stack
               flex={ 1 }

@@ -106,7 +106,7 @@ function Footer() {
   return (
     <>
       <Box bg={ useColorModeValue("gray.800", "white") } color={ useColorModeValue("gray.300", "gray.200") }>
-        <Container justifyContent={ "center" } as={ Stack } maxW={ "7xl" } py={ 10 } pb={ -10 } textAlign={ "justify" }>
+        <Container justifyContent={ "center" } as={ Stack } maxW={ "6xl" } py={ 10 } pb={ -10 } textAlign={ "justify" }>
 
           <SimpleGrid templateColumns={{sm: "1fr 1fr", md: "3fr 2fr 2fr 2fr"}} spacing={{base: 5, lg: 6}}>
             <Stack spacing={ 2 }>
