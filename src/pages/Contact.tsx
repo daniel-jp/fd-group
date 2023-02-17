@@ -26,7 +26,7 @@ import '@fontsource/rubik-moonrocks/400.css';
 import emailjs from '@emailjs/browser';
 import { EnvelopeSimple, Globe, LinkedinLogo, MapPinLine, Phone, TwitterLogo, User } from 'phosphor-react';
 import React, {useRef, useState,useEffect} from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm,SubmitHandler } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
 import Layout from '../layout/Layout';
@@ -44,48 +44,46 @@ type Inputs = {
 function Contact() {
 
 
-    useEffect(() => {
+        useEffect(() => {
+            sr.reveal('.contactf', {
+                rotate: {x: 0, y: 20, z: 0},
+                duration: 800,
+            },);
+        }, []);
 
-        sr.reveal('.contactf', {
-            rotate: {x: 0, y: 20, z: 0},
-            duration: 800,
-        },);
-    }, []);
 
-
- const { t } = useTranslation();
- const toast = useToast();
- const form = useRef();
- const { handleSubmit, register,watch,formState: { errors, isSubmitting }} = useForm<Inputs>();
-          const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
-
+        const { t } = useTranslation();
+        const toast = useToast();
+        const form = useRef();
     function sendEmail(e:any) {
         //  e.preventDefault();
+
+        const { handleSubmit, register,watch,formState: { errors, isSubmitting }} = useForm<Inputs>();
+        const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
         console.log(form.current);
-   
-  
-        emailjs
-            .sendForm('service_o6ymppj', 'template_j01g3ha', form.current, 'VYtbYRJVHvmxoHbpp')
 
-            .then(
-               (result) => {
-                    toast({
-                        position: 'bottom-right',
-                        status: 'success',
-                        title: 'Mensagem enviada'
-                    });
-                    console.log('Message sent');
-                },
+            emailjs
+                .sendForm('service_o6ymppj', 'template_j01g3ha', form.current, 'VYtbYRJVHvmxoHbpp')
 
-               ( error ) => {
-                    toast({
-                        position: 'bottom-right',
-                        status: 'error',
-                        title: 'Mensagem enviada'
-                    });
-                    console.log('Error to sent!');
-                }
-            );
+                .then(
+                (result) => {
+                        toast({
+                            position: 'bottom-right',
+                            status: 'success',
+                            title: 'Mensagem enviada'
+                        });
+                        console.log('Message sent');
+                    },
+
+                ( error ) => {
+                        toast({
+                            position: 'bottom-right', 
+                            status: 'error',
+                            title: 'Mensagem enviada'
+                        });
+                        console.log('Error to sent!');
+                    }
+                );
     }
 
     return (
@@ -146,12 +144,11 @@ function Contact() {
                                         <FormControl isInvalid={!!errors.from_name}>
                                             <FormLabel> {t('ContactText1')}</FormLabel>
                                             <InputGroup borderColor="#E0E1E7">
-                                                <InputLeftElement pointerEvents="from_name" children={<InfoIcon color="gray.800" />} />
+                                                <InputLeftElement pointerEvents='from_name' children={<InfoIcon color="gray.800" />} />
                                                 <Input
-                                                    id="from_name"
+                                                    id='from_name'
                                                     type="text"
-                                                    name="from_name"
-                                                    
+                                                    name='from_name'
                                                     size="md"
                                                     onChange={e => {
                                                         setname(e.target.value);
@@ -169,8 +166,8 @@ function Contact() {
                                                 <InputLeftElement pointerEvents="to_name" children={<EmailIcon color="gray.800" />} />
                                                 <Input
                                                     type="email"
-                                                    id="to_name"
-                                                    name="to_name"
+                                                    id='to_name'
+                                                    name='to_name'
                                                     size="md"
                                                     onChange={e => {
                                                         setemail(e.target.value);
@@ -189,7 +186,7 @@ function Contact() {
                                                 _hover={{
                                                     borderRadius: 'gray.300'
                                                 }}
-                                                name="message"
+                                                name='message'
                                                 placeholder="message"
                                                 onChange={e => {
                                                     setmessage(e.target.value);
