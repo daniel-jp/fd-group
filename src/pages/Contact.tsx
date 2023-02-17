@@ -55,13 +55,14 @@ function Contact() {
         const { t } = useTranslation();
         const toast = useToast();
         const form = useRef();
-        const { handleSubmit, register,formState: { errors, isSubmitting }} = useForm<Inputs>();
+        
+        const { handleSubmit, register,watch,formState: { errors, isSubmitting }} = useForm<Inputs>();
         const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
     function sendEmail(e:any) {
         //  e.preventDefault();
  
         console.log(form.current);
-
+ 
             emailjs
                 .sendForm('service_o6ymppj', 'template_j01g3ha', form.current, 'VYtbYRJVHvmxoHbpp')
 
@@ -150,7 +151,6 @@ function Contact() {
                                                     type="text"
                                                     name='from_name'
                                                     size="md"
-                                                  
                                                     placeholder="Your name"
                                                     {...register('from_name', { required: 'This is required', maxLength: 80 })}
                                                 />
@@ -167,7 +167,6 @@ function Contact() {
                                                     id='to_name'
                                                     name='to_name'
                                                     size="md"
-                                                 
                                                     placeholder="exemple@fdgroup.company"
                                                     {...register('to_name', { required: 'This is required', pattern: /^\S+@\S+$/i })}/>
                                             </InputGroup>
