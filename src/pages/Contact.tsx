@@ -55,11 +55,11 @@ function Contact() {
         const { t } = useTranslation();
         const toast = useToast();
         const form = useRef();
+        const { handleSubmit, register,formState: { errors, isSubmitting }} = useForm<Inputs>();
+        const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
     function sendEmail(e:any) {
         //  e.preventDefault();
-
-        const { handleSubmit, register,watch,formState: { errors, isSubmitting }} = useForm<Inputs>();
-        const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
+ 
         console.log(form.current);
 
             emailjs
@@ -150,9 +150,7 @@ function Contact() {
                                                     type="text"
                                                     name='from_name'
                                                     size="md"
-                                                    onChange={e => {
-                                                        setname(e.target.value);
-                                                    }}
+                                                  
                                                     placeholder="Your name"
                                                     {...register('from_name', { required: 'This is required', maxLength: 80 })}
                                                 />
@@ -169,9 +167,7 @@ function Contact() {
                                                     id='to_name'
                                                     name='to_name'
                                                     size="md"
-                                                    onChange={e => {
-                                                        setemail(e.target.value);
-                                                    }}
+                                                 
                                                     placeholder="exemple@fdgroup.company"
                                                     {...register('to_name', { required: 'This is required', pattern: /^\S+@\S+$/i })}/>
                                             </InputGroup>
@@ -188,9 +184,6 @@ function Contact() {
                                                 }}
                                                 name='message'
                                                 placeholder="message"
-                                                onChange={e => {
-                                                    setmessage(e.target.value);
-                                                }}
                                                 {...register('message', { required: 'This is required', maxLength: 80 })}/>
                                             <FormErrorMessage>{errors.message && errors.message.message}</FormErrorMessage>
                                         </FormControl>
