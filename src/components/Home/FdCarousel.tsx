@@ -38,7 +38,6 @@ function FdCarousel() {
   // This can be static or loaded from a server
   const cards = [
     {
-      id: 1,
       title: "CarousTitle0",
       subTitle: "CarousSubTitle0",
       text: "CarousText0",
@@ -47,7 +46,6 @@ function FdCarousel() {
       buttom: "CarousBtn0",
     },
     {
-      id: 2,
       title: "CarousTitle1",
       subTitle: "CarousSubTitle1",
       text: "CarousText1",
@@ -56,7 +54,6 @@ function FdCarousel() {
       buttom: "CarousBtn1",
     },
     {
-      id: 3,
       title: "CarousTitle2",
       subTitle: "CarousSubTitle2",
       text: "CarousText2",
@@ -108,9 +105,9 @@ function FdCarousel() {
       </IconButton>
 
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
-        {cards.map((card) => (
+        {cards.map((card, index) => (
           <Box
-            key={card.id}
+            key={index}
             height={"1xl"}
             position="relative"
             backgroundPosition="center"
