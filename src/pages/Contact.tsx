@@ -36,12 +36,12 @@ const sr = ScrollReveal();
 
 type Inputs = {
 
-    from_name:string,
-    to_name:string,
-    message:string
+    
 
 };
-function Contact() {
+function Contact(from_name:string,
+    to_name:string,
+    message:string) {
 
 
         useEffect(() => {
