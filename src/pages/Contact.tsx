@@ -22,8 +22,8 @@ import {
 import '@fontsource/raleway/700.css';
 import '@fontsource/righteous/400.css';
 import '@fontsource/roboto/700.css';
-import '@fontsource/rubik-moonrocks/400.css';
-import emailjs from 'emailjs-com';
+import '@fontsource/rubik-moonrocks/400.css'; 
+import emailjs from '@emailjs/browser';
 import { EnvelopeSimple, Globe, LinkedinLogo, MapPinLine, Phone, TwitterLogo, User } from 'phosphor-react';
 import React, {useRef, useEffect} from 'react';
 import { useForm } from 'react-hook-form';
@@ -64,7 +64,7 @@ function Contact() {
 
     const form = useRef();
 
-    function sendEmail(e) {
+    function sendEmail(e):any {
         //  e.preventDefault();
 
         console.log(form.current);
@@ -78,7 +78,7 @@ function Contact() {
             .sendForm('service_o6ymppj', 'template_j01g3ha', form.current, 'VYtbYRJVHvmxoHbpp')
 
             .then(
-                result => {
+               (result):any => {
                     toast({
                         position: 'bottom-right',
                         status: 'success',
@@ -87,7 +87,7 @@ function Contact() {
                     console.log('Message sent');
                 },
 
-                error => {
+               ( error ):any => {
                     toast({
                         position: 'bottom-right',
                         status: 'error',
@@ -183,8 +183,7 @@ function Contact() {
                                                         setemail(e.target.value);
                                                     }}
                                                     placeholder="exemple@fdgroup.company"
-                                                    {...register('to_name', { required: 'This is required', pattern: /^\S+@\S+$/i })}
-                                                />
+                                                    {...register('to_name', { required: 'This is required', pattern: /^\S+@\S+$/i })}/>
                                             </InputGroup>
                                             <FormErrorMessage>{errors.to_name && errors.to_name.message}</FormErrorMessage>
                                         </FormControl>
@@ -202,8 +201,7 @@ function Contact() {
                                                 onChange={e => {
                                                     setmessage(e.target.value);
                                                 }}
-                                                {...register('message', { required: 'This is required', maxLength: 80 })}
-                                            />
+                                                {...register('message', { required: 'This is required', maxLength: 80 })}/>
                                             <FormErrorMessage>{errors.message && errors.message.message}</FormErrorMessage>
                                         </FormControl>
 
@@ -217,8 +215,7 @@ function Contact() {
                                                     bg: 'red.300',
                                                     cursor: 'pointer'
                                                 }}
-                                                isLoading={isSubmitting}
-                                            >
+                                                isLoading={isSubmitting}>
                                                 {t('ContactBtn')}
                                             </Button>
                                         </FormControl>
@@ -227,7 +224,7 @@ function Contact() {
                             </Box>
                         </form>
                     </WrapItem>
-                </Wrap>
+                </Wrap> 
             </Box>
         </Box>
     </Flex>
