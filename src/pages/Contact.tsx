@@ -64,7 +64,7 @@ function Contact() {
 
     const form = useRef();
 
-    function sendEmail({e}:any) {
+    function sendEmail(e:any,{name,email,message}:{name:string,email:string,message:string}) {
         //  e.preventDefault();
 
         console.log(form.current);
