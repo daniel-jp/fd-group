@@ -58,21 +58,17 @@ function Contact() {
         formState: { errors, isSubmitting }
     } = useForm();
 
-    const [name, setname] = useState('');
-    const [email, setemail] = useState('');
-      const [message, setmessage] = useState('');
+    const [from_name, setname] = useState('');
+    const [to_name, setemail] = useState('');
+    const [message, setmessage] = useState('');
 
     const form = useRef();
 
-    function sendEmail(e:any,{name,email,message}:{name:string,email:string,message:string}) {
+    function sendEmail(e:any,{from_name,to_name,message}:any) {
         //  e.preventDefault();
 
         console.log(form.current);
-         const templateparams = {
-             from_name: name + ' ' + email,
-             to_name: email,
-             message: message
-        };
+   
  
         emailjs
             .sendForm('service_o6ymppj', 'template_j01g3ha', form.current, 'VYtbYRJVHvmxoHbpp')
