@@ -242,7 +242,7 @@ import Layout from '../layout/Layout';
 
 
 
-export default function Contact (parameters): typeAnnotation {
+export default function Contact () {
 
     return(
         <Layout>
