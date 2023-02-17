@@ -64,13 +64,13 @@ function FdCard() {
     });
 
   }, []);
-
+ 
   return (
 
 
     <Box bg={useColorModeValue("gray.100", "gray.700")}>
 
-      <Container alignItems={"center"} maxW={"6xl"} spacing={12}>
+      <Container alignItems={"center"} maxW={"6xl"}>
 
         <Stack className={'stack3'} visibility={'hidden'} textAlign={'center'} spacing={0} align={"center"}>
           <Heading> {t("prodCard0")}</Heading>
