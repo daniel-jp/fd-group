@@ -25,7 +25,7 @@ import '@fontsource/roboto/700.css';
 import '@fontsource/rubik-moonrocks/400.css'; 
 import emailjs from '@emailjs/browser';
 import { EnvelopeSimple, Globe, LinkedinLogo, MapPinLine, Phone, TwitterLogo, User } from 'phosphor-react';
-import React, {useRef, useEffect} from 'react';
+import React, {useRef, useState,useEffect} from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
@@ -58,9 +58,9 @@ function Contact() {
         formState: { errors, isSubmitting }
     } = useForm();
 
-    // const [name, setname] = useState('');
-    // const [email, setemail] = useState('');
-    //   const [message, setmessage] = useState('');
+    const [name, setname] = useState('');
+    const [email, setemail] = useState('');
+      const [message, setmessage] = useState('');
 
     const form = useRef();
 
@@ -68,11 +68,11 @@ function Contact() {
         //  e.preventDefault();
 
         console.log(form.current);
-        // const templateparams = {
-        //     from_name: name + ' ' + email,
-        //     to_name: email,
-        //     message: message
-        // };
+         const templateparams = {
+             from_name: name + ' ' + email,
+             to_name: email,
+             message: message
+        };
  
         emailjs
             .sendForm('service_o6ymppj', 'template_j01g3ha', form.current, 'VYtbYRJVHvmxoHbpp')
@@ -145,6 +145,8 @@ function Contact() {
                             </HStack>
                         </Box>
                     </WrapItem>
+
+
 
                     <WrapItem>
                         <form ref={form} onSubmit={handleSubmit(sendEmail)}>
