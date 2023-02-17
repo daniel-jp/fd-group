@@ -8,7 +8,7 @@ import Marque from '../components/Home/FdMarque';
 import Suport from '../components/Home/FdSuport';
 import Testimo from '../components/Home/FdTestimo';
 import SwiperCard from '../components/Home/SwiperCard';
-import NavBar from '../components/NavBar/Navbar';
+import NavBar from '../components/NavBar/NavBar';
 import SimpleLayout from '../layout/SimpleLayout';
 
 

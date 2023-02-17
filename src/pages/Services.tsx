@@ -23,7 +23,7 @@ import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
 import Footer from '../components/Footer/Footer';
-import Navbar from '../components/NavBar/Navbar';
+import Navbar from '../components/NavBar/NavBar';
 import Layout from '../layout/Layout';
 import SimpleLayout from '../layout/SimpleLayout';
 
