@@ -6,7 +6,7 @@ import '@fontsource/rubik-moonrocks/400.css';
 
 import { Box, Button, Container, Flex, Heading, IconButton, Stack, Text, useBreakpointValue } from '@chakra-ui/react';
 import { ArrowRight, CaretCircleLeft, CaretCircleRight } from 'phosphor-react';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 

@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Image, Stack, useColorModeValue } from '@chakra-ui/react';
 
-function DeviceCards({ title, img }) {
+function DeviceCards({title, img}: any) {
   return (
     <Box
       w={ "full" }

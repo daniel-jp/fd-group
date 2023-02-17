@@ -3,7 +3,7 @@ import { ArrowCircleRight } from 'phosphor-react';
 import { useTranslation } from 'react-i18next';
 
 
-export default function CardProduct({ title, subtitle, description, url, href = "#" }) {
+export default function CardProduct({title, subtitle, description, url, href}: any) {
 
   const {t} = useTranslation();
   return (

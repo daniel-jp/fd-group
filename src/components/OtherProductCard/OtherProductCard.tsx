@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Image, Stack, useColorModeValue } from '@chakra-ui/react';
 
-function OtherProductCard({ title, img }) {
+function OtherProductCard({title, img}: any) {
   return (
     <Box
       w={ "full" }

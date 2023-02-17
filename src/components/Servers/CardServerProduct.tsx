@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Image, Stack, useColorModeValue } from '@chakra-ui/react';
 
-function CardServerProduct({ title, img }) {
+function CardServerProduct({title, img}: any) {
   return (
     <Box
 

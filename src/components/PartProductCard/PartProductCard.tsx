@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Image, Stack, useColorModeValue } from '@chakra-ui/react';
 
-function PartProductCard({ title, img }) {
+function PartProductCard({title, img}: any) {
   return (
     <Box
 
