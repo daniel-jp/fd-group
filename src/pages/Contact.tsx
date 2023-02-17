@@ -33,6 +33,14 @@ import Layout from '../layout/Layout';
 import ScrollReveal from 'scrollreveal';
 const sr = ScrollReveal();
 
+
+type Inputs = {
+
+    from_name:string,
+    to_name:string,
+    message:string
+
+};
 function Contact() {
 
 
@@ -41,35 +49,21 @@ function Contact() {
         sr.reveal('.contactf', {
             rotate: {x: 0, y: 20, z: 0},
             duration: 800,
-
         },);
-
-
     }, []);
 
 
+ const { t } = useTranslation();
+ const toast = useToast();
+ const form = useRef();
+ const { handleSubmit, register,watch,formState: { errors, isSubmitting }} = useForm<Inputs>();
+          const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
 
-    const { t } = useTranslation();
-
-    const toast = useToast();
-    const {
-        handleSubmit,
-        register,
-        formState: { errors, isSubmitting }
-    } = useForm();
-
-    const [from_name, setname] = useState('');
-    const [to_name, setemail] = useState('');
-    const [message, setmessage] = useState('');
-
-    const form = useRef();
-
-    function sendEmail(e:any,{from_name,to_name,message}:any) {
+    function sendEmail(e:any) {
         //  e.preventDefault();
-
         console.log(form.current);
    
- 
+  
         emailjs
             .sendForm('service_o6ymppj', 'template_j01g3ha', form.current, 'VYtbYRJVHvmxoHbpp')
 
@@ -157,6 +151,7 @@ function Contact() {
                                                     id="from_name"
                                                     type="text"
                                                     name="from_name"
+                                                    
                                                     size="md"
                                                     onChange={e => {
                                                         setname(e.target.value);
