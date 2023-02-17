@@ -6,7 +6,7 @@ import '@fontsource/rubik-moonrocks/400.css';
 
 import { Box, Button, Container, Flex, Heading, IconButton, Stack, Text, useBreakpointValue } from '@chakra-ui/react';
 import { ArrowRight, CaretCircleLeft, CaretCircleRight } from 'phosphor-react';
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
@@ -76,7 +76,7 @@ function FdCarousel() {
 
 
   return (
-    <Box position={"relative"} height={"600px"} width={"full"} mt={"110px"} overflow={"hidden"}>
+    <Box position={"relative"} height={"500px"} width={"full"} mt={"110px"} overflow={"hidden"}>
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"

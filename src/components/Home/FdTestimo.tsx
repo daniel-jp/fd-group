@@ -1,6 +1,6 @@
-import {Avatar, Box, Container, Flex, Heading, Stack, Text, useColorModeValue} from '@chakra-ui/react';
-import {ReactNode, useEffect, useRef} from 'react';
-import React, {useTranslation} from 'react-i18next';
+import { Avatar, Box, Container, Flex, Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { ReactNode, useEffect, useRef } from 'react';
+import React, { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
 const sr = ScrollReveal();
@@ -42,7 +42,7 @@ const TestimonialContent = ({ children }: { children: ReactNode }) => {
 
 const TestimonialHeading = ({ children }: { children: ReactNode }) => {
   return (
-    <Heading as={"h3"} w={"full"} textAlign={"center"} fontSize={"xl"}>
+    <Heading  w={"full"} textAlign={"center"} fontSize={"xl"}>
       {children}
     </Heading>
   );
@@ -81,15 +81,15 @@ function FdTestimo() {
   useEffect(() => {
     sr.reveal('.testm1', {
       origin: 'bottom',
-      distance: '100px',
-      duration: 2000,
+      distance: '30px',
+      duration: 1000,
       opacity: 0,
     },);
 
     sr.reveal('.testm2', {
       origin: 'bottom',
-      distance: '200px',
-      duration: 2000,
+      distance: '100px',
+      duration: 1000,
       opacity: 0,
     });
 
@@ -100,12 +100,13 @@ function FdTestimo() {
 
   return (
     <Box bg={useColorModeValue("gray.100", "gray.700")}>
-      <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
+      <Container maxW={"6xl"} pb={10}as={Stack} spacing={12}>
         <Stack className={"testm1"} visibility={'hidden'} spacing={0} align={"center"}>
           <Heading>{t("Head0")}</Heading>
           <Text>{t("Testm0")}</Text>
         </Stack>
-        <Stack className={"testm2"} visibility={'hidden'} direction={{base: "column", md: "row"}} spacing={{base: 10, md: 4, lg: 10}}>
+        <Stack className={"testm2"} visibility={'hidden'} direction={{base: "column", md: "row"}}
+         spacing={{base: 10, md: 4, lg: 10}}>
           <Testimonial>
             <TestimonialContent>
               <TestimonialHeading>{t("Head1")}</TestimonialHeading>
@@ -114,7 +115,7 @@ function FdTestimo() {
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
-              src={"/assets/testmo/avatar.png"}
+              src={"/public/assets/testmo/avatar.png"}
               name={"Daniel Paulino"}
               title={t("Title1")} />
           </Testimonial>
@@ -129,8 +130,7 @@ function FdTestimo() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-              }
+                "#" }
               name={"Jane Cooper"}
               title={"CEO at ABC Corporation"}
             />
@@ -144,7 +144,7 @@ function FdTestimo() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+                "#"
               }
               name={"Jane Cooper"}
               title={"CEO at ABC Corporation"}

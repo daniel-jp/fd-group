@@ -22,10 +22,11 @@ export default function Home() {
       <NavBar />
       <FdCarousel />
       <SimpleLayout>
+      <Box overflowY={"hidden"} overflowX={"hidden"}>
         <Suport />
         <ProdCard />
         <SwiperCard />
-        <Testimo />
+        <Testimo /></Box>
       </SimpleLayout>
       <Marque />
       <Footer />

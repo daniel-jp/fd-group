@@ -194,7 +194,7 @@ function About() {
               </Heading>
               <Text
                 textAlign={ "justify" }
-                as="p"
+             
                 marginTop="2"
                 color={ useColorModeValue("gray.700", "gray.200") }
                 fontSize="lg">
@@ -206,7 +206,7 @@ function About() {
                 fontSize="md"
                 border={ "2px solid orange" }
                 textAlign={ "justify" }
-                as={ "a" }
+              
                 maxW={ "300px" }
                 _hover={ {
                   bg: "red.800",
@@ -294,7 +294,7 @@ function About() {
                 </Link>
               </Heading>
               <Text
-                as="p"
+              
                 marginTop="2"
                 textAlign={ "justify" }
                 color={ useColorModeValue("gray.700", "gray.200") }
@@ -326,7 +326,7 @@ function About() {
                 </Link>
               </Heading>
               <Text
-                as="p"
+              
                 marginTop="2"
                 color={ useColorModeValue("gray.700", "gray.200") }
                 textAlign={ "justify" }
@@ -365,23 +365,22 @@ function About() {
 
               <VStack mt={10} spacing="2" alignItems="flex-start" className="about9" visibility={"hidden"}> 
             <Flex gap={ 4 } alignItems={ "center" }>
-              <Heading as="h2"> {t("Text0")} </Heading>
+              <Heading> {t("Text0")} </Heading>
               <Logo />
             </Flex>
 
-            <Text as="p" fontSize="lg">
+            <Box fontSize="lg">
               {t("Text1")}
               <Text fontWeight={"bold"} color="red.800">
                     {t("Text2")}
               </Text>
-            </Text>
-            <Text as="p" fontSize="lg">
+            </Box>
+
+            <Text fontSize="lg">
               {t("Text3")}
-
             </Text>
-            <Text as="p" fontSize="lg">
+            <Text fontSize="lg">
               {t("Text4")}
-
             </Text>
           </VStack>
         </Box>

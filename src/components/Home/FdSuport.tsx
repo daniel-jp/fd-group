@@ -50,7 +50,7 @@ const TestimonialContent = ({ children }: { children: ReactNode }) => {
 
 const TestimonialHeading = ({ children }: { children: ReactNode }) => {
   return (
-    <Heading as={"h3"} fontSize={"xl"}>
+    <Heading  fontSize={"xl"}>
       {children}
     </Heading>
   );
@@ -87,15 +87,15 @@ function FdSuport() {
 
     sr.reveal('.stack', {
       origin: 'bottom',
-      distance: '100px',
-      duration: 2000,
+      distance: '20px',
+      duration: 800,
       opacity: 0,
     },);
 
     sr.reveal('.stack2', {
       origin: 'bottom',
-      distance: '200px',
-      duration: 2000,
+      distance: '100px',
+      duration: 900,
       opacity: 0,
     });
 
@@ -108,14 +108,13 @@ function FdSuport() {
   return (
 
     <Box  bg={useColorModeValue("gray.100", "gray.700")}>
-      <Container alignItems={"center"} maxW={"7xl"} py={16} as={Stack} spacing={12}>
+      <Container alignItems={'center'} as={Stack} maxW={"6xl"} py={32}  spacing={12}>
         <Stack className='stack' visibility={'hidden'} textAlign={'center'} spacing={0} align={"center"}>
           <Heading color={"gray.700"}>{t("suport1")}</Heading>
           <Text>{t("suport2")}</Text>
         </Stack>
 
-        <Stack className='stack2' visibility={'hidden'} direction={{base: "column", md: "row"}} spacing={{base: 10, md: 4, lg: 10}}
-        >
+        <Stack className='stack2' visibility={'hidden'} direction={{base: "column", md: "row"}} spacing={{base: 10, md: 4, lg: 10}}>
           <Testimonial>
             <Text
               _hover={{

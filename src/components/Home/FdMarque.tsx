@@ -1,6 +1,6 @@
-import {Box, chakra, Flex, Image, SimpleGrid} from '@chakra-ui/react';
-import {useEffect, useRef} from 'react';
-import {useTranslation} from 'react-i18next';
+import { Box, chakra, Flex, Image, SimpleGrid } from '@chakra-ui/react';
+import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
 import SimpleLayout from '../../layout/SimpleLayout';
@@ -15,15 +15,15 @@ function FdMarque() {
 
     sr.reveal('.marq1', {
       origin: 'bottom',
-      distance: '100px',
-      duration: 2000,
+      distance: '40px',
+      duration: 1100,
       opacity: 0,
     },);
 
     sr.reveal('.marq2', {
       origin: 'bottom',
       distance: '200px',
-      duration: 2000,
+      duration: 1100,
       opacity: 0,
     });
 
@@ -36,11 +36,12 @@ function FdMarque() {
   return (
 
     <Flex
+    
       pb={20}
       flexDirection={"column"}
       w={"full"}
       justifyContent={"center"}
-      pt={5} 
+     py={10} 
       px={{base: 2, sm: 12, md: 0}}
       bg={"white"}>
 

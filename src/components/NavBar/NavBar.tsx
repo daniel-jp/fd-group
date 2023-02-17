@@ -90,7 +90,7 @@ function Navbar() {
             <Flex
                 bg={useColorModeValue("gray.800", "white")}
                 color={useColorModeValue("gray.600", "white")}
-                minH={"80px"}
+                minH={"50px"}
                 py={{base: 2}}
                 px={{base: 4, md: 8}}
                 borderBottom={1}

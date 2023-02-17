@@ -2,8 +2,8 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-import {Box, Flex, Heading, Image, Stack, Text, useColorModeValue} from '@chakra-ui/react';
-import React, {useEffect} from 'react';
+import { Box, Flex, Heading, Image, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 import SwiperCore, { A11y, Autoplay, EffectCoverflow, Navigation, Pagination, Scrollbar } from 'swiper';
@@ -33,14 +33,14 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
     sr.reveal('.swp1', {
       origin: 'bottom',
       distance: '100px',
-      duration: 2000,
+      duration: 1200,
       opacity: 0,
     });
 
     sr.reveal('.swp2', {
       origin: 'bottom',
       distance: '200px',
-      duration: 2000,
+      duration: 1200,
       opacity: 0,
     });
 
@@ -66,7 +66,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   }
 
   return (
-    <Box p={3}>
+    <Box p={3} py={32}>
 
       <Stack className='swp1' visibility={'hidden'} spacing={0} align={"center"} pb={10}>
         <Heading>{t("swip1")}</Heading>

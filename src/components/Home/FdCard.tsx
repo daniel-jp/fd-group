@@ -1,8 +1,8 @@
 import '@fontsource/raleway/700.css';
 
 import { Box, Container, Heading, Image, keyframes, Stack, Text, useColorModeValue } from '@chakra-ui/react';
-import React, {useEffect, useRef} from 'react';
-import {useTranslation} from 'react-i18next';
+import React, { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
 import CardProduct from '../CardProduct/cardProduct';
@@ -51,15 +51,15 @@ function FdCard() {
 
     sr.reveal('.stack3', {
       origin: 'bottom',
-      distance: '200px',
-      duration: 2000,
+      distance: '20px',
+      duration: 800,
       opacity: 0,
     },);
 
     sr.reveal('.stack4', {
       origin: 'bottom',
-      distance: '300px',
-      duration: 2000,
+      distance: '100px',
+      duration: 900,
       opacity: 0,
     });
 
@@ -70,7 +70,7 @@ function FdCard() {
 
     <Box bg={useColorModeValue("gray.100", "gray.700")}>
 
-      <Container alignItems={"center"} maxW={"7xl"} py={16} as={Stack} spacing={12}>
+      <Container alignItems={"center"} maxW={"6xl"} spacing={12}>
 
         <Stack className={'stack3'} visibility={'hidden'} textAlign={'center'} spacing={0} align={"center"}>
           <Heading> {t("prodCard0")}</Heading>
@@ -79,7 +79,7 @@ function FdCard() {
           </Text>
         </Stack> 
 
-        <Stack
+        <Stack mt={12} 
           w={"full"} className={'stack4'} visibility={'hidden'}
           gap={4}
           pt={10}
@@ -93,12 +93,11 @@ function FdCard() {
               subtitle={card?.subtitle}
               description={t(card?.description)}
               url={card?.url} 
-              href={card?.href}
-            ></CardProduct>
+              href={card?.href}>
+              </CardProduct>
           ))}
 
         </Stack>
-
 
       </Container>
 
