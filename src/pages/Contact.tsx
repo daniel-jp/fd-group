@@ -64,7 +64,7 @@ function Contact() {
 
     const form = useRef();
 
-    function sendEmail(e):any {
+    function sendEmail({e}:any) {
         //  e.preventDefault();
 
         console.log(form.current);
@@ -73,12 +73,12 @@ function Contact() {
         //     to_name: email,
         //     message: message
         // };
-
+ 
         emailjs
             .sendForm('service_o6ymppj', 'template_j01g3ha', form.current, 'VYtbYRJVHvmxoHbpp')
 
             .then(
-               (result):any => {
+               (result) => {
                     toast({
                         position: 'bottom-right',
                         status: 'success',
@@ -87,7 +87,7 @@ function Contact() {
                     console.log('Message sent');
                 },
 
-               ( error ):any => {
+               ( error ) => {
                     toast({
                         position: 'bottom-right',
                         status: 'error',
