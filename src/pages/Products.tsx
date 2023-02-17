@@ -7,7 +7,6 @@ import '@fontsource/rubik-moonrocks/400.css';
 import {
   Box,
   Button,
-  Container,
   createIcon,
   Flex,
   Heading,
@@ -34,7 +33,7 @@ function Products() {
   useEffect(() => {
 
     sr.reveal('.product1', {
-      rotate: {X: 0, y: 20, z: 0},
+      rotate: {x: 0, y: 20, z: 0},
       duration: 800,
 
     },);

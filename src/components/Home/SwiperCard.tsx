@@ -23,7 +23,7 @@ export default function SwiperCard() {
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
-  const onAutoplayTimeLeft = (S, time) => {
+  const onAutoplayTimeLeft = ({s, time}: any) => {
     `${Math.ceil(time / 1000)}s`;
   };
   const Swipers = SwiperProduct();

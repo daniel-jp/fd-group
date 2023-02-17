@@ -1,16 +1,16 @@
 import { CheckCircleIcon } from '@chakra-ui/icons';
-
-import {Box, Flex, Link, Heading, Text, SimpleGrid, Stack} from '@chakra-ui/react';
+import {Box, Flex, Heading, Link, SimpleGrid, Stack, Text} from '@chakra-ui/react';
 import {CameraSlash, QrCode} from 'phosphor-react';
+import React, {useEffect} from 'react';
 import {useTranslation} from 'react-i18next';
+import ScrollReveal from 'scrollreveal';
 
 import AudiovisuelProductCard1 from '../Audiovisuel/AudiovisuelProductCard1';
 import AudiovisuelProductCard2 from '../Audiovisuel/AudiovisuelProductCard2';
 import AudiovisuelProductCard from '../components/AudiovisuelProductCard/AudiovisuelProductCard';
 import FdgLogo from '../components/fdgLogo';
 import Layout from '../layout/Layout';
-import ScrollReveal from 'scrollreveal';
-import React, {useEffect} from 'react';
+
 const sr = ScrollReveal();
 
 function Audiovisuel() {
@@ -18,7 +18,7 @@ function Audiovisuel() {
   useEffect(() => {
 
     sr.reveal('.audioV1', {
-      rotate: {X: 0, y: 20, z: 0},
+      rotate: {x: 0, y: 20, z: 0},
       duration: 1000,
 
     },);

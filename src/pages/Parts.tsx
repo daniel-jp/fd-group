@@ -1,15 +1,14 @@
 import {Box, Flex, Heading, SimpleGrid, Stack, Text} from '@chakra-ui/react';
 import {CameraSlash, QrCode} from 'phosphor-react';
+import React, {useEffect} from 'react';
 import {useTranslation} from 'react-i18next';
+import ScrollReveal from 'scrollreveal';
 
 import PartProductCard from '../components/PartProductCard/PartProductCard';
 import Layout from '../layout/Layout';
 import PartProduct1 from '../parts/PartProduct1';
 import PartProduct2 from '../parts/PartProduct2';
 
-
-import ScrollReveal from 'scrollreveal';
-import React, {useEffect} from 'react';
 
 const sr = ScrollReveal();
 function Parts() {
@@ -18,7 +17,7 @@ function Parts() {
   useEffect(() => {
 
     sr.reveal('.part1', {
-      rotate: {X: 0, y: 20, z: 0},
+      rotate: {x: 0, y: 20, z: 0},
       duration: 1000,
 
     },);

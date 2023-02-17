@@ -66,7 +66,7 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 };
 
 
-const sr = ScrollReveal();
+let sr = ScrollReveal();
 function About() {
 
 
@@ -74,18 +74,18 @@ function About() {
   useEffect(() => {
 
     sr.reveal(".about1", {
-      rotate: {X: 0, y: 20, z: 0},
+      rotate: {x: 0, y: 20, z: 0},
       duration: 800,
 
     },);
 
     sr.reveal(".about2", {
-      rotate: {X: 0, y: 50, z: 0},
+      rotate: {x: 0, y: 50, z: 0},
       duration: 900
     });
 
     sr.reveal(".about3", {
-      rotate: {X: 0, y: 50, z: 0},
+      rotate: {x: 0, y: 50, z: 0},
       duration: 1000
     });
     sr.reveal(".about4", {

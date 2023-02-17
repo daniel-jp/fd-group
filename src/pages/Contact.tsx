@@ -23,7 +23,7 @@ import '@fontsource/raleway/700.css';
 import '@fontsource/righteous/400.css';
 import '@fontsource/roboto/700.css';
 import '@fontsource/rubik-moonrocks/400.css';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 import { EnvelopeSimple, Globe, LinkedinLogo, MapPinLine, Phone, TwitterLogo, User } from 'phosphor-react';
 import React, {useRef, useEffect} from 'react';
 import { useForm } from 'react-hook-form';
@@ -39,7 +39,7 @@ function Contact() {
     useEffect(() => {
 
         sr.reveal('.contactf', {
-            rotate: {X: 0, y: 20, z: 0},
+            rotate: {x: 0, y: 20, z: 0},
             duration: 800,
 
         },);

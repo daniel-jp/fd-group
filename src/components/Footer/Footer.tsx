@@ -14,9 +14,9 @@ import {
   VisuallyHidden,
 } from '@chakra-ui/react';
 import { EnvelopeSimple, Globe, LinkedinLogo, TwitterLogo } from 'phosphor-react';
-import {Check} from 'phosphor-react';
-import React, {ReactNode, useEffect, useRef} from 'react';
-import {useTranslation} from 'react-i18next';
+import { Check } from 'phosphor-react';
+import React, { ReactNode, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
 const sr = ScrollReveal();

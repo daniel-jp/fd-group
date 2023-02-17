@@ -1,6 +1,8 @@
 import {Box, Flex, Heading, SimpleGrid, Stack, Text} from '@chakra-ui/react';
 import {CameraSlash, QrCode} from 'phosphor-react';
+import React, {useEffect} from 'react';
 import {useTranslation} from 'react-i18next';
+import ScrollReveal from 'scrollreveal';
 
 import CardServerProduct from '../components/Servers/CardServerProduct';
 import Layout from '../layout/Layout';
@@ -8,8 +10,6 @@ import ServerProductsServer1 from '../servers/ServerProductsServer1';
 import ServerProductsServer2 from '../servers/ServerProductsServer2';
 import ServerProductsServer3 from '../servers/ServerProductsServer3';
 import ServerProductsServer4 from '../servers/ServerProductsServer4';
-import ScrollReveal from 'scrollreveal';
-import React, {useEffect} from 'react';
 
 const sr = ScrollReveal();
 
@@ -18,7 +18,7 @@ function Server() {
   useEffect(() => {
 
     sr.reveal('.server1', {
-      rotate: {X: 0, y: 20, z: 0},
+      rotate: {x: 0, y: 20, z: 0},
       duration: 1000,
 
     },);

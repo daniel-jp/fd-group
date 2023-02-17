@@ -2,7 +2,9 @@ import { CheckCircleIcon } from '@chakra-ui/icons';
 import { Flex, Link, SimpleGrid, Stack } from '@chakra-ui/react';
 import { Box, Heading, Text } from '@chakra-ui/react';
 import {CameraSlash, QrCode} from 'phosphor-react';
+import React, {useEffect} from 'react';
 import {useTranslation} from 'react-i18next';
+import ScrollReveal from 'scrollreveal';
 
 import FdgLogo from '../components/fdgLogo';
 import OtherProductCard from '../components/OtherProductCard/OtherProductCard';
@@ -15,16 +17,13 @@ import OtherProduct3 from '../Others/OtherProduct3';
 
 
 
-import ScrollReveal from 'scrollreveal';
-import React, {useEffect} from 'react';
-
 const sr = ScrollReveal();
 
 function Others() {
   useEffect(() => {
 
     sr.reveal('.other1', {
-      rotate: {X: 0, y: 20, z: 0},
+      rotate: {x: 0, y: 20, z: 0},
       duration: 1000,
 
     },);

@@ -1,6 +1,8 @@
 import {Box, Flex, Heading, SimpleGrid, Stack, Text} from '@chakra-ui/react';
 import {CameraSlash, QrCode} from 'phosphor-react';
+import React, {useEffect} from 'react';
 import {useTranslation} from 'react-i18next';
+import ScrollReveal from 'scrollreveal';
 
 import DeviceCards from '../components/DeviceCards/DeviceCards';
 import DeviceProduct1 from '../devices/DeviceProduct1';
@@ -8,9 +10,6 @@ import DeviceProduct2 from '../devices/DeviceProduct2';
 import DeviceProduct3 from '../devices/DeviceProduct3';
 import DeviceProduct4 from '../devices/DeviceProduct4';
 import Layout from '../layout/Layout';
-
-import ScrollReveal from 'scrollreveal';
-import React, {useEffect} from 'react';
 
 const sr = ScrollReveal();
 
@@ -20,7 +19,7 @@ function Devices() {
   useEffect(() => {
 
     sr.reveal('.device1', {
-      rotate: {X: 0, y: 20, z: 0},
+      rotate: {x: 0, y: 20, z: 0},
       duration: 1000,
 
     },);

@@ -35,13 +35,13 @@ function Services() {
   useEffect(() => {
 
     sr.reveal('.service1', {
-      rotate: {X: 0, y: 20, z: 0},
+      rotate: {x: 0, y: 20, z: 0},
       duration: 800,
 
     },);
 
     sr.reveal('.service2', {
-      rotate: {X: 0, y: 40, z: 0},
+      rotate: {x: 0, y: 40, z: 0},
       duration: 900
     });
 
