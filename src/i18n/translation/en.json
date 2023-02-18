@@ -114,6 +114,8 @@
         "ContactText2": "Email",
         "ContactText3": "Message",
         "ContactBtn": "Send Message",
+        "Contactdescription": "Your message has been sent successfully.",
+
 
         "ServiceH0": "OUR AREAS OF EXPERTISE",
         "ServiceH1": " Our services",

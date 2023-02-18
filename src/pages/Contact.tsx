@@ -1,8 +1,7 @@
 import { EmailIcon, InfoIcon } from '@chakra-ui/icons';
 import {
     Box,
-    Button,
-    Flex,
+  Button, Flex,
     FormControl,
     FormErrorMessage,
     FormLabel,
@@ -25,8 +24,7 @@ import '@fontsource/roboto/700.css';
 import '@fontsource/rubik-moonrocks/400.css'; 
 import emailjs from '@emailjs/browser';
 import { EnvelopeSimple, Globe, LinkedinLogo, MapPinLine, Phone, TwitterLogo, User } from 'phosphor-react';
-import React, {useRef, useState,useEffect} from 'react';
-import { useForm,SubmitHandler } from 'react-hook-form';
+import React, {useState, useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Layout from '../layout/Layout';
@@ -34,182 +32,232 @@ import ScrollReveal from 'scrollreveal';
 const sr = ScrollReveal();
 
 
-type Inputs = {
+interface FormState {
+  from_name?: string,
+  to_name?: string,
+  message?: string
 
-    
+}
 
-};
-function Contact(from_name:string,
-    to_name:string,
-    message:string) {
+const Contact: React.FC = () => {
 
-
-        useEffect(() => {
+  const {t} = useTranslation();
+  useEffect(() => {
             sr.reveal('.contactf', {
                 rotate: {x: 0, y: 20, z: 0},
                 duration: 800,
             },);
         }, []);
+ // const form = useRef();
 
+  const [formState, setFormState] = useState<FormState>({
 
-        const { t } = useTranslation();
-        const toast = useToast();
-        const form = useRef();
-        
-        const { handleSubmit, register,watch,formState: { errors, isSubmitting }} = useForm<Inputs>();
-        const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
-    function sendEmail(e:any) {
-        //  e.preventDefault();
- 
-        console.log(form.current);
- 
-            emailjs
-                .sendForm('service_o6ymppj', 'template_j01g3ha', form.current, 'VYtbYRJVHvmxoHbpp')
+    from_name: "",
+    to_name: "",
+    message: "",
+  });
 
-                .then(
-                (result) => {
-                        toast({
-                            position: 'bottom-right',
-                            status: 'success',
-                            title: 'Mensagem enviada'
-                        });
-                        console.log('Message sent');
-                    },
+  const [errors, setErrors] = useState<FormState>({
+    from_name: "",
+    to_name: "",
+    message: "",
+  });
 
-                ( error ) => {
-                        toast({
-                            position: 'bottom-right', 
-                            status: 'error',
-                            title: 'Mensagem enviada'
-                        });
-                        console.log('Error to sent!');
-                    }
-                );
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const {name, value} = e.target;
+    setFormState((prevState) => ({...prevState, [name]: value}));
+  };
+
+  const toast = useToast();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const validationErrors = validateForm(formState);
+    if(Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
     }
+
+    try {
+      const emailResult = await emailjs.sendForm(
+        "service_nzpojqk", "template_jn3yurv",
+        e.currentTarget as HTMLFormElement,
+        "VYtbYRJVHvmxoHbpp"
+      );
+      if(emailResult.text === "OK") {
+        toast({
+          title: "Message sent",
+          status: "success",
+          description: 'Your message has been sent successfully.',
+          duration: 5000,
+          isClosable: true,
+        });
+        setFormState({
+          from_name: "",
+          to_name: "",
+          message: "",
+        });
+        setErrors({
+          from_name: "",
+          to_name: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Email send failed");
+      }
+    } catch(error) {
+      toast({
+        title: "Error sending message",
+        description: "Please try again later",
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+      });
+    }
+  };
+
+
+  const validateForm = (formState: FormState) => {
+    const errors: Partial<FormState> = {};
+
+    if(!formState.from_name) {
+      errors.from_name = "Please enter your name";
+    }
+
+    if(!formState.to_name) {
+      errors.to_name = "Please enter the recipient's name";
+    }
+    if(!formState.to_name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formState.to_name)) {
+      errors.to_name = "Please enter a valid email address";
+    }
+    if(!formState.message) {
+      errors.message = "Please enter a message";
+    }
+    return errors;
+  };
+
 
     return (
 <Layout>
-    <Flex maxW="full" pb={30} className='contactf' visibility={'hidden'}>
-        <Box color="white" borderRadius="lg" m={{ sm: 1, md: 6, lg: 8 }} p={{ sm: 1, md: 5, lg: 6 }}>
+        <Flex maxW="full" pb={30} className='contactf' visibility={'hidden'}>
+          <Box color="white" borderRadius="lg" m={{sm: 1, md: 6, lg: 8}} p={{sm: 1, md: 5, lg: 6}}>
             <Box>
-                <Wrap maxW={'full'} justify={'space-between'} spacing={{ base: 10, sm: 3, md: 5, lg: 10 }}>
-                    <WrapItem>
-                        <Box>
-                            <Heading fontFamily={"'Rubik Moonrocks', sans-serif"} color={'gray.800'} p={1}>
-                                {t('ContactFormH')}
-                            </Heading>
-                            <Text p={1} mt={{ sm: 3, md: 3, lg: 5 }} color="gray.600">
-                                {t('ContactText0')}
-                            </Text>
+              <Wrap maxW={'full'} justify={'space-between'} spacing={{base: 10, sm: 3, md: 5, lg: 10}}>
+                <WrapItem>
+                  <Box>
+                    <Heading fontFamily={"'Rubik Moonrocks', sans-serif"} color={'gray.800'} p={1}>
+                      {t('ContactFormH')}
+                    </Heading>
+                    <Text p={1} mt={{sm: 3, md: 3, lg: 5}} color="gray.600">
+                      {t('ContactText0')}
+                    </Text>
 
-                            <Box color={'gray.600'}>
-                                <VStack spacing={3} alignItems="flex-start">
-                                    <Box display={'flex'} p={1} fontSize={{ base: '1xl', sm: '1xl' }}>
-                                        <Phone color="#4299e1" size={30} />
-                                        <Text p={2} w={{ base: 180, sm: 200, md: 250, lg: 330 }}>
-                                            +244 931 901 243 & +244 927 538 808
-                                        </Text>
-                                    </Box>
-
-                                    <Box p={1} display={'flex'} alignContent={'space-between'} fontSize={{ base: '1xl', sm: '1xl' }}>
-                                        <EnvelopeSimple color="#4299e1" size={30} />
-                                        <Text p={2} w={{ base: 200, sm: 200, md: 250, lg: 200 }}>
-                                            info@fdgroup.company
-                                        </Text>
-                                    </Box>
-
-                                    <Box display={'flex'} pt={2} p={1} width="350px">
-                                        <MapPinLine color="#4299e1" size={30} />
-                                        <Text p={2} w={{ base: 200, sm: 250, md: 300, lg: 350 }}>
-                                            10 rue liberté Etg 3 Apt 5 CA Al Hiba, Casablanca & Distrito Ingombota Rua Bartolomeu Dias Zona 4 Casa N 1 Luanda / Angola
-                                        </Text>
-                                    </Box>
-                                </VStack>
-                            </Box>
-
-                            <HStack mt={{ lg: 5, md: 5 }} spacing={5} px={5} alignItems="flex-start">
-                                <IconButton aria-label="facebook" variant="ghost" size="lg" isRound={true} _hover={{ bg: 'red.800' }} icon={<LinkedinLogo size="28px" />} />
-                                <IconButton aria-label="github" variant="ghost" size="lg" isRound={true} _hover={{ bg: 'red.800' }} icon={<TwitterLogo size="28px" />} />
-                                <IconButton aria-label="discord" variant="ghost" size="lg" isRound={true} _hover={{ bg: 'red.800' }} icon={<Globe size="28px" />} />
-                            </HStack>
+                    <Box color={'gray.600'}>
+                      <VStack spacing={3} alignItems="flex-start">
+                        <Box display={'flex'} p={1} fontSize={{base: '1xl', sm: '1xl'}}>
+                          <Phone color="#4299e1" size={30} />
+                          <Text p={2} w={{base: 180, sm: 200, md: 250, lg: 330}}>
+                            +244 931 901 243 & +244 927 538 808
+                          </Text>
                         </Box>
-                    </WrapItem>
+
+                        <Box p={1} display={'flex'} alignContent={'space-between'} fontSize={{base: '1xl', sm: '1xl'}}>
+                          <EnvelopeSimple color="#4299e1" size={30} />
+                          <Text p={2} w={{base: 200, sm: 200, md: 250, lg: 200}}>
+                            info@fdgroup.company
+                          </Text>
+                        </Box>
+
+                        <Box display={'flex'} pt={2} p={1} width="350px">
+                          <MapPinLine color="#4299e1" size={30} />
+                          <Text p={2} w={{base: 200, sm: 250, md: 300, lg: 350}}>
+                            10 rue liberté Etg 3 Apt 5 CA Al Hiba, Casablanca & Distrito Ingombota Rua Bartolomeu Dias Zona 4 Casa N 1 Luanda / Angola
+                          </Text>
+                        </Box>
+                      </VStack>
+                    </Box>
+
+                    <HStack mt={{lg: 5, md: 5}} spacing={5} px={5} alignItems="flex-start">
+                      <IconButton aria-label="facebook" variant="ghost" size="lg" isRound={true} _hover={{bg: 'red.800'}} icon={<LinkedinLogo size="28px" />} />
+                      <IconButton aria-label="github" variant="ghost" size="lg" isRound={true} _hover={{bg: 'red.800'}} icon={<TwitterLogo size="28px" />} />
+                      <IconButton aria-label="discord" variant="ghost" size="lg" isRound={true} _hover={{bg: 'red.800'}} icon={<Globe size="28px" />} />
+                    </HStack>
+                  </Box>
+                </WrapItem>
+
+                <WrapItem> 
+                  <form onSubmit={handleSubmit}>
+                    <Box bg="white" w={{base: 300, sm: 350, md: 540, lg: 600}}>
+                      <Box m={3} pt={3} pb={3} color="#0B0E3F">
+                        <VStack justify={'center'} spacing={5}>
 
 
+                          <FormControl id="from_name" isInvalid={!!errors.from_name}>
+                            <FormLabel>  {t('ContactText1')} </FormLabel>
+                            <InputGroup borderColor="#E0E1E7">
+                              <InputLeftElement children={<InfoIcon color="gray.800" />} />
+                              <Input 
+                                name="from_name" value={formState.from_name} onChange={handleInputChange}
+                                type="text"
+                                size="md"
+                                placeholder="Your name" />
 
-                    <WrapItem>
-                        <form ref={form} onSubmit={handleSubmit(sendEmail)}>
-                            <Box bg="white" w={{ base: 300, sm: 350, md: 540, lg: 600 }}>
-                                <Box m={3} pt={3} pb={3} color="#0B0E3F">
-                                    <VStack justify={'center'} spacing={5}>
-                                        <FormControl isInvalid={!!errors.from_name}>
-                                            <FormLabel> {t('ContactText1')}</FormLabel>
-                                            <InputGroup borderColor="#E0E1E7">
-                                                <InputLeftElement pointerEvents='from_name' children={<InfoIcon color="gray.800" />} />
-                                                <Input
-                                                    id='from_name'
-                                                    type="text"
-                                                    name='from_name'
-                                                    size="md"
-                                                    placeholder="Your name"
-                                                    {...register('from_name', { required: 'This is required', maxLength: 80 })}
-                                                />
-                                            </InputGroup>
-                                            <FormErrorMessage>{errors.from_name && errors.from_name.message}</FormErrorMessage>
-                                        </FormControl>
+                            </InputGroup>
+                            {errors.from_name && (<FormErrorMessage>{errors.from_name}</FormErrorMessage>)}
+                          </FormControl>
 
-                                        <FormControl isInvalid={!!errors.to_name}>
-                                            <FormLabel>{t('ContactText2')}</FormLabel>
-                                            <InputGroup borderColor="#E0E1E7">
-                                                <InputLeftElement pointerEvents="to_name" children={<EmailIcon color="gray.800" />} />
-                                                <Input
-                                                    type="email"
-                                                    id='to_name'
-                                                    name='to_name'
-                                                    size="md"
-                                                    placeholder="exemple@fdgroup.company"
-                                                    {...register('to_name', { required: 'This is required', pattern: /^\S+@\S+$/i })}/>
-                                            </InputGroup>
-                                            <FormErrorMessage>{errors.to_name && errors.to_name.message}</FormErrorMessage>
-                                        </FormControl>
+                          <FormControl id="to_name" isInvalid={!!errors.to_name}>
+                            <FormLabel> {t('ContactText2')} </FormLabel>
+                            <InputGroup borderColor="#E0E1E7">
+                              <InputLeftElement children={<EmailIcon color="gray.800" />} />
+                              <Input 
+                                type="email" value={formState.to_name}
+                                name="to_name" onChange={handleInputChange}
 
-                                        <FormControl isInvalid={!!errors.message}>
-                                            <FormLabel>{t('ContactText3')}</FormLabel>
-                                            <Textarea
-                                                id="message"
-                                                borderColor="gray.300"
-                                                _hover={{
-                                                    borderRadius: 'gray.300'
-                                                }}
-                                                name='message'
-                                                placeholder="message"
-                                                {...register('message', { required: 'This is required', maxLength: 80 })}/>
-                                            <FormErrorMessage>{errors.message && errors.message.message}</FormErrorMessage>
-                                        </FormControl>
+                                size="md"
+                                placeholder="exemple@fdgroup.company"
+                              />
 
-                                        <FormControl float="right">
-                                            <Button
-                                                type="submit"
-                                                variant="solid"
-                                                bg={'red.900'}
-                                                color="white"
-                                                _hover={{
-                                                    bg: 'red.300',
-                                                    cursor: 'pointer'
-                                                }}
-                                                isLoading={isSubmitting}>
-                                                {t('ContactBtn')}
-                                            </Button>
-                                        </FormControl>
-                                    </VStack>
-                                </Box>
-                            </Box>
-                        </form>
-                    </WrapItem>
-                </Wrap> 
+                            </InputGroup>  
+                            {errors.to_name && (<FormErrorMessage>{errors.to_name}</FormErrorMessage>)}
+                          </FormControl>
+
+                          <FormControl id="message" isInvalid={!!errors.message}>
+                            <FormLabel> {t('ContactText3')} </FormLabel>
+                            <Textarea
+                              borderColor="gray.300"
+                              _hover={{
+                                borderRadius: 'gray.300'
+                              }}
+                              name="message" value={formState.message} onChange={handleInputChange}
+                              placeholder="Enter your message here"
+                            />
+                            {errors.message && (<FormErrorMessage>{errors.message}</FormErrorMessage>)}
+                          </FormControl>
+
+                          <FormControl float="right">
+                            <Button
+                              type="submit"
+                              variant="solid"
+                              bg={'red.900'}
+                              color="white"
+                              _hover={{
+                                bg: 'red.300',
+                                cursor: 'pointer'
+                              }}>
+                              {t('ContactBtn')}
+                            </Button>
+                          </FormControl>
+                        </VStack>
+                      </Box>
+                    </Box>
+                  </form>
+                </WrapItem>
+              </Wrap>
             </Box>
-        </Box>
-    </Flex>
+          </Box>
+        </Flex>
 </Layout>
     );
 }

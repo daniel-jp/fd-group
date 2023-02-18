@@ -13,7 +13,6 @@ import Services from './pages/Services';
 
 
 
-
 // interface routs {
 //   path: string | null,
 //   name?: string | null,
@@ -60,7 +59,7 @@ export const routes = [
 
   {
     path: "/contact",
-    element: <Contact />,
+    element: <Contact/>,
     errorElement: <Error />,
   },
 

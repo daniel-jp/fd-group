@@ -127,6 +127,7 @@
         "ContactText2": "E-mail",
         "ContactText3": "Message",
         "ContactBtn": "Envoyer message",
+        "Contactdescription": "Votre message a été envoyé avec succès.",
 
         "ServiceH0": "NOS DOMAINES D'EXPERTISE",
         "ServiceH1": "Nos services",
