@@ -32,18 +32,18 @@ import ScrollReveal from 'scrollreveal';
 const sr = ScrollReveal();
 
 
-// interface FormState {
+interface FormState {
+  from_name: string,
+  to_name: string,
+  message: string
+}
+
+// type FormState = {
 //   from_name: string,
 //   to_name: string,
 //   message: string
 
 // }
-type FormState = {
-  from_name: string,
-  to_name: string,
-  message: string
-
-}
 
 const Contact: React.FC = () => {
 
@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
     message: "",
   });
 
-  const [errors, setErrors] = useState<FormState>({
+  const [errors, setErrors] = useState<Partial<FormState>>({
     from_name: "",
     to_name: "",
     message: "",
@@ -76,6 +76,7 @@ const Contact: React.FC = () => {
 
   const toast = useToast();
 
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -84,6 +85,11 @@ const Contact: React.FC = () => {
       setErrors(validationErrors);
       return;
     }
+
+
+
+
+
 
     try {
       const emailResult = await emailjs.sendForm(
@@ -112,6 +118,7 @@ const Contact: React.FC = () => {
       } else {
         throw new Error("Email send failed");
       }
+
     } catch(error) {
       toast({
         title: "Error sending message",
@@ -121,10 +128,11 @@ const Contact: React.FC = () => {
         isClosable: true,
       });
     }
+
   };
 
 
-  const validateForm = (formState: FormState) => {
+  const validateForm = (formState: FormState): Partial<FormState> => {
     const errors: Partial<FormState> = {};
 
     if(!formState.from_name) {
@@ -140,7 +148,7 @@ const Contact: React.FC = () => {
     if(!formState.message) {
       errors.message = "Please enter a message";
     }
-    return errors;
+    return errors
   };
 
 
