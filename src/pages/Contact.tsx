@@ -32,10 +32,16 @@ import ScrollReveal from 'scrollreveal';
 const sr = ScrollReveal();
 
 
-interface FormState {
-  from_name?: string,
-  to_name?: string,
-  message?: string
+// interface FormState {
+//   from_name: string,
+//   to_name: string,
+//   message: string
+
+// }
+type FormState = {
+  from_name: string,
+  to_name: string,
+  message: string
 
 }
 
