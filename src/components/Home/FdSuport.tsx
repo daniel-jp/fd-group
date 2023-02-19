@@ -108,7 +108,7 @@ function FdSuport() {
   return (
 
     <Box  bg={useColorModeValue("gray.100", "gray.700")}>
-      <Container alignItems={'center'} as={Stack} maxW={"6xl"} py={32}  spacing={12}>
+      <Container overflowY={"hidden"} overflowX={"hidden"} alignItems={'center'} as={Stack} maxW={"6xl"} py={22} spacing={12}>
         <Stack className='stack' visibility={'hidden'} textAlign={'center'} spacing={0} align={"center"}>
           <Heading color={"gray.700"}>{t("suport1")}</Heading>
           <Text>{t("suport2")}</Text>

@@ -76,7 +76,7 @@ function FdCarousel() {
 
 
   return (
-    <Box position={"relative"} height={"500px"} width={"full"} mt={"110px"} overflow={"hidden"}>
+    <Box overflowY={"hidden"} overflowX={"hidden"} position={"relative"} height={"500px"} width={"full"} mt={"110px"} overflow={"hidden"}>
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
