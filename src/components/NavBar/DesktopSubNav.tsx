@@ -5,35 +5,41 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
+  Link,
   Stack,
   Text,
   useDisclosure,
 } from '@chakra-ui/react';
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+// import { Link } from 'react-router-dom';
 
 const DesktopSubNav = () => {
   const {isOpen, onOpen, onClose} = useDisclosure();
-  const btnRef = React.useRef();
 
   return (
     <>
-      <Text ml={8} {...btnRef} onClick={onOpen}>
-        Categorias
+      <Text  _hover={{
+                    cursor: "pointer",
+                    color: "gray.400",
+                    transform: "scale(1.1)",
+                  }} onClick={onOpen}>
+      Categorias
       </Text>
-      <Drawer isOpen={isOpen} placement="right" onClose={onClose} {...btnRef} >
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose} >
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Categorias</DrawerHeader>
+          
+          <DrawerHeader>Products</DrawerHeader>
           <DrawerBody>
             <Stack spacing={4}>
               <Text>
-                <Link to="/produtos/server">Servers</Link>
+                <Link href="/products/server">Servers</Link>
               </Text>
               <Text>
-                <Link to="/produtos/devices">Devices</Link>
-              </Text>
+                <Link href="/products/devices">Devices</Link>
+              </Text> 
             </Stack>
           </DrawerBody>
         </DrawerContent>

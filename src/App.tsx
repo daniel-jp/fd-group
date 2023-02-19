@@ -34,16 +34,15 @@ function App() {
     <>
     
       <Router>
-        <Navbar />
         <Routes>
           <Route  path="/" element={<Home/>} />
           <Route  path="/about" element={<About/>} />
-          <Route  path="/produtos" element={<Products/>} />
-
-          <Route  path="/produtos/server" element={<Server/>} />
-                <Route  path="/produtos/devices" element={<Devices/>} />          <Route  path="/services" element={<Services/>} />
+          <Route  path="/products" element={<Products/>}/ > 
+          <Route  path="/products/server" element={<Server/>} />
+          <Route  path="/products/devices" element={<Devices/>} /> 
+          <Route  path="/services" element={<Services/>} />
           <Route  path="/contact" element={<Contact/>} />
-        </Routes> 
+     </Routes>
       </Router>
  
     </>
