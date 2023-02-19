@@ -115,7 +115,7 @@ function FdTestimo() {
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
-              src={"../../public/assets/testmo/avatar.png"}
+              src={"https://media.licdn.com/dms/image/D4E03AQGvBkytqkkSPw/profile-displayphoto-shrink_100_100/0/1664478662979?e=1682553600&v=beta&t=sRF5-sZH2SAN16-4ttH3EhWxM0Yqii5crOCW7qkXGkw"}
               name={"Daniel Paulino"}
               title={t("Title1")} />
           </Testimonial>
