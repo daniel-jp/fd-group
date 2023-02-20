@@ -1,6 +1,7 @@
-import { Flex, HStack, Link, Text } from '@chakra-ui/react';
+import { Flex, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
-import { NavLink as RouteLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { Link, NavLink as RouteLink } from 'react-router-dom';
 
 import FdgLogo from '../fdgLogo';
 import DesktopSubNav from '../NavBar/DesktopSubNav';
@@ -9,36 +10,43 @@ import DesktopSubNav from '../NavBar/DesktopSubNav';
 
 // Componente DesktopNav
 const DesktopNav = () => {
+  const {t} = useTranslation()
+
   return (
-    <Flex display={{base: "none", md: "flex"}}   align={'center'}>
+    <Flex  display={{base: "none", md: "flex"}}   align={'center'}>
 
 
-      <Text ml={8}>
+      <Text ml={6}>
        <RouteLink to="/">
            <FdgLogo />
        </RouteLink>
-      </Text>
+    </Text>
 
-  <Flex>
-      <Text ml={8}>
-        <Link href="/">Home</Link>
+  <Stack  ml={8} direction={'row'}
+   spacing={{sm: '12px',md: '14px', lg:12}} p={2}>
+      <Text fontWeight={'bold'}>
+        <Link 
+       to="/"> {t("home0")}
+        </Link>
       </Text>
-      <Text  ml={8}>
-        <Link href="/about">About Us</Link>
+      <Text fontWeight={'bold'}>
+        <Link to="/about">{t("home1")}</Link>
       </Text>
-      <Text ml={8}>
-        <Link href={'/products'}>Products</Link>
+      <Text fontWeight={'bold'}>
+        <Link to={'/products'}> {t("home2")}</Link>
       </Text>
-      <Text ml={8}>
+      <Text>
       <DesktopSubNav />
       </Text>
-      <Text ml={8}>
-        <Link href="/services">Services</Link>
+      <Text fontWeight={'bold'}>
+        <Link  to="/services">{t("home4")}</Link>
       </Text>
-      <Text ml={8}>
-        <Link href="/contact">Contact</Link>
+      
+      
+      <Text fontWeight={'bold'}>
+        <Link  to="/contact">{t("home5")}</Link>
       </Text>
-      </Flex>
+      </Stack>
     </Flex>
   );
 }

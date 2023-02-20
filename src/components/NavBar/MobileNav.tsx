@@ -9,10 +9,9 @@ import {
   Flex,
   IconButton,
   Stack,
+  Text,
   useDisclosure,
 } from '@chakra-ui/react';
-import { List } from 'phosphor-react';
-import { Link } from 'react-router-dom';
 import { NavLink as RouteLink } from 'react-router-dom';
 
 import FdgLogo from '../fdgLogo';
@@ -27,21 +26,21 @@ const MobileNav = () => {
     <Flex display={{base: "flex", md: "none"}} justifyContent="space-between" alignItems="center" px={4}>
       <IconButton icon={<HamburgerIcon />} variant="ghost" onClick={onOpen} aria-label={''} />
       <RouteLink to="/">
-           <FdgLogo />
+           <FdgLogo/>
        </RouteLink>
-      <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
+      <Drawer placement="top" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Menu</DrawerHeader>
+          <DrawerHeader> <Text fontFamily={"'Rubik Moonrocks', sans-serif"}>Menu</Text> </DrawerHeader>
           <DrawerBody>
             <Stack spacing={4}>
-              <MobileNavItem href="/">Home</MobileNavItem>
-              <MobileNavItem href="/about">About</MobileNavItem>
-              <MobileNavItem href="/products">Produtos</MobileNavItem>
+              <MobileNavItem to="/">Home</MobileNavItem>
+              <MobileNavItem to="/about">About</MobileNavItem>
+              <MobileNavItem to="/products">Produtos</MobileNavItem>
               <MobileNavItem> <DesktopSubNav /></MobileNavItem>
-              <MobileNavItem href="/services">Services</MobileNavItem>
-              <MobileNavItem href="/contact">Contact</MobileNavItem>
+              <MobileNavItem to="/services">Services</MobileNavItem>
+              <MobileNavItem to="/contact">Contact</MobileNavItem>
 
             </Stack>
           </DrawerBody>

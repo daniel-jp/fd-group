@@ -3,8 +3,9 @@
         "home0": "Home",
         "home1": "About Us",
         "home2": "Products",
-        "home3": "Services",
-        "home4": "Contact",
+        "home3": "Category",
+        "home4": "Services",
+        "home5": "Contact",
 
         "childrenLab0": "Servers & Storage Array",
         "childrenLab1": "Network Devices",
