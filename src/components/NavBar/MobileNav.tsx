@@ -35,12 +35,12 @@ const MobileNav = () => {
           <DrawerHeader> <Text fontFamily={"'Rubik Moonrocks', sans-serif"}>Menu</Text> </DrawerHeader>
           <DrawerBody>
             <Stack spacing={4}>
-              <MobileNavItem to="/">Home</MobileNavItem>
-              <MobileNavItem to="/about">About</MobileNavItem>
-              <MobileNavItem to="/products">Produtos</MobileNavItem>
+              <MobileNavItem href="/">Home</MobileNavItem>
+              <MobileNavItem href="/about">About</MobileNavItem>
+              <MobileNavItem href="/products">Produtos</MobileNavItem>
               <MobileNavItem> <DesktopSubNav /></MobileNavItem>
-              <MobileNavItem to="/services">Services</MobileNavItem>
-              <MobileNavItem to="/contact">Contact</MobileNavItem>
+              <MobileNavItem href="/services">Services</MobileNavItem>
+              <MobileNavItem href="/contact">Contact</MobileNavItem>
 
             </Stack>
           </DrawerBody>
