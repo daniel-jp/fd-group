@@ -20,7 +20,9 @@ import {
 } from '@chakra-ui/react'; import '@fontsource/open-sans/700.css';
 import '@fontsource/raleway/700.css';
 import '@fontsource/righteous/400.css';
-import '@fontsource/roboto/700.css';
+import '@fontsource/roboto/700.css'
+import '@fontsource/inter/600.css';
+
 import '@fontsource/rubik-moonrocks/400.css'; 
 import emailjs from '@emailjs/browser';
 import { EnvelopeSimple, Globe, LinkedinLogo, MapPinLine, Phone, TwitterLogo, User } from 'phosphor-react';
@@ -154,13 +156,13 @@ const Contact: React.FC = () => {
 
     return (
 <Layout>
-        <Flex maxW="full" pb={30} className='contactf' visibility={'hidden'}>
+        <Flex  fontFamily={"'Inter', sans-serif"} color={"gray.600"} maxW="full" pb={30} className='contactf' visibility={'hidden'}>
           <Box color="white" borderRadius="lg" m={{sm: 1, md: 6, lg: 8}} p={{sm: 1, md: 5, lg: 6}}>
-            <Box>
+            <Box  mt={12}>
               <Wrap maxW={'full'} justify={'space-between'} spacing={{base: 10, sm: 3, md: 5, lg: 10}}>
                 <WrapItem>
                   <Box>
-                    <Heading fontFamily={"'Rubik Moonrocks', sans-serif"} color={'gray.800'} p={1}>
+                    <Heading color={'gray.800'} p={1}>
                       {t('ContactFormH')}
                     </Heading>
                     <Text p={1} mt={{sm: 3, md: 3, lg: 5}} color="gray.600">
@@ -170,23 +172,23 @@ const Contact: React.FC = () => {
                     <Box color={'gray.600'}>
                       <VStack spacing={3} alignItems="flex-start">
                         <Box display={'flex'} p={1} fontSize={{base: '1xl', sm: '1xl'}}>
-                          <Phone color="#4299e1" size={30} />
+                          <Phone color="#C53030" size={30} />
                           <Text p={2} w={{base: 180, sm: 200, md: 250, lg: 330}}>
-                            +244 931 901 243 & +244 927 538 808
+                            +244 927 538 808 / +244 931901243
                           </Text>
                         </Box>
 
                         <Box p={1} display={'flex'} alignContent={'space-between'} fontSize={{base: '1xl', sm: '1xl'}}>
-                          <EnvelopeSimple color="#4299e1" size={30} />
+                          <EnvelopeSimple color="#C53030" size={30} />
                           <Text p={2} w={{base: 200, sm: 200, md: 250, lg: 200}}>
                             info@fdgroup.company
                           </Text>
                         </Box>
 
                         <Box display={'flex'} pt={2} p={1} width="350px">
-                          <MapPinLine color="#4299e1" size={30} />
+                          <MapPinLine color={'#C53030'} size={30} />
                           <Text p={2} w={{base: 200, sm: 250, md: 300, lg: 350}}>
-                            10 rue liberté Etg 3 Apt 5 CA Al Hiba, Casablanca & Distrito Ingombota Rua Bartolomeu Dias Zona 4 Casa N 1 Luanda / Angola
+                            Distrito Ingombota Rua Bartolomeu Dias Zona 4 Casa N 1 Luanda / Angola
                           </Text>
                         </Box>
                       </VStack>
@@ -254,10 +256,10 @@ const Contact: React.FC = () => {
                             <Button
                               type="submit"
                               variant="solid"
-                              bg={'red.900'}
+                              bg={'gray.600'}
                               color="white"
                               _hover={{
-                                bg: 'red.300',
+                                bg: 'red.400',
                                 cursor: 'pointer'
                               }}>
                               {t('ContactBtn')}

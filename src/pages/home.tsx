@@ -1,3 +1,5 @@
+import '@fontsource/inter/600.css';
+
 import { Box } from '@chakra-ui/react';
 import { keyframes } from '@emotion/react';
 
@@ -15,14 +17,13 @@ import SimpleLayout from '../layout/SimpleLayout';
 
 
 
-
 export default function Home() {
   return (
     <Box as="main" margin="0" padding="0" bg={"gray.100"} overflowX={'hidden'} >
       <NavBar />
       <FdCarousel />
       <SimpleLayout>
-      <Box overflowY={"hidden"} overflowX={"hidden"}>
+      <Box fontFamily={"'Inter', sans-serif"} color={"gray.600"} overflowY={"hidden"} overflowX={"hidden"}>
         <Suport />
         <ProdCard />
         <SwiperCard />

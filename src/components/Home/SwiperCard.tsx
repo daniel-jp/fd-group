@@ -66,7 +66,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   }
 
   return (
-    <Box p={3} overflowY={"hidden"} overflowX={"hidden"} py={32}>
+    <Box p={3} py={32}>
 
       <Stack className='swp1' visibility={'hidden'} spacing={0} align={"center"} pb={10}>
         <Heading>{t("swip1")}</Heading>
@@ -75,9 +75,9 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
       <SimpleLayout>
 
- <Box className='swp2' visibility={'hidden'}>
-    <Swiper
-
+ <Box className='swp2' visibility={'hidden'} overflowY={"hidden"} overflowX={"hidden"}>
+    <Swiper 
+    
          {...myStyle}
           effect={"coverflow"}
           grabCursor={true}

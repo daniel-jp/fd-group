@@ -39,7 +39,7 @@ const DesktopSubNav = () => {
           <PopoverHeader><Text fontFamily={"'Rubik Moonrocks', sans-serif"}>{t("home0")}</Text></PopoverHeader>
           <Box overflowY={'scroll'}>
 
-          <PopoverBody>
+          <PopoverBody> 
          
             <Link to="/products/server" role={"group"}>
               <Stack direction={"row"} align={'flex-start'} >

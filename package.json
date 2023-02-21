@@ -15,6 +15,7 @@
         "@emailjs/browser": "^3.10.0",
         "@emotion/react": "^11.10.5",
         "@emotion/styled": "^11.10.5",
+        "@fontsource/inter": "^4.5.15",
         "@fontsource/open-sans": "^4.5.14",
         "@fontsource/raleway": "^4.5.12",
         "@fontsource/righteous": "^4.5.7",

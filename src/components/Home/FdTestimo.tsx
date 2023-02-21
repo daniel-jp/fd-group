@@ -11,7 +11,7 @@ const Testimonial = ({children}: {children: ReactNode}) => {
 
 const TestimonialContent = ({ children }: { children: ReactNode }) => {
   return (
-    <Stack
+    <Stack 
       bg={useColorModeValue("white", "gray.800")}
       boxShadow={"lg"}
       p={8}

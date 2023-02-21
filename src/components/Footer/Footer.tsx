@@ -123,13 +123,8 @@ function Footer() {
               <Box className={'foots1'} visibility={'hidden'} textAlign={"start"} pb={"2px"}>
 
                 <ListHeader>{t("fOff")}</ListHeader>
-                <Text textDecor="none" fontSize={ 20 } color={ "red.400" }>
-                  {t("fMorocco")}
-                </Text>
-
-                <Text w={ "full" } textAlign={ "justify" } fontSize={ "sm" }>
-                  10 rue liberté Etg 3 Apt 5 CA Al Hiba, Casablanca
-                </Text>
+              
+              
 
                 <Text fontSize={ 20 } color={ "red.400" }>
                   Angola
@@ -146,7 +141,7 @@ function Footer() {
                   info@fdgroup.company
                 </Text>
                 <Text pb={ "2px" } textAlign={ "justify" } fontSize={ "sm" }>
-                  +212 772276887 / +244 931901243
+                  +244 927 538 808 / +244 931901243
                 </Text>
               </Box>
 

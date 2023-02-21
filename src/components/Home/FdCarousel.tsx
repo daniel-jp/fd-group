@@ -1,12 +1,13 @@
+import '@fontsource/inter/';
+import '@fontsource/inter/600.css';
 import '@fontsource/open-sans/700.css';
 import '@fontsource/raleway/700.css';
 import '@fontsource/righteous/400.css';
 import '@fontsource/roboto/700.css';
-import '@fontsource/rubik-moonrocks/400.css';
 
-import { Box, Button, Container, Flex, Heading, IconButton, Stack, Text, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Button, Container, Heading, IconButton, Stack, Text, useBreakpointValue } from '@chakra-ui/react';
 import { ArrowRight, CaretCircleLeft, CaretCircleRight } from 'phosphor-react';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
@@ -76,7 +77,7 @@ function FdCarousel() {
 
 
   return (
-    <Box overflowY={"hidden"} overflowX={"hidden"} position={"relative"} height={"500px"} width={"full"} mt={"110px"} overflow={"hidden"}>
+    <Box overflowY={"hidden"} overflowX={"hidden"} position={"relative"} height={"full"} width={"full"} mt={"110px"} overflow={"hidden"}>
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
@@ -119,7 +120,7 @@ function FdCarousel() {
             width={"full"}
             backgroundImage={`url(${card.image})`}> 
             {/* This is the block you need to change, to customize the caption */}
-            <Container size="container.lg" height="600px" position="relative">
+            <Container size="container.lg" h={600} position="relative">
               <Stack
                 spacing={2}
                 w={"full"}
@@ -131,15 +132,15 @@ function FdCarousel() {
                 align={"center"}
                 p={"10"} >
 
-                <Heading fontFamily={"'Rubik Moonrocks', sans-serif"} fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} color="white">
+                <Heading fontFamily={"'Inter', sans-serif"} fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} color="white">
                   {t(card.title)}
                 </Heading>
 
-                <Heading fontFamily={"'Rubik Moonrocks', sans-serif"} fontSize={{base: "2xl", sm: "3xl", md: "4xl"}} color="#822727">
+                <Heading fontFamily={"'Inter', sans-serif"} fontSize={{base: "2xl", sm: "3xl", md: "4xl"}} color="red.600">
                   {t(card.subTitle)}
                 </Heading>
 
-                <Text fontSize={{base: "md", lg: "lg"}} color="gray.200">
+                <Text py={2} fontFamily={"'Inter', sans-serif"} fontSize={{base: "md", lg: "lg"}} color="gray.300">
                   {t(card.text)}
                 </Text>
 
@@ -148,6 +149,8 @@ function FdCarousel() {
                   href={`${card.href}`}
                   borderRadius={30} 
                   fontFamily="roboto"
+                  w={160}
+                  maxW={'full'}
                   fontSize={18}  
                   color="white"
                   p="10px"
@@ -159,7 +162,7 @@ function FdCarousel() {
                     transform: "scale(1.1)",
                   }}>
 
-                  <Flex justify={'flex-end'} align={'center'}> {t(card.buttom)} <ArrowRight size={22} /></Flex>
+                  <Text display={'flex'}> {t(card.buttom)}  <ArrowRight size={22} /></Text>
                  
                  
                 </Button>

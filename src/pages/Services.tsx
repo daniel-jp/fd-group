@@ -1,3 +1,4 @@
+import '@fontsource/inter/600.css';
 import '@fontsource/open-sans/700.css';
 import '@fontsource/raleway/700.css';
 import '@fontsource/righteous/400.css';
@@ -106,31 +107,37 @@ function Services() {
   return (
     <>
       <Navbar/>
-      <Box pb={ 100 } mt={ 20 }>
 
+
+
+      <Box pb={ 100 } mt={ 20 } bg={"gray.200"} fontFamily={"'Inter', sans-serif"} color={"gray.600"}>
+
+      <SimpleLayout>
+      
         <Box textAlign="center" py={ 10 } px={ 6 }>
-          <Flex boxShadow={ "4px 0px 0px" }
+          <Flex boxShadow={ "8px 0px 0px" }
             mt={ 20 }
             p={ 2 }
             h={ "70px" }
-            maxW={ 300 }
-            py={ 4 }
-            gap={ 4 }
+            w={260}
+              maxW={ "full" }
+            py={ 4 } bg={"red.800"}
+            gap={ 4 }  justify={'end'}
             alignItems={ "center" }
             fontSize={ "2xl" }
             textAlign={ "end" }
-            color={ "red.700" }
-            fontWeight={"bold"} fontFamily={"'Rubik Moonrocks', sans-serif"} className='service1' visibility={'hidden'}>
-            {t("ServiceH0")}
+            color={ "gray.800" }
+            fontWeight={"bold"} className='service1' visibility={'hidden'}>
+            <Text color={"white"} textTransform={'uppercase'}>  {t("ServiceH1")}</Text>
 
-            <LineSegments size={ 40 } />
+            <LineSegments size={ 40 } color='#1A202C' />
           </Flex>
 
-          <Stack className='service2' visibility={'hidden'} align={'center'} py={10}>
-
-            <Heading as="h2" size="xl" fontFamily={"'Rubik Moonrocks', sans-serif"}>
-              {t("ServiceH1")}
-          </Heading>
+          <Stack className='service2' visibility={'hidden'} align={'center'} mt={28}>
+ 
+            <Text  fontWeight={'bold'}>
+            {t("ServiceH0")} 
+          </Text>
             <Text color={'gray.600'} textAlign={'center'}
               fontWeight={500} w={{base: 350, sm: 300, md: 400, lg: 900}} >
               {t("ServiText0")}
@@ -138,9 +145,8 @@ function Services() {
           </Stack>
         </Box>
 
-        <SimpleLayout>
 
-          <SimpleGrid spacing={ 16 } columns={ { base: 1, sm: 2 } }>
+          <SimpleGrid spacing={ 16 } columns={ { base: 1, sm: 2 } } mt={12}>
 
 
             {/* FUTURE 1 */ }
@@ -163,7 +169,7 @@ function Services() {
               <Stack>
 
                 <Heading pt={ 3 }
-                  color={ useColorModeValue('gray.700', 'white') }
+                  color={ useColorModeValue('gray.600', 'white') }
                   fontSize={ '2xl' } 
                   fontFamily={ 'body' }>
                   {t("ServiceSubH0")}
@@ -189,7 +195,6 @@ function Services() {
 
             {/* FUTURE 2 */ }
             <Stack className='service4' visibility={'hidden'} 
-
               w={ 'full' }
               bg={ useColorModeValue('white', 'gray.900') }
               boxShadow={ '2xl' }
@@ -200,7 +205,7 @@ function Services() {
               <Box
                 bg={'gray.100'}
                 h={'full'}
-                mt={ 6 }
+              
                
                 pos={ 'relative' }>
                 <Image w={ 'full' } h={ 'full' }
@@ -210,7 +215,7 @@ function Services() {
               <Stack>
 
                 <Heading pt={ 3 }
-                  color={ useColorModeValue('gray.700', 'white') }
+                  color={ useColorModeValue('gray.600', 'white') }
                   fontSize={ '2xl' }
                   fontFamily={ 'body' }>
                   {t("ServiceSubH1")}
@@ -255,7 +260,7 @@ function Services() {
               <Stack>
 
                 <Heading pt={ 2 }
-                  color={ useColorModeValue('gray.700', 'white') }
+                  color={ useColorModeValue('gray.600', 'white') }
                   fontSize={ '2xl' }
                   fontFamily={ 'body' }>
                   {t("ServiceSubH2")}
@@ -293,7 +298,7 @@ function Services() {
 
               <Box
                 bg={ 'gray.100' }
-                mt={ 6 }
+             
                 pos={ 'relative' }>
                 <Image w={ 'full' } h={ 'full' }
                   src={
@@ -348,6 +353,12 @@ function Services() {
             h={ 'full' }
           />
         </Flex>
+
+
+
+
+
+
         <Container className='service8' visibility={'hidden'} maxW={'6xl'} zIndex={10} position={'relative'}>
           <Stack direction={ { base: 'column', lg: 'row' } }>
             <Stack

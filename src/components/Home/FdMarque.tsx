@@ -6,6 +6,7 @@ import ScrollReveal from 'scrollreveal';
 import SimpleLayout from '../../layout/SimpleLayout';
 import GetAllMarques from '../../service/MarquesService';
 
+
 const sr = ScrollReveal();
 function FdMarque() {
 
@@ -35,7 +36,7 @@ function FdMarque() {
   const {t} = useTranslation();
   return (
 
-    <Flex
+    <Flex 
       overflowY={"hidden"} overflowX={"hidden"}
       pb={20}
       flexDirection={"column"}
@@ -45,7 +46,8 @@ function FdMarque() {
       px={{base: 2, sm: 12, md: 0}}
       bg={"white"}>
 
-      <chakra.h1 className={'marq1'} visibility={'hidden'} textAlign={"center"} fontSize={"4xl"} pt={10} pb={20} fontWeight={"bold"} w={"full"}>
+      <chakra.h1 className={'marq1'} visibility={'hidden'} textAlign={"center"} 
+      fontSize={"4xl"} pt={10} pb={20}fontWeight={"bold"}  w={"full"}>
         {t("Maques")}
       </chakra.h1>
       <SimpleLayout>

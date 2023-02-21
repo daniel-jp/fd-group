@@ -1,12 +1,12 @@
+import '@fontsource/inter/600.css';
 import '@fontsource/open-sans/700.css';
 import '@fontsource/raleway/700.css';
 import '@fontsource/righteous/400.css';
 import '@fontsource/roboto/700.css';
-import '@fontsource/rubik-moonrocks/400.css';
 
-import { Avatar, Box, Container, Flex, Heading, keyframes, Link, Stack, Text, useColorModeValue } from '@chakra-ui/react';
-import { ArrowSquareOut, X } from 'phosphor-react';
-import React, { ReactNode, useEffect, useRef } from 'react';
+import { Avatar, Box, Container, Flex, Heading, Link, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { ArrowSquareOut } from 'phosphor-react';
+import React, { ReactNode, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
@@ -65,7 +65,7 @@ const TestimonialText = ({ children }: { children: ReactNode }) => {
 };
 const TestimonialAvatar = ({ src, name, title }: { src: string; name: string; title: string }) => {
   return (
-    <Flex align={"center"} mt={8} direction={"column"}>
+    <Flex  fontFamily={"'Inter', sans-serif"} align={"center"} mt={8} direction={"column"}>
       <Avatar w={150} h={150} src={src} mb={2} />
       <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600}>
@@ -108,9 +108,9 @@ function FdSuport() {
   return (
 
     <Box  bg={useColorModeValue("gray.100", "gray.700")}>
-      <Container overflowY={"hidden"} overflowX={"hidden"} alignItems={'center'} as={Stack} maxW={"6xl"} py={22} spacing={12}>
+      <Container fontFamily={"'Inter', sans-serif"} overflowY={"hidden"} overflowX={"hidden"} alignItems={'center'} as={Stack} maxW={"6xl"} py={22} spacing={12}>
         <Stack className='stack' visibility={'hidden'} textAlign={'center'} spacing={0} align={"center"}>
-          <Heading color={"gray.700"}>{t("suport1")}</Heading>
+          <Heading color={"gray.600"} fontFamily={"'Inter', sans-serif"} >{t("suport1")}</Heading>
           <Text>{t("suport2")}</Text>
         </Stack>
 
