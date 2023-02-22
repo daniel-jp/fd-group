@@ -51,7 +51,7 @@ const Navbar = () => {
                 justify={'space-between'} 
                 bg={useColorModeValue("gray.800", "white")}
                 py={{base: 2}}
-                px={{base: 4, md: 8}}>
+                px={{base: 2, md: 4}}>
 
                 <Flex flex={{base: 1, md: "auto"}}
                     ml={{base: -2}}
@@ -60,36 +60,34 @@ const Navbar = () => {
 
                   
                 </Flex>
-                <Stack direction="row" spacing={8} align="center">
+                <Stack justify={'center'} direction="row" spacing={8} align="center">
                     <DesktopNav />
                 </Stack>
 
 
-                <Stack p={8} direction={"row"}>
+                <Stack p={2} justify={'center'} direction={"row"}>
 
                     {languageOptions.map((languageOption) => (
                         <Text
                           
                             key={`${languageOption.value}`}
                             bg={"gray.800"}
-                        
                             borderRadius={"30px"}
-                            display={'block'} textAlign={'center'}
+                            display={'block'} textAlign={'justify'}
                             onClick={() => {
                                 i18n.changeLanguage(languageOption.value)
                             }}
-                            w={5} h={5} 
-                         
-
+                            w={4} h={4} 
+                            
                             color={"white"}
                             fontSize={"12px"}
-                            fontWeight={"bord"}
+                            fontWeight={"bold"}
                             _hover={{
                                 cursor:"pointer",
-                                bg: "gray.800",
+                                bg: "gray.600",
                             }}>
                                 
-                            <Image w={5} h={5} src={languageOption.flag} alt={languageOption.name} />
+                            <Image w={3} h={3} src={languageOption.flag} alt={languageOption.name} />
                            
                             <span style={{
                                 fontWeight: i18n.language === languageOption.value ? "bord" : "normal",
