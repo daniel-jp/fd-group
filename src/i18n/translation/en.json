@@ -14,10 +14,10 @@
         "childrenLab4": "Others",
 
         "childrenSubLab0": "Rackmount servers | Tower servers | Power Edge Servers | Stocking Harbor",
-        "childrenSubLab1": "Switches | Routers | IP Phones | SFP",
-        "childrenSubLab2": "Drives | RAM | Battery | Motherboards | CPU",
-        "childrenSubLab3": "Audiovisual | APC",
-        "childrenSubLab4": "UBIQUITI | MIKROTIK | TPLINK",
+        "childrenSubLab1": "Switches | Routers | Ip Phones | Sfp",
+        "childrenSubLab2": "Drives | Ram | Battery | Motherboards | Cpu",
+        "childrenSubLab3": "Audiovisual | Apc",
+        "childrenSubLab4": "Ubiquiti | Mikrotik | Tplink",
 
         "WhoWe": "WHO WE ARE",
         "heaAboutUs": "About Us",

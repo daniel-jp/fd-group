@@ -14,10 +14,10 @@
         "childrenLab4": "Autres",
 
         "childrenSubLab0": "Serveurs rackables, Serveurs tours, Serveurs Power Edge & Baie de stockage",
-        "childrenSubLab1": "Switchs, Routeurs, IP Phones & SFP",
-        "childrenSubLab2": "Drives, RAM, Batterie & Cartes Mères|CPU",
-        "childrenSubLab3": "Audiovisual & APC",
-        "childrenSubLab4": "UBIQUITI, MIKROTIK & TPLINK",
+        "childrenSubLab1": "Switchs, Routeurs, Ip Phones & Sfp",
+        "childrenSubLab2": "Drives, Ram, Batterie & Cartes Mères|Cpu",
+        "childrenSubLab3": "Audiovisual & Apc",
+        "childrenSubLab4": "Ubiquiti, Mikrotik & Tplink",
 
         "WhoWe": "QUI NOUS SOMMES",
         "heaAboutUs": "À propos de nous",
@@ -89,21 +89,17 @@
         "CarousTitle0": "FD GROUP",
         "CarousTitle1": "Ton Equipe",
         "CarousTitle2": "Qualités",
-
         "CarousSubTitle0": "La Référence Africaine en Informatique",
         "CarousSubTitle1": "Laissez votre équipe motivée avec du matériel de qualité.",
         "CarousSubTitle2": "Optez pour la qualité de nos produits",
-
         "CarousText0": "Le comité de projet est une ressource exclusive pour les travaux contractuels. Il est parfait pour les indépendants, les agences et les travailleurs au noir",
 
         "CarousText1": "A Fd-Group propose du matériel pour renforcer votre équipe afin de créer un environnement plus dynamique dans votre entreprise.",
         "CarousText2": "La qualité des produits est constituée de nos marques de fabrique.",
-
         "CarousBtn0": "Apprendre encore plus",
         "CarousBtn1": "Voir plus",
 
         "HeadProd0": "Nos produits",
-
         "HeadProd1": "Serveurs & Baie de stockage",
         "HeadProd2": "Équipements Réseau",
         "HeadProd3": "Pièces détachées",

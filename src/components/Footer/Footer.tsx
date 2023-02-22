@@ -123,20 +123,15 @@ function Footer() {
               <Box className={'foots1'} visibility={'hidden'} textAlign={"start"} pb={"2px"}>
 
                 <ListHeader>{t("fOff")}</ListHeader>
-              
-              
-
                 <Text fontSize={ 20 } color={ "red.400" }>
                   Angola
                 </Text>
                 <Text textAlign={ "justify" } fontSize={ "sm" }>
                   Distrito Ingombota Rua Bartolomeu Dias Zona 4 Casa N 1 Luanda / Angola
                 </Text>
-
                 <Text fontSize={ 20 } color={ "red.400" }>
                   {t("fContactUs")}
                 </Text>
-
                 <Text pb={ "3px" } textAlign={ "justify" } fontSize={ "sm" }>
                   info@fdgroup.company
                 </Text>
@@ -179,12 +174,8 @@ function Footer() {
                 </SocialButton>
               </Stack>
             </Stack>
-
             <Stack align={"flex-start"}>
-
               <ListHeader>{t("fCompany")}</ListHeader>
-
-
               <Link className={'foots3'} visibility={'hidden'} href={"/about"}>
                 {t("home3")}
               </Link>

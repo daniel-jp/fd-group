@@ -1,15 +1,20 @@
+import '@fontsource/raleway/700.css';
+
+import { ChevronDownIcon } from '@chakra-ui/icons';
 import {
   Box,
+  Button,
+  Collapse,
   Flex,
+  Heading,
   Icon,
-  Popover,
-  PopoverArrow,
-  PopoverBody,
-  PopoverCloseButton,
-  PopoverContent,
-  PopoverFooter,
-  PopoverHeader,
-  PopoverTrigger,
+  Image,
+  Menu,
+  MenuButton,
+  MenuDivider,
+  MenuGroup,
+  MenuItem,
+  MenuList,
   Stack,
   Text,
   useDisclosure,
@@ -20,33 +25,34 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 const DesktopSubNav = () => {
-  const {isOpen,onOpen} = useDisclosure();
   const {t} = useTranslation()
+  const {isOpen, onOpen} = useDisclosure();
 
   return (
     <>
-    
-      <Popover>
 
-        <PopoverTrigger>
-          <Text _hover={{cursor: "pointer",color: "gray.400",transform: "scale(1.1)",}} onClick={onOpen}>
-            {t( "home3",)}
+
+      <Menu>
+       
+     
+           <MenuButton>
+          <Text fontWeight={"bold"}> {t("home3")}<ChevronDownIcon /></Text>
+        </MenuButton>
+   
+     
+     
+
+        <MenuList w={{base: 280, sm:  375, md: 500}}  color={"gray.600"}  maxW={'full'}>
+          <Text p={3} fontSize={'1xl'} fontWeight={'bold'} color={'red.800'} >{t("home2")} 
           </Text>
-        </PopoverTrigger>
-        <PopoverContent w={{base: 280, sm: 400, md: 500}} maxW={'full'}  >
-          <PopoverArrow />
-          <PopoverCloseButton />
-          <PopoverHeader><Text fontFamily={"'Rubik Moonrocks', sans-serif"}>{t("home0")}</Text></PopoverHeader>
-          <Box overflowY={'scroll'}>
-
-          <PopoverBody> 
-         
+          <MenuItem _hover={{bg: "pink.50"}} >
             <Link to="/products/server" role={"group"}>
-              <Stack direction={"row"} align={'flex-start'} >
+              <Stack direction={"row"} align={"center"}>
                 <Box>
-                  <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}> Servers & Storage Array </Text>
-                  <Text>Rackmount servers | Tower servers | Power Edge Servers | Stocking Harbor</Text>
+                  <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>{t("childrenLab0")}</Text>
+                  <Text fontSize={'sm'}>{t("childrenSubLab0")}</Text>
                 </Box>
+
                 <Flex transition={"all .3s ease"} transform={"translateX(-10px)"} opacity={0}
                   _groupHover={{opacity: "100%", transform: "translateX(0)"}} justify={"flex-end"}
                   align={"center"} flex={1}>
@@ -54,13 +60,13 @@ const DesktopSubNav = () => {
                 </Flex>
               </Stack>
             </Link>
-
-
+          </MenuItem>
+          <MenuItem _hover={{bg: "pink.50"}}>
             <Link to="/products/devices" role={"group"}>
-              <Stack direction={"row"} align={'flex-start'} >
+              <Stack direction={"row"} align={"center"}>
                 <Box>
-                  <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}> Network Devices </Text>
-                  <Text>Rackmount servers | Tower servers | Power Edge Servers | Stocking Harbor</Text>
+                  <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>{t("childrenLab1")}</Text>
+                  <Text fontSize={'sm'}>{t("childrenSubLab1")}</Text>
                 </Box>
                 <Flex transition={"all .3s ease"} transform={"translateX(-10px)"} opacity={0}
                   _groupHover={{opacity: "100%", transform: "translateX(0)"}} justify={"flex-end"}
@@ -68,60 +74,64 @@ const DesktopSubNav = () => {
                   <Icon color={"pink.400"} w={5} h={5} as={CaretCircleDoubleRight} />
                 </Flex>
               </Stack>
-            </Link> 
-
-            <Link to="/products/server" role={"group"}>
-
-              <Stack direction={"row"} align={'flex-start'} >
-                <Box>
-                  <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>Parts</Text>
-                  <Text>Rackmount servers | Tower servers | Power Edge Servers | Stocking Harbor</Text>
-                </Box>
-                <Flex transition={"all .3s ease"} transform={"translateX(-10px)"} opacity={0}
-                  _groupHover={{opacity: "100%", transform: "translateX(0)"}} justify={"flex-end"}
-                  align={"center"} flex={1}>
-                  <Icon color={"pink.400"} w={5} h={5} as={CaretCircleDoubleRight} />
-                </Flex>
-              </Stack>
-
             </Link>
 
-            <Link to="/products/devices"
+          </MenuItem>
+          <MenuItem _hover={{bg: "pink.50"}}>
+            <Link to="/products/parts" role={"group"}>
+              <Stack direction={"row"} align={"center"}>
+                <Box>
+                  <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>{t("childrenLab2")}</Text>
+                  <Text fontSize={'sm'}>{t("childrenSubLab2")}</Text>
+                </Box>
+                <Flex transition={"all .3s ease"} transform={"translateX(-10px)"} opacity={0}
+                  _groupHover={{opacity: "100%", transform: "translateX(0)"}} justify={"flex-end"}
+                  align={"center"} flex={1}>
+                  <Icon color={"pink.400"} w={5} h={5} as={CaretCircleDoubleRight} />
+                </Flex>
+              </Stack>
+            </Link>
+          </MenuItem>
+
+
+          <MenuItem _hover={{bg: "pink.50"}}>
+            <Link to="/products/audiovisuel
+"  role={"group"}>
+
+              <Stack direction={"row"} align={"center"}>
+                <Box>
+                  <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>{t("childrenLab3")}</Text>
+                  <Text fontSize={'sm'}>{t("childrenSubLab3")}</Text>
+                </Box>
+                <Flex transition={"all .3s ease"} transform={"translateX(-10px)"} opacity={0}
+                  _groupHover={{opacity: "100%", transform: "translateX(0)"}} justify={"flex-end"}
+                  align={"center"} flex={1}>
+                  <Icon color={"pink.400"} w={5} h={5} as={CaretCircleDoubleRight} />
+                </Flex>
+              </Stack>
+            </Link>
+          </MenuItem>
+          <MenuItem _hover={{bg: "pink.50"}}>
+            <Link to="/products/other"
               role={"group"}>
 
-              <Stack direction={"row"} align={'flex-start'} >
+              <Stack direction={"row"} align={"center"} >
                 <Box>
-                  <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>Audiovisuel & Conferencing</Text>
-                  <Text>Rackmount servers | Tower servers | Power Edge Servers | Stocking Harbor</Text>
+                  <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>{t("childrenLab4")}</Text>
+                  <Text fontSize={'sm'}>{t("childrenSubLab4")}</Text>
                 </Box>
                 <Flex transition={"all .3s ease"} transform={"translateX(-10px)"} opacity={0}
                   _groupHover={{opacity: "100%", transform: "translateX(0)"}} justify={"flex-end"}
-                  align={"center"} flex={1}>
+                  align={"end"} flex={1}>
                   <Icon color={"pink.400"} w={5} h={5} as={CaretCircleDoubleRight} />
                 </Flex>
               </Stack>
             </Link>
-         
-          </PopoverBody>
-          <PopoverFooter>
-            <Link to="/products/devices"
-              role={"group"}>
+          </MenuItem>
+        </MenuList>
+     
+      </Menu>
 
-              <Stack direction={"row"} align={'flex-start'} >
-                <Box>
-                  <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>Others</Text>
-                  <Text>Rackmount servers | Tower servers | Power Edge Servers | Stocking Harbor</Text>
-                </Box>
-                <Flex transition={"all .3s ease"} transform={"translateX(-10px)"} opacity={0}
-                  _groupHover={{opacity: "100%", transform: "translateX(0)"}} justify={"flex-end"}
-                  align={"center"} flex={1}>
-                  <Icon color={"pink.400"} w={5} h={5} as={CaretCircleDoubleRight} />
-                </Flex>
-              </Stack>
-            </Link>
-          </PopoverFooter>   </Box>
-        </PopoverContent>
-      </Popover>
     </>
   );
 }

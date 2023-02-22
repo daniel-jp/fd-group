@@ -1,4 +1,6 @@
-import { Flex, Stack, Text } from '@chakra-ui/react';
+import '@fontsource/raleway/700.css';
+
+import { Flex, Stack, Text, useDisclosure } from '@chakra-ui/react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink as RouteLink } from 'react-router-dom';
@@ -10,42 +12,42 @@ import DesktopSubNav from '../NavBar/DesktopSubNav';
 
 // Componente DesktopNav
 const DesktopNav = () => {
-  const {t} = useTranslation()
+  const {t} = useTranslation();
+  const {onOpen} = useDisclosure();
+
 
   return (
-    <Flex  display={{base: "none", md: "flex"}}   align={'center'}>
+    <Flex fontFamily={"'Inter', sans-serif"} display={{base: "none", md: "flex"}}
+
+      align={'center'}>
 
 
       <Text ml={6}>
-       <RouteLink to="/">
-           <FdgLogo />
-       </RouteLink>
-    </Text>
+        <RouteLink to="/">
+          <FdgLogo />
+        </RouteLink>
+      </Text>
 
-  <Stack  ml={8} direction={'row'}
-   spacing={{sm: '12px',md: '14px', lg:12}} p={2}>
-      <Text fontWeight={'bold'}>
-        <Link 
-       to="/"> {t("home0")}
-        </Link>
-      </Text>
-      <Text fontWeight={'bold'}>
-        <Link to="/about">{t("home1")}</Link>
-      </Text>
-      <Text fontWeight={'bold'}>
-        <Link to={'/products'}> {t("home2")}</Link>
-      </Text>
-      <Text>
-      <DesktopSubNav />
-      </Text>
-      <Text fontWeight={'bold'}>
-        <Link  to="/services">{t("home4")}</Link>
-      </Text>
-      
-      
-      <Text fontWeight={'bold'}>
-        <Link  to="/contact">{t("home5")}</Link>
-      </Text>
+      <Stack ml={8} fontWeight={'bold'} direction={'row'}
+        spacing={{sm: '12px', md: '14px', lg: 8}} p={2}>
+        <Text _hover={{color: "red"}} >
+          <Link to="/"> {t("home0")}</Link>
+        </Text>
+        <Text _hover={{color: "red.600", }} >
+          <Link to="/about">{t("home1")}</Link>
+        </Text>
+        <Text _hover={{color: "red.600", }} >
+          <Link to={'/products'}> {t("home2")}</Link>
+        </Text>
+        <Text _hover={{color: "red.600", }} >
+          <DesktopSubNav />
+        </Text>
+        <Text _hover={{color: "red.600", }} >
+          <Link to="/services">{t("home4")}</Link>
+        </Text>
+        <Text _hover={{color: "red.600", }} >
+          <Link to="/contact">{t("home5")}</Link>
+        </Text>
       </Stack>
     </Flex>
   );

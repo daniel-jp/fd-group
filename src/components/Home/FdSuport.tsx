@@ -146,8 +146,7 @@ function FdSuport() {
 
           <Testimonial>
             <Text
-              _hover={{
-                cursor: "pointer",
+              _hover={{cursor: "pointer",
                 color: "gray.400",
                 transform: "scale(1.1)",
               }} >
@@ -158,12 +157,7 @@ function FdSuport() {
             </Text>
           </Testimonial>
           <Testimonial>
-            <Text
-              _hover={{
-                cursor: "pointer",
-                color: "gray.400",
-                transform: "scale(1.1)",
-              }}>
+            <Text _hover={{cursor: "pointer", color: "gray.400", transform: "scale(1.1)",}}>
               <TestimonialAvatar
                 src={ "../../assets/Suport/sp-4.webp" }
                 name={t("name4")}

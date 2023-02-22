@@ -40,6 +40,9 @@ function App() {
           <Route  path="/products" element={<Products/>}/ > 
           <Route  path="/products/server" element={<Server/>} />
           <Route  path="/products/devices" element={<Devices/>} /> 
+          <Route  path="/products/parts" element={<Parts/>} />
+          <Route  path="/products/audiovisuel" element={<Audiovisuel/>} /> 
+          <Route  path="/products/other" element={<Others/>} /> 
           <Route  path="/services" element={<Services/>} />
           <Route  path="/contact" element={<Contact/>} />
      </Routes>

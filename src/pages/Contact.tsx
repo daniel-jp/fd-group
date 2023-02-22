@@ -89,15 +89,11 @@ const Contact: React.FC = () => {
     }
 
 
-
-
-
-
     try {
       const emailResult = await emailjs.sendForm(
-        "service_nzpojqk", "template_jn3yurv",
+        "service_7l5qci6", "template_ybyzxm7",
         e.currentTarget as HTMLFormElement,
-        "VYtbYRJVHvmxoHbpp"
+        "b8pJCYyLwxo1IYfh-"
       );
       if(emailResult.text === "OK") {
         toast({
@@ -105,6 +101,7 @@ const Contact: React.FC = () => {
           status: "success",
           description: 'Your message has been sent successfully.',
           duration: 5000,
+          position:'top-right',
           isClosable: true,
         });
         setFormState({
@@ -112,7 +109,7 @@ const Contact: React.FC = () => {
           to_name: "",
           message: "",
         });
-        setErrors({
+        setErrors({ 
           from_name: "",
           to_name: "",
           message: "",
@@ -207,7 +204,6 @@ const Contact: React.FC = () => {
                     <Box bg="white" w={{base: 300, sm: 350, md: 540, lg: 600}}>
                       <Box m={3} pt={3} pb={3} color="#0B0E3F">
                         <VStack justify={'center'} spacing={5}>
-
 
                           <FormControl id="from_name" isInvalid={!!errors.from_name}>
                             <FormLabel>  {t('ContactText1')} </FormLabel>

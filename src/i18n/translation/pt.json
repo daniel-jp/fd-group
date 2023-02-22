@@ -14,10 +14,11 @@
         "childrenLab4": "Outros",
 
         "childrenSubLab0": "Servidores de rack, Servidores em torre,  Servidores Power Edge &  Compartimento de armazenamento",
-        "childrenSubLab1": "Switchs,  Roteadores,  Telefones IP & SFP",
-        "childrenSubLab2": "Discos Duros, RAM, Baterias &  Placa Mãe|CPU",
-        "childrenSubLab3": "Audiovisual & APC",
-        "childrenSubLab4": "UBIQUITI, MIKROTIK & TPLINK",
+        "childrenSubLab1": "Switchs,  Roteadores,  Telefones Ip & Sfp",
+        "childrenSubLab2": "Discos Duros, Ram, Baterias &  Placa Mãe|Cpu",
+        "childrenSubLab3": "Audiovisual & Apc",
+        "childrenSubLab4": "Ubiquiti, Mikrotik & Tplink",
+
 
         "WhoWe": "QUEM SOMOS NÓS",
         "heaAboutUs": "Sobre nós",
@@ -111,6 +112,7 @@
         "ContactText0": "Preencha o formulário abaixo para entrar em contato",
         "ContactText1": "Seu Nome",
         "ContactText2": "E-mail",
+
         "ContactText3": "Mensagem",
         "ContactBtn": "Enviar mensagem",
         "Contactdescription": "Sua mensagem foi enviada com sucesso.",
