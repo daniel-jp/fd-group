@@ -129,16 +129,13 @@ function Services() {
             color={ "gray.800" }
             fontWeight={"bold"} className='service1' visibility={'hidden'}>
             <Text color={"white"} textTransform={'uppercase'}>  {t("ServiceH1")}</Text>
-
             <LineSegments size={ 40 } color='#1A202C' />
           </Flex>
-
           <Stack className='service2' visibility={'hidden'} align={'center'} mt={28}>
- 
             <Text  fontWeight={'bold'}>
             {t("ServiceH0")} 
           </Text>
-            <Text color={'gray.600'} textAlign={'center'}
+            <Text color={'gray.800'} textAlign={'center'}
               fontWeight={500} w={{base: 350, sm: 300, md: 400, lg: 900}} >
               {t("ServiText0")}
             </Text>
@@ -146,7 +143,7 @@ function Services() {
         </Box>
 
 
-          <SimpleGrid spacing={ 16 } columns={ { base: 1, sm: 2 } } mt={12}>
+          <SimpleGrid  overflowY={'hidden'} overflowX={'hidden'} spacing={ 16 } columns={ { base: 1, sm: 2 } } mt={12}>
 
 
             {/* FUTURE 1 */ }
@@ -373,7 +370,7 @@ function Services() {
                   textTransform={ 'uppercase' }
                   mb={ 3 }
                   fontSize={ 'xl' }
-                  color={ 'gray.600' }>
+                  color={ 'gray.800' }>
                   {t("ServiceH2")}
                 </Text>
                 <Heading
@@ -382,14 +379,14 @@ function Services() {
                   fontSize={ { base: '3xl', md: '5xl' } }>
                   {t("ServiceH3")}
                 </Heading>
-                <Text className='service9' visibility={'hidden'} fontSize={'xl'} color={'gray.400'}>
+                <Text className='service9' textAlign={'justify'} visibility={'hidden'} mr={2} fontSize={'xl'} color={'gray.400'}>
                   {t("ServiText5")}
                 </Text>
               </Box>
 
               <SimpleGrid className='service10' visibility={'hidden'} columns={{base: 1, md: 2}} spacing={10}>
                 { stats.map((stat) => (
-                  <Box key={ stat.title }>
+                  <Box key={ stat.id }>
                     <Text
                       fontFamily={ 'heading' }
                       fontSize={ '3xl' }
@@ -398,9 +395,11 @@ function Services() {
                       { stat.title }
                     </Text>
                     <Text fontSize={ 'xl' } color={ 'gray.400' }>
-                      { stat.content }
+                      { t(stat.subtitle)}
                     </Text>
                   </Box>
+
+                  
                 )) }
               </SimpleGrid>
             </Stack>
@@ -415,6 +414,7 @@ function Services() {
 export default Services
 
 const StatsText = ({ children }: { children: ReactNode }) => (
+  
   <Text as={ 'span' } fontWeight={ 700 } color={ 'white' }>
     { children }
   </Text>
@@ -422,39 +422,23 @@ const StatsText = ({ children }: { children: ReactNode }) => (
 
 const stats = [
   {
-    title: '10+',
-    content: (
-      <>
-        <StatsText>Software modules</StatsText> for detailed monitoring and
-        real-time analytics
-      </>
-    ),
+    id:1,
+    title: 'Preços $',
+    subtitle:'ServiTextCaerd1'
   },
   {
-    title: '24/7',
-    content: (
-      <>
-        <StatsText>Analytics</StatsText> enabled right in your dashboard without
-        history limitations
-      </>
-    ),
+    id:2,
+    title: '24/24 & 7/7',
+    subtitle:"ServiTextCaerd2"
   },
   {
-    title: '13%',
-    content: (
-      <>
-        <StatsText>Farms</StatsText> in North America has chosen NewLife™ as
-        their management solution
-      </>
-    ),
+    id:3,
+    title: 'Prazos',
+    subtitle:'ServiTextCaerd3'
   },
   {
-    title: '250M+',
-    content: (
-      <>
-        <StatsText>Plants</StatsText> currently connected and monitored by the
-        NewLife™ software
-      </>
-    ),
+    id:4,
+    title: 'Serviços',
+    subtitle:'ServiTextCaerd4'
   },
 ];

@@ -85,12 +85,13 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
           spaceBetween={5}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
+
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
             depth: 100,
             modifier: 1,
-            slideShadows: true,
+            slideShadows: true, 
           }}
         autoplay={{
           delay: 3000,
@@ -104,8 +105,12 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
   {Swipers.map((item) => (
     <SwiperSlide key={item.id}>
-      <Box  shadow="md" borderWidth="1px" borderRadius="lg" overflow="hidden" bg={'gray.800'}>
-      <Flex p={2} justifyContent={'center'} bg={'red.800'}  h={200}
+      <Box  shadow="md" borderWidth="1px" borderRadius="lg" overflow="hidden" 
+            overflowY={"hidden"} 
+            overflowX={"hidden"} bg={'gray.800'}>
+      <Flex p={2} 
+            overflowY={"hidden"} 
+            overflowX={"hidden"} justifyContent={'center'} bg={'red.800'}  h={200}
                
                   mx={-2}
                   my={-2}

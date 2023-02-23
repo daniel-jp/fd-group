@@ -95,10 +95,10 @@ function Server() {
   const serversProducts4 = ServerProductsServer4();
 
   return (  
-  <Box bg={"gray.200"}>
+  <Box bg={"gray.200"} >
     <Layout>
 
-    <Box overflowY={'hidden'} overflowX={'hidden'} fontFamily={"'Inter', sans-serif"}>
+    <Box pb={20} overflowY={'hidden'} overflowX={'hidden'} fontFamily={"'Inter', sans-serif"}>
           <Flex className='server1' visibility={'hidden'} justify={'flex-end'} align={'center'} py={10} px={6}>
 
         <Heading mt={ 6 } mb={ 2 } fontSize={ { base: 18, sm: 20, md: 22, lg: 32 } }>
@@ -173,9 +173,10 @@ function Server() {
           )) }
         </SimpleGrid>
       </Box>
-        </Box>
+      </Box>
 
-    </Layout></Box>
+    </Layout>
+    </Box>
   );
 }
 

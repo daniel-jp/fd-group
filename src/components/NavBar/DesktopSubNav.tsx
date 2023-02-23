@@ -38,10 +38,10 @@ const DesktopSubNav = () => {
           <Text fontWeight={"bold"}> {t("home3")}<ChevronDownIcon /></Text>
         </MenuButton>
    
-        <MenuList w={{base: 280, sm:  375, md: 500}}  color={"gray.600"}  maxW={'full'}>
+        <MenuList mb={4} w={{base: 280, sm:  375, md: 500}}  color={"gray.600"}  maxW={'full'}>
           <Text p={3} fontSize={'1xl'} fontWeight={'bold'} color={'red.800'} >{t("home2")} 
           </Text>
-          <MenuItem _hover={{bg: "pink.50"}} >
+          <MenuItem _hover={{bg: "pink.50"}} fontSize={"sm"}>
             <Link to="/products/server" role={"group"}>
               <Stack direction={"row"} align={"center"}>
                 <Box>
@@ -91,8 +91,7 @@ const DesktopSubNav = () => {
 
 
           <MenuItem _hover={{bg: "pink.50"}}>
-            <Link to="/products/audiovisuel
-"  role={"group"}>
+            <Link to="/products/audiovisuel" role={"group"}>
 
               <Stack direction={"row"} align={"center"}>
                 <Box>

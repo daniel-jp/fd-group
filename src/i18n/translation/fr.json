@@ -130,7 +130,7 @@
 
         "ServiceSubH0": "Switch",
         "ServiceSubH1": "Installation informatique",
-        "ServiceSubH2": "Maintenance Logicielle Corrective",
+        "ServiceSubH2": "Maintenance",
         "ServiceSubH3": "Notre service client",
 
         "ServiText0": "Le Groupe FD intervient dans tout ce qui est prestation de services, fourniture de matériel informatique et call center de téléphonie. Nous proposons une grande variété d'équipements multimarques.",
@@ -145,13 +145,23 @@
         "ServiceH2": "TECHNOLOGIE",
         "ServiceH3": "36 pays",
 
-        "ServiText5": "FD GROUP ™ vous permet de surveiller vos cultures et d'obtenir des informations complètes en temps réel. L'écosystème logiciel/matériel propriétaire empêche vos usines d'être négligées.",
+        "ServiText5": "FD GROUP™ permet à ses clients d'obtenir des informations complètes en temps réel et nous assurons également un support technique tel que : Maintenance, installation/hardware, Téléphonie Call Center et Fourniture de matériel informatique.",
 
         "serverpag0": "Serveurs rackables",
         "serverpag1": "Serveurs tours ",
         "serverpag2": "Serveurs Power Edge",
         "serverpag3": "Baie de stockage",
         "TextServ0": "pour profiter de toutes nos fonctionnalités intéressantes",
+
+        "ServiTexttitle1": " Prix $",
+        "ServiTexttitle2": "Délais",
+        "ServiTexttitle3": "Services",
+
+        "ServiTextCaerd1": "Des prix compétitifs sur le marché",
+        "ServiTextCaerd2": "Avec une hotline",
+        "ServiTextCaerd3": "Délais de livraison courts",
+        "ServiTextCaerd4": "Ventes et services de vente",
+
 
         "headDivic": "Équipements Réseau",
         "Divice0": "Switchs",

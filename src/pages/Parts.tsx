@@ -1,7 +1,7 @@
-import {Box, Flex, Heading, SimpleGrid, Stack, Text} from '@chakra-ui/react';
-import {CameraSlash, QrCode} from 'phosphor-react';
-import React, {useEffect} from 'react';
-import {useTranslation} from 'react-i18next';
+import { Box, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
+import { CameraSlash, QrCode } from 'phosphor-react';
+import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
 import PartProductCard from '../components/PartProductCard/PartProductCard';
@@ -62,7 +62,7 @@ function Parts() {
       <Box bg={"gray.200"}>
       <Layout>
 
-        <Box overflowY={'hidden'} overflowX={'hidden'}>
+        <Box pb={20}  overflowY={'hidden'} overflowX={'hidden'}>
 
 
           <Flex className='part1' visibility={'hidden'} justify={'flex-end'} align={'center'} py={10} px={6}>

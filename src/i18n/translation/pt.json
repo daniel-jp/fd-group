@@ -7,13 +7,13 @@
         "home4": "Serviços",
         "home5": "Contacto",
 
-        "childrenLab0": "Servidores & Compartimentos de armazenamento",
+        "childrenLab0": "Servidores & Compartimentos",
         "childrenLab1": "Equipamentos de rede",
         "childrenLab2": "Peças de Reposição",
         "childrenLab3": "Audiovisual e Conferência",
         "childrenLab4": "Outros",
 
-        "childrenSubLab0": "Servidores de rack, Servidores em torre,  Servidores Power Edge &  Compartimento de armazenamento",
+        "childrenSubLab0": "Servidoresrack,torre, Power Edge &  Compartimento de armazenamento",
         "childrenSubLab1": "Switchs,  Roteadores,  Telefones Ip & Sfp",
         "childrenSubLab2": "Discos Duros, Ram, Baterias &  Placa Mãe|Cpu",
         "childrenSubLab3": "Audiovisual & Apc",
@@ -122,7 +122,7 @@
 
         "ServiceSubH0": "Switch",
         "ServiceSubH1": "Instalação de computador",
-        "ServiceSubH2": "Manutenção corretiva de software",
+        "ServiceSubH2": "Manutenção",
         "ServiceSubH3": "Nosso suporte ao cliente",
 
         "ServiText0": "O FD Grupo  atua em tudo que é prestação de serviços, fornecimento de equipamentos de informática e call center de telefonia. Oferecemos uma grande variedade de equipamentos multimarcas.",
@@ -137,7 +137,18 @@
 
         "ServiceH2": "TECNOLOGIA",
         "ServiceH3": "36 países",
-        "ServiText5": "A tecnologia NewLife™ permite que você monitore suas colheitas e obtenha informações completas em tempo real. O ecossistema proprietário de software/hardware evita que suas plantas sejam negligenciadas.",
+        "ServiText5": "O FD GROUP ™ permite que os seus clientes obtenham informações completas em tempo real e também demos suporte tecnico como: Manutenção, instalação/hardware, Call Center Telefonia e  Fornecimento de equipamentos IT.",
+
+
+        "ServiTexttitle1": "Preços $",
+        "ServiTexttitle2": "Prazos",
+        "ServiTexttitle3": "Serviços",
+
+        "ServiTextCaerd1": "Preços competitivos no mercado",
+        "ServiTextCaerd2": " Com uma linha de atendimento",
+        "ServiTextCaerd3": "Curtos prazos de entrega",
+        "ServiTextCaerd4": "Serviços de venda e pois venda",
+
 
         "fOff": "NOSSOS ESCRITÓRIOS",
         "fContactUs": "Contacte-nos",

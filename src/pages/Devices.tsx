@@ -1,7 +1,7 @@
-import {Box, Flex, Heading, SimpleGrid, Stack, Text} from '@chakra-ui/react';
-import {CameraSlash, QrCode} from 'phosphor-react';
-import React, {useEffect} from 'react';
-import {useTranslation} from 'react-i18next';
+import { Box, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
+import { CameraSlash, QrCode } from 'phosphor-react';
+import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
 import DeviceCards from '../components/DeviceCards/DeviceCards';
@@ -89,7 +89,7 @@ function Devices() {
       <Box bg={"gray.200"}>
       <Layout>
 
-        <Box overflowY={'hidden'} overflowX={'hidden'}>
+        <Box pb={20}  overflowY={'hidden'} overflowX={'hidden'}>
           <Flex className='device1' visibility={'hidden'} justify={'flex-end'} align={'center'} py={10} px={6}>
         <Heading mt={ 6 } mb={ 2 } fontSize={ { base: 18, sm: 20, md: 22, lg: 32 } }>
             {t("headDivic")}

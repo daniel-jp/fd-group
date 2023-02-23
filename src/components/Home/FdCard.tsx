@@ -79,7 +79,7 @@ function FdCard() {
           </Text>
         </Stack> 
 
-        <Stack mt={12} 
+        <Stack mt={12} overflowY={"hidden"} overflowX={"hidden"}
           w={"full"} className={'stack4'} visibility={'hidden'}
           gap={4}
           pt={10}

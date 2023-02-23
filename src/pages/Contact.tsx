@@ -170,7 +170,7 @@ const Contact: React.FC = () => {
                       <VStack spacing={3} alignItems="flex-start">
                         <Box display={'flex'} p={1} fontSize={{base: '1xl', sm: '1xl'}}>
                           <Phone color="#C53030" size={30} />
-                          <Text p={2} w={{base: 180, sm: 200, md: 250, lg: 330}}>
+                          <Text p={2} w={{base: 200, sm: 300, md: 300, lg: 330}}>
                             +244 927 538 808 / +244 931901243
                           </Text>
                         </Box>
@@ -184,13 +184,13 @@ const Contact: React.FC = () => {
 
                         <Box display={'flex'} pt={2} p={1} width="350px">
                           <MapPinLine color={'#C53030'} size={30} />
-                          <Text p={2} w={{base: 200, sm: 250, md: 300, lg: 350}}>
+                          <Text p={2} w={{base: 200, sm: 300, md: 300, lg: 330}}>
                             Distrito Ingombota Rua Bartolomeu Dias Zona 4 Casa N 1 Luanda / Angola
                           </Text>
                         </Box>
                       </VStack>
                     </Box>
-
+ 
                     <HStack mt={{lg: 5, md: 5}} spacing={5} px={5} alignItems="flex-start">
                       <IconButton aria-label="facebook" variant="ghost" size="lg" isRound={true} _hover={{bg: 'red.800'}} icon={<LinkedinLogo size="28px" />} />
                       <IconButton aria-label="github" variant="ghost" size="lg" isRound={true} _hover={{bg: 'red.800'}} icon={<TwitterLogo size="28px" />} />
@@ -201,8 +201,8 @@ const Contact: React.FC = () => {
 
                 <WrapItem> 
                   <form onSubmit={handleSubmit}>
-                    <Box bg="white" w={{base: 300, sm: 350, md: 540, lg: 600}}>
-                      <Box m={3} pt={3} pb={3} color="#0B0E3F">
+                    <Box bg="white" w={{base: 265, sm: 414, md: 540, lg: 600}}>
+                      <Box m={2} pt={3} pb={3} color="#0B0E3F">
                         <VStack justify={'center'} spacing={5}>
 
                           <FormControl id="from_name" isInvalid={!!errors.from_name}>

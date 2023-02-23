@@ -122,7 +122,7 @@
 
         "ServiceSubH0": "Switch",
         "ServiceSubH1": "Computer installation",
-        "ServiceSubH2": "Corrective software maintenance",
+        "ServiceSubH2": "Maintenance",
         "ServiceSubH3": "Our customer support",
 
         "ServiText0": "The FD Group operates in everything that is service provision, supply of computer equipment and telephony call center. We offer a wide variety of multi-brand equipment.",
@@ -133,13 +133,22 @@
 
         "ServiceH2": "TECHNOLOGY",
         "ServiceH3": "36 countries",
-        "ServiText5": "The NewLife™ technology allows you to monitor your crops and get complete insights at real time. The proprietary software/hardware ecosystem prevents your plants from getting neglected.",
+        "ServiText5": "FD GROUP ™ allows is customers to obtain complete information in real time and we also provide technical support such as: Maintenance, installation/hardware, Call Center Telephony and Supply of IT equipment.",
 
         "serverpag0": "Rackmount servers ",
         "serverpag1": "Tower servers",
         "serverpag2": "Power Edge Servers",
         "serverpag3": "Stocking Harbor",
         "TextServ0": " to enjoy all of our cool features",
+
+        "ServiTexttitle1": "Prices /$",
+        "ServiTexttitle2": "Deadlines",
+        "ServiTexttitle3": "Services",
+
+        "ServiTextCaerd1": "Competitive prices in the market",
+        "ServiTextCaerd2": "With a hotline",
+        "ServiTextCaerd3": "Short delivery times",
+        "ServiTextCaerd4": "Sales and sales services",
 
         "headDivic": "Network Devices",
         "Divice0": "Switchs",

@@ -1,8 +1,8 @@
 import { CheckCircleIcon } from '@chakra-ui/icons';
-import {Box, Flex, Heading, Link, SimpleGrid, Stack, Text} from '@chakra-ui/react';
-import {CameraSlash, QrCode} from 'phosphor-react';
-import React, {useEffect} from 'react';
-import {useTranslation} from 'react-i18next';
+import { Box, Flex, Heading, Link, SimpleGrid, Stack, Text } from '@chakra-ui/react';
+import { CameraSlash, QrCode } from 'phosphor-react';
+import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
 import AudiovisuelProductCard1 from '../Audiovisuel/AudiovisuelProductCard1';
@@ -64,7 +64,7 @@ function Audiovisuel() {
      <Box bg={"gray.200"}>
     <Layout>
 
-        <Box overflowY={'hidden'} overflowX={'hidden'}>
+        <Box pb={20}  overflowY={'hidden'} overflowX={'hidden'}>
 
 
           <Flex className='audioV1' visibility={'hidden'} justify={'flex-end'} align={'center'} py={10} px={6}>

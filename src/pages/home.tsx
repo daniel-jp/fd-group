@@ -19,7 +19,7 @@ import SimpleLayout from '../layout/SimpleLayout';
 
 export default function Home() {
   return (
-    <Box as="main" margin="0" padding="0" bg={"gray.100"} overflowX={'hidden'} >
+    <Box as="main" margin="0" padding="0" bg={"gray.100"} overflowY={"hidden"} overflowX={"hidden"} >
       <NavBar />
       <FdCarousel />
       <SimpleLayout>

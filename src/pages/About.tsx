@@ -150,14 +150,14 @@ function About() {
               h={ "70px" }p={4}
               w={260}              
               maxW={ "full" }
-              py={ 4 } bg={"red.800"}
+              bg={"red.800"}
               gap={ 4 } justify={'end'}
               alignItems={ "center" }
-              fontSize={ "3xl" } color={"gray.800"}
+              fontSize={ "2xl" } color={"gray.800"}
               fontWeight={ "bold" }
               boxShadow={"8px 0px"}
               className="about1" visibility={"hidden"}>
-      <Text color={"white"} textTransform={'uppercase'}> {t("heaAboutUs")} </Text> 
+      <Text color={"white"}  m={4} textTransform={'uppercase'}> {t("heaAboutUs")} </Text> 
        
       </Flex>
       <Box as={ "section" } mt={28}>
@@ -165,7 +165,7 @@ function About() {
               <Text display={'flex'} fontWeight={'bold'}>
                {t("WhoWe")}  <CircleWavyQuestion size={ 20 } />
               </Text>
-              <Text textAlign={'center'}  fontSize="sm"
+              <Text textAlign={'center'}  fontSize="sm" color={"gray.800"}
                 fontWeight={'bord'} w={{base: 350, sm: 300, md: 400, lg: 900}}>{t("QualityText")}</Text>
             </Stack>
 
@@ -219,7 +219,7 @@ function About() {
               </Button>
             </Box>
 
-                <Box className="about4" visibility={"hidden"} display="flex" flex="1" marginRight="3" position="relative" alignItems="center">
+                <Box className="about4" visibility={"hidden"} display="flex" flex="1" position="relative" alignItems="center">
                   <Box width={{base: "100%", sm: "85%", md: "100%", lg: "100%"}} zIndex="2" marginLeft={{base: "0", sm: "2%"}} marginTop="5%">
                 <Link textDecoration="none" _hover={ { textDecoration: "none" } }>
                   <Image
@@ -245,7 +245,7 @@ function About() {
             justifyContent="space-between"
             className="about5" visibility={"hidden"}>
 
-            <Box display="flex" flex="1" marginRight="3" position="relative" alignItems="center" h={500}>
+            <Box display="flex" flex="1" position="relative" alignItems="center" h={500}>
                <Box width={{base: "100%", sm: "85%", md: "100%", lg: "100%"}} 
                zIndex="2" marginLeft={{base: "0", sm: "2%"}} marginTop="2%">
                 <Link textDecoration="none" _hover={ { textDecoration: "none" } }>
@@ -320,13 +320,12 @@ function About() {
             </Box>
                 <Box
                   className="about8" visibility={"hidden"}
-                  display="flex" flex="1" marginRight="3" position="relative" alignItems="center">
+                  display="flex" flex="1"  position="relative" alignItems="center">
                   <Box width={{base: "100%", sm: "85%", md: "100%", lg: "100%"}} zIndex="2"
                   marginLeft={{base: "0", sm: "2%"}} marginTop="5%">
                 <Link textDecoration="none" _hover={ { textDecoration: "none" } }>
                   <Image
                     maxW={ "full" }
-                  
                     src={ "../../assets/about/Imagem4.png" }
                     alt="some good alt text"
                     objectFit="contain"

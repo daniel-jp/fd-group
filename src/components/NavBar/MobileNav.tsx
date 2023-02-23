@@ -27,19 +27,18 @@ const MobileNav = () => {
 
   const {t} = useTranslation();
   return (
-    <Flex display={{base: "flex", md: "none"}} justifyContent="space-between" alignItems="center" px={4}>
+    <Flex  display={{base: "flex", md: "none"}} justifyContent="space-between" alignItems="center" px={4}>
       <IconButton icon={<HamburgerIcon />} variant="ghost" onClick={onOpen} aria-label={''} />
       <RouteLink to="/">
            <FdgLogo/>
        </RouteLink>
-      <Drawer placement="top" onClose={onClose} isOpen={isOpen}>
+      <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent bg={"gray.800"} color={"gray.400"}>
           <DrawerCloseButton />
-          <DrawerHeader> <Text fontFamily={"'Intel', sans-serif"}>Menu</Text> </DrawerHeader>
+          <DrawerHeader> <Text fontFamily={"'Intel', sans-serif"} mt={-4}><FdgLogo/></Text> </DrawerHeader>
           <DrawerBody>   
-             <Stack fontFamily={"'Intel', sans-serif"} spacing={4}>
-        
+             <Stack fontFamily={"'Inter', sans-serif"} fontWeight={'bold'} spacing={4}>
               <MobileNavItem  href={"/"}> 
               {t("home0")}
               </MobileNavItem>
@@ -50,7 +49,7 @@ const MobileNav = () => {
               {t("home2")}
               </MobileNavItem>
               <MobileNavItem>  
-                <DesktopSubNav />
+                <DesktopSubNav/>
               </MobileNavItem>
 
               <MobileNavItem  href={"/services"}> 

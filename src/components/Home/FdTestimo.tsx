@@ -95,17 +95,16 @@ function FdTestimo() {
 
   }, []);
 
-
   const {t} = useTranslation();
 
   return (
-    <Box bg={useColorModeValue("gray.100", "gray.700")}>
+    <Box bg={useColorModeValue("gray.100", "gray.700")} overflowY={"hidden"} overflowX={"hidden"}>
       <Container overflowY={"hidden"} overflowX={"hidden"} maxW={"6xl"} pb={10} as={Stack} spacing={12}>
         <Stack className={"testm1"} visibility={'hidden'} spacing={0} align={"center"}>
           <Heading>{t("Head0")}</Heading>
           <Text>{t("Testm0")}</Text>
         </Stack>
-        <Stack className={"testm2"} visibility={'hidden'} direction={{base: "column", md: "row"}}
+        <Stack className={"testm2"} visibility={'hidden'} overflowX={"hidden"} overflowY={"hidden"} direction={{base: "column", md: "row"}}
          spacing={{base: 10, md: 4, lg: 10}}>
           <Testimonial>
             <TestimonialContent>
