@@ -5,6 +5,3 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   plugins: [react()],
 });
-export {
-  vite_config_default as default
-};

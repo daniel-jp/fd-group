@@ -34,14 +34,10 @@ const DesktopSubNav = () => {
 
       <Menu>
        
-     
-           <MenuButton>
+        <MenuButton>
           <Text fontWeight={"bold"}> {t("home3")}<ChevronDownIcon /></Text>
         </MenuButton>
    
-     
-     
-
         <MenuList w={{base: 280, sm:  375, md: 500}}  color={"gray.600"}  maxW={'full'}>
           <Text p={3} fontSize={'1xl'} fontWeight={'bold'} color={'red.800'} >{t("home2")} 
           </Text>
