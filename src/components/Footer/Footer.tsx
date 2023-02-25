@@ -152,7 +152,7 @@ function Footer() {
                     <TwitterLogo color="#822727" size={ 32 } />
                   </Text>
                 </SocialButton>
-                <SocialButton label={ "Linkedin" } href={ "https://www.linkedin.com/company/fdgroupe" }>
+                <SocialButton label={ "Linkedin" } href={ "https://www.linkedin.com/company/fd-group-sarl/" }>
                   <Text
                     _hover={ {
                       cursor: "pointer",
