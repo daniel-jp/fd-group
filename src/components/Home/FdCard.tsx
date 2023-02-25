@@ -1,6 +1,6 @@
 import '@fontsource/raleway/700.css';
 
-import { Box, Container, Heading, Image, keyframes, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Container, Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react';
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';

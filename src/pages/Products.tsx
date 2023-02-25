@@ -158,9 +158,9 @@ function Products() {
                     {t("HeadProd1")}
               </Text>
             <br />
-                <Text as={"span"} fontSize={'md'} color={"red.600"}>
+                {/* <Text as={"span"} fontSize={'md'} color={"red.600"}>
                   {t("SubHead0")}
-            </Text>
+            </Text> */}
           </Heading>
               <Text color={"gray.600"}>
                 {t("TextProd0")}
@@ -270,9 +270,9 @@ function Products() {
 
             </Text>
             <br />
-                <Text  fontSize={'md'} color={"red.600"}>
+                {/* <Text  fontSize={'md'} color={"red.600"}>
                   {t("SubHead0")}
-            </Text>
+            </Text> */}
           </Heading>
               <Text color={"gray.600"}>
                 {t("TextProd1")}
@@ -320,9 +320,9 @@ function Products() {
 
             </Text>
             <br />
-                <Text fontSize={'md'} color={"red.600"}>
+                {/* <Text fontSize={'md'} color={"red.600"}>
                   {t("SubHead0")}
-            </Text>
+            </Text> */}
           </Heading>
               <Text color={"gray.600"}>
                 {t("TextProd2")}
@@ -433,9 +433,9 @@ function Products() {
 
             </Text>
             <br />
-                <Text fontSize={'md'} color={"red.600"}>
+                {/* <Text fontSize={'md'} color={"red.600"}>
                   {t("SubHead0")}
-            </Text>
+            </Text> */}
           </Heading>
               <Text color={"gray.600"}>
                 {t("TextProd3")}

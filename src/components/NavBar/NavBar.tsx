@@ -1,5 +1,5 @@
-import { Box, Collapse, Flex, Image, Stack, Text, useColorModeValue } from '@chakra-ui/react';
-import React, { useEffect } from 'react';
+import { Box, Flex, Image, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink as RouteLink } from 'react-router-dom';
 
@@ -45,7 +45,7 @@ const Navbar = () => {
             right={0}
             zIndex={1000}>
 
-            <Flex color={"gray.400"} minH="60px" 
+            <Flex  minH="60px" 
                 borderBottom={1} borderStyle="solid" align={'center'}
                 borderColor={"gray.200"}
                 justify={'space-between'} 

@@ -28,7 +28,7 @@ const MobileNav = () => {
   const {t} = useTranslation();
   return (
     <Flex  display={{base: "flex", md: "none"}} justifyContent="space-between" alignItems="center" px={4}>
-      <IconButton icon={<HamburgerIcon />} variant="ghost" onClick={onOpen} aria-label={''} />
+      <IconButton color={"gray.400"} icon={<HamburgerIcon boxSize={6} />} variant="ghost" onClick={onOpen} aria-label={''} />
       <RouteLink to="/">
            <FdgLogo/>
        </RouteLink>

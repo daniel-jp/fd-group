@@ -22,6 +22,8 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
 };
+
+
 function FdCarousel() {
 
 
@@ -43,7 +45,7 @@ function FdCarousel() {
       title: "CarousTitle0",
       subTitle: "CarousSubTitle0",
       text: "CarousText0",
-      image: "../../assets/cs1.jpg", 
+      image: "../../assets/Carousel/cs4.webp", 
       href: "/about", 
       buttom: "CarousBtn0",
     },
@@ -52,7 +54,7 @@ function FdCarousel() {
       title: "CarousTitle1",
       subTitle: "CarousSubTitle1",
       text: "CarousText1",
-      image: "../../assets/cs2.jpg",
+      image: "../../assets/Carousel/css23.jpg",
       href: "/services",
       buttom: "CarousBtn1",
     },
@@ -61,14 +63,26 @@ function FdCarousel() {
       title: "CarousTitle2",
       subTitle: "CarousSubTitle2",
       text: "CarousText2",
-      image: "../../assets/cs3.jpg",
+      image: "../../assets/Carousel/cs3.jpg",
       href: "/about",
       buttom: "CarousBtn1",
     },
   ];
 
 
-
+  const innerBoxStyles = {
+    display: 'block', 
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    boxSize: 'full', 
+    color: 'white',
+    textShadow: '0 0 20px black',
+    fontWeight: 'bold',
+    fontSize: '20px',
+    px:"4px",
+    py:"4px"
+  }
 
 
 
@@ -130,19 +144,21 @@ function FdCarousel() {
                 transform="translate(0, -50%)"
                 textAlign={"center"}
                 align={"center"}
-                p={"10"} >
-
-                <Heading fontFamily={"'Inter', sans-serif"} fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} color="white">
+                p={"10"}>
+                  
+       <Box sx={innerBoxStyles} backdropFilter='auto' backdropContrast='50%'>
+                <Heading bg={'transparent'}  textTransform={'uppercase'} fontFamily={"'Inter', sans-serif"} fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} color="white">
                   {t(card.title)}
                 </Heading>
 
-                <Heading fontFamily={"'Inter', sans-serif"} fontSize={{base: "2xl", sm: "3xl", md: "4xl"}} color="red.600">
+                <Heading fontFamily={"'Inter', sans-serif"}  fontSize={{base: "2xl", sm: "3xl", md: "4xl"}} color={"red.700"}>
                   {t(card.subTitle)}
                 </Heading>
 
                 <Text py={2} fontFamily={"'Inter', sans-serif"} fontSize={{base: "md", lg: "lg"}} color="gray.300">
                   {t(card.text)}
                 </Text>
+         </Box>
 
                 <Button
                   as={"a"}

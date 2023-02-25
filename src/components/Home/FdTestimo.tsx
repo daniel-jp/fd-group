@@ -129,7 +129,7 @@ function FdTestimo() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                "#" }
+                "https://randomuser.me/api/portraits/men/86.jpg" }
               name={"Jane Cooper"}
               title={"CEO at ABC Corporation"}
             />
@@ -143,7 +143,7 @@ function FdTestimo() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                "#"
+                "https://randomuser.me/api/portraits/men/86.jpg"
               }
               name={"Jane Cooper"}
               title={"CEO at ABC Corporation"}
