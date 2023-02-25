@@ -184,7 +184,7 @@ function Services() {
                 mx={ -6 }
                 pos={ 'relative' }>
                 <Image w={ 'full' } h={ 'full' }
-                    src={'../../public/assets/services/serv1.jpeg'}
+                    src={'../../assets/services/serv1.jpeg'}
                 />
               </Box>
             </Stack>
