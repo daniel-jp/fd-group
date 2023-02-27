@@ -101,7 +101,7 @@ function Devices() {
           <Stack align={"center"} className='device2' visibility={'hidden'}>
           <Heading color={'gray.700'} fontSize={"2xl"}>{t("Divice0")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
-            {t("TextServ0")} <CameraSlash size={20} color='#2F855A' />
+            {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
       </Stack>
 
@@ -117,7 +117,7 @@ function Devices() {
           <Stack align={"center"} className='device4' visibility={'hidden'}>
           <Heading color={'gray.700'} fontSize={"2xl"}>{t("Divice1")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
-            {t("TextServ0")} <CameraSlash size={20} color='#2F855A' />
+            {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
       </Stack>
 
@@ -135,7 +135,7 @@ function Devices() {
           <Stack align={"center"} className='device6' visibility={'hidden'}>
           <Heading color={'gray.700'} fontSize={"2xl"}>{t("Divice2")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
-            {t("TextServ0")} <CameraSlash size={20} color='#2F855A' />
+            {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
       </Stack>
 
@@ -152,7 +152,7 @@ function Devices() {
           <Stack align={"center"} className='device8' visibility={'hidden'}>
           <Heading color={'gray.700'} fontSize={"2xl"}>{t("Divice3")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
-            {t("TextServ0")} <CameraSlash size={20} color='#2F855A' />
+            {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
       </Stack>
 

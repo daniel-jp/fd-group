@@ -79,7 +79,7 @@ function Audiovisuel() {
           <Heading color={'gray.700'} fontSize={"2xl"}>{t("audioVisuel0")}</Heading>
 
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
-            {t("TextServ0")} <CameraSlash size={20} color='#2F855A' />
+            {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
       </Stack>
 
@@ -95,7 +95,7 @@ function Audiovisuel() {
           <Stack align={'center'} className='audioV4' visibility={'hidden'} >
           <Heading color={'gray.700'} fontSize={"2xl"}> {t("audioVisuel1")} </Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
-            {t("TextServ0")} <CameraSlash size={20} color='#2F855A' />
+            {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
       </Stack>
 

@@ -1,9 +1,9 @@
 {
     "translation": {
-        "home0": "Inicio",
+        "home0": "Início",
         "home1": "Sobre Nós",
         "home2": "Productos",
-        "home3": "Categgoria",
+        "home3": "Categoria",
         "home4": "Serviços",
         "home5": "Contacto",
 
@@ -118,14 +118,14 @@
         "Contactdescription": "Sua mensagem foi enviada com sucesso.",
 
         "ServiceH0": "NOSSAS ÁREAS DE EXPERIÊNCIA",
-        "ServiceH1": "ATIVIDADE DO FD-GRUPO ",
+        "ServiceH1": "ATIVIDADES DA FD GROUP",
 
         "ServiceSubH0": "Switch",
         "ServiceSubH1": "Instalação de computador",
         "ServiceSubH2": "Manutenção",
         "ServiceSubH3": "Nosso suporte ao cliente",
 
-        "ServiText0": "O FD Grupo  atua em tudo que é prestação de serviços, fornecimento de equipamentos de informática e call center de telefonia. Oferecemos uma grande variedade de equipamentos multimarcas.",
+        "ServiText0": "O FD Group  atua em tudo que é prestação de serviços, fornecimento de equipamentos.",
 
         "ServiText1": "Satisfazemos a demanda como materiais de TI de um fornecedor confiável para o usuário ou consumidor. Vendemos equipamentos de um fornecedor para um local com o objetivo de facilitar o processo de construção da sua empresa.",
 
@@ -138,7 +138,7 @@
         "ServiceH2": "TECNOLOGIA",
         "ServiceH3": "36 países",
 
-        "ServiText5": "O Grupo FD atua em tudo que é prestação de serviços, fornecimento de equipamentos de informática e call center de telefonia. Oferecemos uma grande variedade de equipamentos multimarcas como: roteadores, inversores, switches, soluções de videoconferência e audiovisual, servidores, soluções microsoft, telefonia entre outros. Nós fornecemos desde o quarto até a configuração completa. ",
+        "ServiText5": "Oferecemos uma grande variedade de equipamentos multimarcas como: roteadores, inversores, switches, soluções de videoconferência e audiovisual, servidores, soluções microsoft, telefonia entre outros. Nós fornecemos desde o quarto até a configuração completa. ",
 
 
         "ServiTexttitle1": "Preços $",
@@ -166,8 +166,7 @@
         "serverpag0": "Servidores de rack",
         "serverpag1": "Servidores em torre",
         "serverpag2": "Servidores Power Edge",
-        "serverpag3": " Compartimento de armazenamento",
-        "TextServ0": "para aproveitar todos os nossos recursos legais",
+        "serverpag3": "Compartimento de armazenamento",
 
         "headDivic": "Equipamentos de rede",
         "Divice0": "Switchs",

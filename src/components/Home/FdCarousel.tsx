@@ -45,7 +45,7 @@ function FdCarousel() {
       title: "CarousTitle0",
       subTitle: "CarousSubTitle0",
       text: "CarousText0",
-      image: "../../assets/Carousel/cs4.webp", 
+      image: "../../assets/Carousel/cs012.png", 
       href: "/about", 
       buttom: "CarousBtn0",
     },
@@ -77,7 +77,7 @@ function FdCarousel() {
     textAlign: 'center',
     boxSize: 'full', 
     color: 'white',
-    textShadow: '0 0 20px black',
+    textShadow: '0 0 20px 0',
     fontWeight: 'bold',
     fontSize: '20px',
     px:"4px",
@@ -146,26 +146,27 @@ function FdCarousel() {
                 align={"center"}
                 p={"10"}>
                   
-       <Box sx={innerBoxStyles} backdropFilter='auto' backdropContrast='50%'>
+       <Box sx={innerBoxStyles} backdropFilter='auto' backdropContrast='60%'>
                 <Heading bg={'transparent'}  textTransform={'uppercase'} fontFamily={"'Inter', sans-serif"} fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} color="white">
                   {t(card.title)}
                 </Heading>
 
-                <Heading fontFamily={"'Inter', sans-serif"}  fontSize={{base: "2xl", sm: "3xl", md: "4xl"}} color={"red.700"}>
+                <Heading fontFamily={"'Inter', sans-serif"}  fontSize={{base: "1xl", sm: "2xl", md: "3xl"}} 
+                color={"red.500"}>
                   {t(card.subTitle)}
                 </Heading>
 
-                <Text py={2} fontFamily={"'Inter', sans-serif"} fontSize={{base: "md", lg: "lg"}} color="gray.300">
+                <Text py={2} fontFamily={"'Inter', sans-serif"} fontSize={{base: "md", lg: "lg"}} color="white">
                   {t(card.text)}
                 </Text>
          </Box>
-
+ 
                 <Button
                   as={"a"}
                   href={`${card.href}`}
                   borderRadius={30} 
                   fontFamily="roboto"
-                  w={160}
+                
                   maxW={'full'}
                   fontSize={18}  
                   color="white"
@@ -177,9 +178,7 @@ function FdCarousel() {
                     color: "gray.400",
                     transform: "scale(1.1)",
                   }}>
-
-                  <Text display={'flex'}> {t(card.buttom)}  <ArrowRight size={22} /></Text>
-                 
+                  <Text display={'flex'}> {t("CarousBtn1")}  <ArrowRight size={22} /></Text>
                  
                 </Button>
               </Stack>

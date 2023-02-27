@@ -110,7 +110,7 @@ function Server() {
           <Stack align={"center"} className='server2' visibility={'hidden'}>
           <Heading color={'gray.700'} fontSize={"2xl"}>{t("serverpag0")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
-            {t("TextServ0")} <CameraSlash size={20} color='#2F855A' />
+            {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
       </Stack>
 
@@ -126,7 +126,7 @@ function Server() {
           <Stack align={"center"} className='server4' visibility={'hidden'}>
           <Heading color={'gray.700'} fontSize={"2xl"}>{t("serverpag1")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
-            {t("TextServ0")} <CameraSlash size={20} color='#2F855A' />
+            {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
       </Stack>
 
@@ -145,7 +145,7 @@ function Server() {
           <Stack align={"center"} className='server6' visibility={'hidden'}>
           <Heading color={'gray.700'} fontSize={"2xl"}>{t("serverpag2")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
-            {t("TextServ0")} <CameraSlash size={20} color='#2F855A' />
+            {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
       </Stack>
 
@@ -162,7 +162,7 @@ function Server() {
           <Stack align={"center"} className='server8' visibility={'hidden'}>
           <Heading color={'gray.700'} fontSize={"2xl"}>{t("serverpag3")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
-            {t("TextServ0")} <CameraSlash size={20} color='#2F855A' />
+            {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
       </Stack>
 
