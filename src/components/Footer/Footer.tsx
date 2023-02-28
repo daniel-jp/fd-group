@@ -27,7 +27,7 @@ const SocialButton = ({ children, label, href }: { children: ReactNode; label: s
       bg={ useColorModeValue("blackAlpha.100", "whiteAlpha.100") }
       rounded={ "full" }
       w={ 8 }
-      h={ 8 }
+      h={ 8 } target="_blank"
       cursor={ "pointer" }
       as={ "a" }
       href={ href }
@@ -152,7 +152,8 @@ function Footer() {
                     <TwitterLogo color="#822727" size={ 32 } />
                   </Text>
                 </SocialButton>
-                <SocialButton label={ "Linkedin" } href={ "https://www.linkedin.com/company/fd-group-sarl/" }>
+                <SocialButton label={ "Linkedin" } 
+                href={ "https://www.linkedin.com/company/fd-group-sarl/" }>
                   <Text
                     _hover={ {
                       cursor: "pointer",

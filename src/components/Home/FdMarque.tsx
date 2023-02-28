@@ -51,7 +51,9 @@ function FdMarque() {
         {t("Maques")}
       </chakra.h1>
       <SimpleLayout>
-        <SimpleGrid overflowY={"hidden"} overflowX={"hidden"} className={'marq2'} visibility={'hidden'} justifyItems={"center"} columns={{base: 1, md: 5}} spacing={{base: 5, lg: 6}}>
+        <SimpleGrid overflowY={"hidden"} overflowX={"hidden"} 
+        className={'marq2'} visibility={'hidden'} 
+        justifyItems={"center"} columns={{base: 1, md: 5}} spacing={{base: 5, lg: 6}}>
           {marques.map((img, key) => (
             <Box height="30px" key={key}>
               <Image height={"full"} src={img.url} />
