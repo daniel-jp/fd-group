@@ -66,9 +66,9 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   }
 
   return (
-    <Box p={3} py={32}>
+    <Box p={3}>
 
-      <Stack className='swp1' visibility={'hidden'} spacing={0} align={"center"} pb={10}>
+      <Stack className='swp1' visibility={'hidden'} mb={6} align={"center"}>
         <Heading>{t("swip1")}</Heading>
         <Text> {t("swip2")} </Text>
       </Stack>

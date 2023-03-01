@@ -72,9 +72,9 @@ function FdCard() {
 
       <Container overflowY={"hidden"} overflowX={"hidden"} alignItems={"center"} maxW={"6xl"}>
 
-        <Stack className={'stack3'} visibility={'hidden'} textAlign={'center'} spacing={0} align={"center"}>
+        <Stack className={'stack3'} visibility={'hidden'} textAlign={'center'}  align={"center"}>
           <Heading> {t("prodCard0")}</Heading>
-          <Text >
+          <Text fontSize={'sm'}>
             {t("prodCard1")}
           </Text>
         </Stack> 
@@ -82,7 +82,6 @@ function FdCard() {
         <Stack mt={12} overflowY={"hidden"} overflowX={"hidden"}
           w={"full"} className={'stack4'} visibility={'hidden'}
           gap={4}
-          pt={10}
           direction={{base: "column", md: "row"}}
           spacing={{base: 10, md: 2, lg: 2}}>
 

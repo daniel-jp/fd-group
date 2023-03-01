@@ -16,7 +16,7 @@ export default function CardProduct({title, subtitle, description, url, href}: a
       zIndex={ 1 }>
       <Box 
         rounded={ "sm" }
-        mt={ -8 }
+      
         pos={ "relative" }
         height={ "180px" }
         bg={"gray.800"} _hover={{

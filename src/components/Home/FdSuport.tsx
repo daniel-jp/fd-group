@@ -8,6 +8,7 @@ import { Avatar, Box, Container, Flex, Heading, Link, Stack, Text, useColorModeV
 import { ArrowSquareOut } from 'phosphor-react';
 import React, { ReactNode, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { NavLink as RouteLink } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
 
 const sr = ScrollReveal();
@@ -108,41 +109,48 @@ function FdSuport() {
   return (
 
     <Box  bg={useColorModeValue("gray.100", "gray.700")}>
-      <Container fontFamily={"'Inter', sans-serif"} overflowY={"hidden"} overflowX={"hidden"} alignItems={'center'} as={Stack} maxW={"6xl"} py={22} spacing={12}>
-        <Stack className='stack' visibility={'hidden'} textAlign={'center'} spacing={0} align={"center"}>
-          <Heading color={"gray.600"} fontFamily={"'Inter', sans-serif"} >{t("suport1")}</Heading>
+      <Container fontFamily={"'Inter', sans-serif"} overflowY={"hidden"} overflowX={"hidden"} alignItems={'center'} as={Stack} maxW={"6xl"}  spacing={4}>
+        <Stack mb={6} className='stack' visibility={'hidden'} textAlign={'center'}  align={"center"}>
+          
+          <Heading color={"gray.600"} fontFamily={"'Inter', sans-serif"}>{t("suport1")}</Heading>
           <Text>{t("suport2")}</Text>
         </Stack>
 
-        <Stack className='stack2' visibility={'hidden'} direction={{base: "column", md: "row"}} spacing={{base: 10, md: 4, lg: 10}}>
+        <Stack pb={2}
+            className='stack2' 
+            visibility={'hidden'} 
+            direction={{base: "column", md: "row"}} 
+            spacing={{base: 10, md: 4, lg: 10}}>
+
+<Link  to="/services" as={RouteLink} >
           <Testimonial>
-            <Text
+            <Text textAlign={'center'}
               _hover={{
                 cursor: "pointer",
                 color: "gray.400",
                 transform: "scale(1.1)",
               }}
-              w={"full"} >
+              w={"full"}>
+
               <TestimonialAvatar
                 src={ "../../assets/Suport/Imagem1.png" }
-                name={t("name1")}
-                 title={t("Corporation")}
-              />
+                name={t("name1")}/>
             </Text>
           </Testimonial>
+          </Link>
+
+          <Link  to="/services" as={RouteLink} >
+
           <Testimonial>
-            <Text 
-              _hover={{
-                cursor: "pointer",
-                color: "gray.400",
-                transform: "scale(1.1)",
+            <Text  _hover={{ cursor: "pointer", color: "gray.400", transform: "scale(1.1)",
               }}>
               <TestimonialAvatar
                 src={ "../../assets/Suport/sp-2.webp" }
-                name={t("name2")}
-                title={t("Corporation")}/>
+                name={t("name2")}/>
             </Text>
           </Testimonial>
+</Link>
+<Link  to="/services" as={RouteLink} >
 
           <Testimonial>
             <Text
@@ -152,19 +160,20 @@ function FdSuport() {
               }} >
               <TestimonialAvatar
                 src={ "../../assets/Suport/sp-3.webp" }
-                name={t("name3")}
-                 title={t("Corporation")}/>
+                name={t("name3")}/>
             </Text>
           </Testimonial>
+          </Link>
+          <Link  to="/services" as={RouteLink} >
+
           <Testimonial>
             <Text _hover={{cursor: "pointer", color: "gray.400", transform: "scale(1.1)",}}>
               <TestimonialAvatar
                 src={ "../../assets/Suport/sp-4.webp" }
-                name={t("name4")}
-                 title={t("Corporation")}
-              />
+                name={t("name4")}/>
             </Text>
           </Testimonial>
+          </Link>
         </Stack>
       </Container>
     </Box>

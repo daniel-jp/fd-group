@@ -2,7 +2,7 @@
     "translation": {
         "home0": "Accueil",
         "home1": "À propos de nous",
-        "home2": "Des produits",
+        "home2": "Produits",
         "home3": "Catégorie",
         "home4": "Services",
         "home5": "Contact",
@@ -53,7 +53,7 @@
         "Corporation": "Corporation",
 
         "prodCard0": "Retrouvez ici nos meilleurs produits",
-        "prodCard1": "Nous avons travaillé avec nos clients dans 36 pays d'Afrique, vendant du matériel informatique et fournissant un support technique.",
+        "prodCard1": "Nous avons travaillé avec nos clients dans 30 pays d'Afrique, vendant du matériel informatique et fournissant un support technique.",
 
         "Server1": "Serveurs & Baie de stockage",
         "Server2": "Équipements Réseau",
@@ -88,7 +88,7 @@
         "CarousTitle0": "FD GROUP",
         "CarousTitle1": "Ton Equipe",
         "CarousTitle2": "Qualités",
-        "CarousSubTitle0": "Faites confiance à la puissance informatique.",
+        "CarousSubTitle0": "Trust IT Power",
         "CarousSubTitle1": "Laissez votre équipe motivée avec du matériel de qualité.",
         "CarousSubTitle2": "Optez pour la qualité de nos produits",
         "CarousText0": "Le comité de projet est une ressource exclusive pour les travaux contractuels. Il est parfait pour les indépendants, les agences et les travailleurs au noir",
@@ -112,7 +112,7 @@
 
         "TextProd2": "Retrouvez nos modèles d'appareils réseau ici. Nous vous présentons les modèles suivants : Disques, RAM, Batterie, Cartes mères et CPU. Cliquez sur le bouton ci-dessous pour le découvrir.",
 
-        "TextProd3": "Trouvez nos modèles de périphériques réseau ici. Nous vous présentons les modèles suivants : Audiovisuel, APC, UBIQUITI, MIKROTIK, TPLINK, cartes mères et CPU. Cliquez sur le bouton ci-dessous pour le découvrir.",
+        "TextProd3": "Retrouvez nos produits audiovisuels et de conférence dans différents modèles des marques suivantes : Logitech, Cisco, Jabra, Polycom, Ibm, HP, Dell...",
 
         "btnProduct": "Voir plus ici",
 
@@ -132,7 +132,7 @@
         "ServiceSubH2": "Maintenance",
         "ServiceSubH3": "Notre service client",
 
-        "ServiText0": "Le Groupe FD intervient dans tout ce qui est prestation de services, fourniture de matériel informatique et call center de téléphonie. Nous proposons une grande variété d'équipements multimarques.",
+        "ServiText0": "Le Groupe FD intervient dans tout ce qui est prestation de services, fourniture d'équipements et centre d'appel téléphonique. Nous proposons une grande variété d'équipements multimarques.",
 
         "ServiText1": "Nous satisfaisons la demande telle que le matériel informatique d'un fournisseur fiable pour l'utilisateur ou le consommateur. Nous vendons des équipements d'un fournisseur à un seul site dans le but de faciliter le processus de création de votre entreprise.",
 
@@ -142,9 +142,9 @@
         "ServiText4": "Notre équipe de support client est composée de personnes qualifiées et capables, travaillant 24 heures sur 24 pour fournir de l'aide lorsque nos clients ont des problèmes avec les produits ou services de notre société et pour s'assurer que les clients réussissent à résoudre tous les problèmes.",
 
         "ServiceH2": "TECHNOLOGIE",
-        "ServiceH3": "36 pays",
+        "ServiceH3": "30 pays",
 
-        "ServiText5": "FD Group intervient dans tout ce qui est prestation de services, fourniture de matériel informatique et call center de téléphonie. équipements multimarques tels que : routeurs, onduleurs, switchs, solutions de visioconférence et audiovisuelles, serveurs, solutions microsoft, téléphonie entre autres. Nous fournissons de la pièce à la configuration complète.",
+        "ServiText5": "Nous proposons une grande variété d'équipements multimarques tels que : routeurs, onduleurs, commutateurs, solutions de visioconférence et audiovisuelles, serveurs, solutions microsoft, téléphonie, entre autres. Nous fournissons même la configuration complète.",
 
         "serverpag0": "Serveurs rackables",
         "serverpag1": "Serveurs tours ",

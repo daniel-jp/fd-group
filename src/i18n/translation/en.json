@@ -48,7 +48,7 @@
         "Corporation": "Corporation",
 
         "prodCard0": "Find our best products here",
-        "prodCard1": "We have worked with our customers in 36 countries across Africa, selling IT equipment and providing technical support.",
+        "prodCard1": "We have worked with our customers in 30 countries across Africa, selling IT equipment and providing technical support.",
         "Server1": "Servers & Storage Array",
         "Server2": "Network Devices",
         "Server3": "Parts",
@@ -86,7 +86,7 @@
         "CarousSubTitle2": "Opt for the quality of our products",
 
         "CarousText0": "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters",
-        "CarousText1": "A Fd-Group offers material to strengthen your team to create a more dynamic environment in your company.",
+        "CarousText1": "A Fd Group offers material to strengthen your team to create a more dynamic environment in your company.",
         "CarousText2": "The quality of the products consists of our trademarks.",
 
         "CarousBtn0": "Learn more",
@@ -102,9 +102,12 @@
         "SubHead0": "use everywhere!",
 
         "TextProd0": "Find our server models here. We present to you the following models: Rackmount servers, Serveurs tours, Serveurs Power Edge and Baie de stockage. Click the button below to find out",
+
         "TextProd1": "Find our Network Devices models here. We present to you the following models: Switchs, Routeurs, IP Phones and SFP. Click the button below to find out.",
+
         "TextProd2": "Find our network device models here. We present to you the following models: Drives, RAM, Battery, Motherboards and CPU. Click the button below to find out.",
-        "TextProd3": "Find our Network Device models here. We present you the following models: Audiovisual, APC, UBIQUITI, MIKROTIK, TPLINK, motherboards and CPU. Click the button below to find out.",
+
+        "TextProd3": "Find our audiovisual and conference products in different models from the following brands: Logitech, Cisco, Jabra, Polycom, Ibm, HP, Dell...",
 
         "btnProduct": "View more here",
 
@@ -125,15 +128,19 @@
         "ServiceSubH2": "Maintenance",
         "ServiceSubH3": "Our customer support",
 
-        "ServiText0": "The FD Group operates in everything that is service provision, supply of computer equipment and telephony call center. We offer a wide variety of multi-brand equipment.",
+        "ServiText0": "The FD Group operates in everything that is service provision, supply of equipment and telephony call center. We offer a wide variety of multi-brand equipment.",
+
         "ServiText1": "We satisfy the demand such as IT materials from a reliable supplier for the user or consumer. We sell equipment from one supplier to one location with the aim of facilitating the process of building your company.",
+
         "ServiText2": "We gave full support and attention to the customer, in case of installation of the material purchased in our company.",
+
         "ServiText3": "The computer maintenance technician ensures the maintenance and repair of computer equipment. You can also install new equipment or train users.",
+
         "ServiText4": "Our customer support team is made up of qualified and capable people, working 24 hours a day to provide help when our customers have problems with our company's products or services and to ensure that customers are successful in resolving any issues.",
 
         "ServiceH2": "TECHNOLOGY",
-        "ServiceH3": "36 countries",
-        "ServiText5": "FD Group operates in all that is service provision, IT equipment supply and telephony call center.We offer a wide variety of multi-brand equipment such as: routers, inverters, switches,videoconferencing and audiovisual solutions, servers, microsoft solutions, telephony among others. We provide from room to complete configuration.",
+        "ServiceH3": "30 countries",
+        "ServiText5": "We offer a wide variety of multi-brand equipment such as: routers, inverters, switches, videoconferencing and audiovisual solutions, servers, microsoft solutions, telephony, among others. We even provide the complete setup.",
 
         "serverpag0": "Rackmount servers ",
         "serverpag1": "Tower servers",

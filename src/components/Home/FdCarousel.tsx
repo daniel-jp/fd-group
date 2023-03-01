@@ -5,7 +5,7 @@ import '@fontsource/raleway/700.css';
 import '@fontsource/righteous/400.css';
 import '@fontsource/roboto/700.css';
 
-import { Box, Button, Container, Heading, IconButton, Stack, Text, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Button, Container, Flex, Heading, IconButton, Stack, Text, useBreakpointValue } from '@chakra-ui/react';
 import { ArrowRight, CaretCircleLeft, CaretCircleRight } from 'phosphor-react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -91,7 +91,7 @@ function FdCarousel() {
 
 
   return (
-    <Box overflowY={"hidden"} overflowX={"hidden"} position={"relative"} height={"full"} width={"full"} mt={"70px"} overflow={"hidden"}>
+    <Box overflowY={"hidden"} overflowX={"hidden"} position={"relative"} height={"full"} width={"full"} overflow={"hidden"}>
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
@@ -146,7 +146,7 @@ function FdCarousel() {
                 align={"center"}
                 p={"10"}>
                   
-       <Box sx={innerBoxStyles} backdropFilter='auto' backdropContrast='60%'>
+       <Box sx={innerBoxStyles} textAlign={'center'} backdropFilter='auto' backdropContrast='60%'>
                 <Heading bg={'transparent'}  textTransform={'uppercase'} fontFamily={"'Inter', sans-serif"} fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} color="white">
                   {t(card.title)}
                 </Heading>

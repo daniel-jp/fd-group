@@ -99,7 +99,7 @@ function FdTestimo() {
 
   return (
     <Box bg={useColorModeValue("gray.100", "gray.700")} overflowY={"hidden"} overflowX={"hidden"}>
-      <Container overflowY={"hidden"} overflowX={"hidden"} maxW={"6xl"} pb={10} as={Stack} spacing={12}>
+      <Container overflowY={"hidden"} overflowX={"hidden"} maxW={"6xl"}  as={Stack} spacing={12}>
         <Stack className={"testm1"} visibility={'hidden'} spacing={0} align={"center"}>
           <Heading>{t("Head0")}</Heading>
           <Text>{t("Testm0")}</Text>

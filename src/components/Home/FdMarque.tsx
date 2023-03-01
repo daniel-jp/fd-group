@@ -38,11 +38,11 @@ function FdMarque() {
 
     <Flex 
       overflowY={"hidden"} overflowX={"hidden"}
-      pb={20}
+     
       flexDirection={"column"}
       w={"full"}
       justifyContent={"center"}
-     py={10} 
+   mb={32} py={4}
       px={{base: 2, sm: 12, md: 0}}
       bg={"white"}>
 
