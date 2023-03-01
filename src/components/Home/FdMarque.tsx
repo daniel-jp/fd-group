@@ -42,7 +42,7 @@ function FdMarque() {
       flexDirection={"column"}
       w={"full"}
       justifyContent={"center"}
-   mb={32} py={4}
+   mb={32} py={10}
       px={{base: 2, sm: 12, md: 0}}
       bg={"white"}>
 

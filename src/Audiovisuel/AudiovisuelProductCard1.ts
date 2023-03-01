@@ -20,8 +20,9 @@ export default function AudiovisuelProductCard1() {
     },
 
     {
-      title: "Lifesize Icon  300",
-      img: "Imagem5.png"
+     
+      img: "Imagem5.png",
+      title: "Lifesize Icon  300"
     },
     {
       img: "Imagem6.png",
@@ -35,8 +36,9 @@ export default function AudiovisuelProductCard1() {
     },
 
     {
+     
+      img: "Imagem8.png",
       title: "Polycom Eagle Eye Iv  Usb",
-      img: "Imagem8.png"
     },
 
     {
@@ -55,8 +57,9 @@ export default function AudiovisuelProductCard1() {
     },
 
     {
+     
+      img: "Imagem12.png",
       title: "Avaya Huddle  Cameras",
-      img: "Imagem12.png"
     },
 
     {

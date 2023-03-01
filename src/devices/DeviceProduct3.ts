@@ -8,7 +8,7 @@ export default function DeviceProduct3() {
     },
     {
       img: "er-8.webp",
-      title: "CP-8845-K9 Cisco 8800 IP Phon"
+      title: "CP-8845-K9 Cisco 8800 IP Phone"
     },
     {
       img: "er-7.webp",

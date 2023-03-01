@@ -157,8 +157,8 @@ function About() {
               fontWeight={ "bold" }
               boxShadow={"8px 0px"}
               className="about1" visibility={"hidden"}>
-      <Text color={"white"}  m={4} textTransform={'uppercase'}> {t("heaAboutUs")} </Text> 
-       
+      <Text color={"white"}  m={4} textTransform={'uppercase'}> 
+      {t("heaAboutUs")} </Text> 
       </Flex>
       <Box as={ "section" } mt={28}>
             <Stack className={"about2"} align={'center'}   visibility={"hidden"}>
@@ -208,8 +208,8 @@ function About() {
                 fontSize="md"
                 border={ "1px solid #1A202C" }
                 textAlign={ "justify" }
-              
-                maxW={ "200px" }
+                w={250}
+                maxW={ "full" }
                 _hover={ {
                   cursor:"pointer",
                   bg: "red.900",
@@ -220,19 +220,16 @@ function About() {
             </Box>
 
                 <Box className="about4" visibility={"hidden"} display="flex" flex="1" position="relative" alignItems="center">
-                  <Box width={{base: "100%", sm: "85%", md: "100%", lg: "100%"}} zIndex="2" marginLeft={{base: "0", sm: "2%"}} marginTop="5%">
+              <Box width={{base: "100%", sm: "85%", md: "100%", lg: "100%"}} zIndex="2" 
+                  marginLeft={{base: "0", sm: "2%"}} marginTop="5%">
                 <Link textDecoration="none" _hover={ { textDecoration: "none" } }>
                   <Image
-
                     maxW={ "full" }
                     src={ "/publ../../assets/about/Imagem1.png" }
                     alt="some good alt text"
-                    objectFit="contain"
-                  />
-
+                    objectFit="contain"/>
                 </Link>
               </Box>
-             
             </Box>
           </Box>
 
@@ -253,14 +250,10 @@ function About() {
                     maxW={ "full" }
                     src={ `${"/publ../../assets/about/Imagem2.png"}` }
                     alt="some good alt text"
-                    objectFit="contain"
-                  />
+                    objectFit="contain"/>
                 </Link>
               </Box>
-            
             </Box>
-
-
             <Box 
               className="about6" visibility={"hidden"}
               display="flex"  mx={4} 

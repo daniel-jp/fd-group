@@ -10,42 +10,44 @@
         "childrenLab0": "Serveurs & Baie de stockage",
         "childrenLab1": "Équipements Réseau",
         "childrenLab2": "Pièces détachées",
-        "childrenLab3": "Audiovisuel & Conferencing",
+        "childrenLab3": "Audiovisuel & Conférence",
         "childrenLab4": "Autres",
 
         "childrenSubLab0": "Serveurs rackables, Serveurs tours, Serveurs Power Edge & Baie de stockage",
         "childrenSubLab1": "Switchs, Routeurs, Ip Phones & Sfp",
-        "childrenSubLab2": "Drives, Ram, Batterie & Cartes Mères|Cpu",
+        "childrenSubLab2": " Disques Durs, Ram, Batterie & Cartes Mères|Cpu",
         "childrenSubLab3": "Audiovisual & Apc",
         "childrenSubLab4": "Ubiquiti, Mikrotik & Tplink",
 
         "WhoWe": "QUI NOUS SOMMES",
         "heaAboutUs": "À propos de nous",
         "QualityText": "FD GROUP est une société de vente de matériel informatique qui propose des solutions adaptées à vos besoins et garantit la qualité de votre infrastructure avec nos produits et nos services avant et après vente de manière efficace et efficiente.",
-        "Founded1": "Fondée",
+
 
         "Learn": "Apprendre encore plus",
-        "Abaut1": "Avec une vision claire d'offrir une expérience client transparente, FD GROUP est un fournisseur de confiance d'équipements informatiques neufs et remis à neuf pour la maintenance et l'optimisation des activités informatiques. FD GROUP est un courtier informatique qui fournit l'infrastructure dont votre parc informatique a besoin.",
 
-        "About2": "Nos interviennent dans tout ce qui est prestation de services, fourniture de matériel informatique et call center de téléphonie. Nous proposons une grande variété d'équipements multimarques tels que : routeurs, onduleurs, commutateurs, solutions de visioconférence et audiovisuelles, serveurs, solutions microsoft, téléphonie entre autres. Nous fournissons de la pièce à la configuration complète.",
-        "FDGroup1": " FD Group",
+        "Founded1": "Foundation",
+        "Abaut1": "Fondé avec une vision claire d'offrir une expérience client parfaite, FD GROUP est un fournisseur de confiance d'équipement d’IT neuf & reconditionnés pour la maintenance et l'optimisation informatique des entreprises. FD GROUP est un broker informatique qui vous fournit les infrastructures dont votre parc informatique a besoin.",
+
+        "FDGroup1": "Operation",
+        "About2": "FD Group opère dans tout ce qui est prestation de services, fournitures d'équipements IT et call center téléphonie. Nous vous proposons une large variété des équipements multimarques comme : routers, onduleurs, switchs, solutions visioconférence et audiovisuel, serveurs, solutions microsoft, téléphonie entre autres. Nous fournissons de la pièce à la configuration complète.",
+
         "Mission": "Mission",
 
-        "About3": "La mission de FD GROUP est de vous proposer des solutions adaptées à vos besoins, vous fournir et assurer la qualité de vos infrastructures avec nos produits et services avant et après vente, vous assister efficacement et efficacement, livrer rapidement et fidéliser.",
+        "About3": "La mission de FD GROUP est de vous offrir des solutions adapté à vos besoins, vous fournir et assurer la qualité des vos infrastructure avec nos produits et nos services avant et après vente, vous assister en toute efficacité et efficience, vous livrer en toute rapidité et vous FIDÉLISER.",
 
         "Text0": "Pourquoi choisir",
         "Text1": "FD GROUP aide les entreprises africaines à répondre à leurs demandes et attentes en matière d'infrastructure informatique évolutive et rentable. Aujourd'hui, nous servons des clients dans plus de 30 pays et offrons une large gamme de matériel de stockage, de conférence, de matériel réseau, de téléphonie de fabricants leaders tels que",
 
         "Text2": "IBM, APC, HP, LOGITECH, CISCO, TP-LINK et plus",
-
         "Text3": "Chez FD GROUP, nous recherchons – et respectons – la qualité des produits que nous commercialisons et croyons qu'un excellent service client est au cœur de l'expérience d'achat.",
 
-        "Text4": "Des prix compétitifs sur le marché Des délais de livraison des cours Des services avant et après-vente Un service client à votre écoute 24h/24 et 7j/7 Grâce à nos partenaires transporteurs et transitaires, nous vous proposons différentes options d'expédition en fonction de vos besoins.",
+        "Text4": " ● Des prix compétitifs sur le marché ● Des délais de livraison des cours ● Des services avant et après-vente Un service client à votre écoute 24h/24 et 7j/7 Grâce à nos partenaires transporteurs et transitaires, nous vous proposons différentes options d'expédition en fonction de vos besoins.",
 
         "suport1": "La Réféence Africaine en IT",
         "suport2": "Nous avons travaillé avec des clients partout en Afrique, fournissant un support technique",
 
-        "name1": " Fourniture des",
+        "name1": "Fourniture des équipements IT",
         "name2": "Installation",
         "name3": "Maintenance",
         "name4": "Call center téléphonie",
@@ -164,7 +166,7 @@
         "headDivic": "Équipements Réseau",
         "Divice0": "Switchs",
         "Divice1": "Routeurs",
-        "Divice2": "Téléphones IP",
+        "Divice2": "IP Phones",
         "Divice3": "SFP",
 
         "headAudiovisuel": "Audiovisuel & Conférence",
@@ -172,7 +174,7 @@
         "audioVisuel1": "APC",
 
         "headParts": "Pièces détachées",
-        "Part0": "Drives, batterie et câble",
+        "Part0": " Disques Durs, batterie et câble",
         "Part1": "Ram, Cartes Mères et CPU",
 
         "headOther": "Autres produits",

@@ -18,7 +18,7 @@ function FdCard() {
       subtitle: "P07203-S01 – HPE MicroServer Gen10 Server.",
       description: "description1",
       url: "serv1.webp",
-      href: "/products/servers"
+      href: "/products/server"
     },
     {
       title: "Server2",
