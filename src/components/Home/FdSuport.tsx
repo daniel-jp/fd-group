@@ -64,19 +64,19 @@ const TestimonialText = ({ children }: { children: ReactNode }) => {
     </Text>
   );
 };
-const TestimonialAvatar = ({ src, name, title }: { src: string; name: string; title: string }) => {
+const TestimonialAvatar = ({ src, name }: { src: string; name: string;}) => {
   return (
     <Flex  fontFamily={"'Inter', sans-serif"} align={"center"} mt={8} direction={"column"}>
       <Avatar w={150} h={150} src={src} mb={2} />
       <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600}>
-          <Link display={"flex"} color="red.800" href="#">
-            {name} <ArrowSquareOut size={18} />
+          <Link display={"flex"} color="red.800" to="/services" as={RouteLink}>
+            {name} <ArrowSquareOut color="black" size={18} />
           </Link>
         </Text>
-        <Text fontSize={"sm"}  color={useColorModeValue("gray.600", "gray.400")}>
+        {/* <Text fontSize={"sm"}  color={useColorModeValue("gray.600", "gray.400")}>
           {title}
-        </Text>
+        </Text> */}
       </Stack>
     </Flex>
   );
@@ -116,14 +116,17 @@ function FdSuport() {
           <Text>{t("suport2")}</Text>
         </Stack>
 
+
         <Stack pb={2}
             className='stack2' 
             visibility={'hidden'} 
             direction={{base: "column", md: "row"}} 
             spacing={{base: 10, md: 4, lg: 10}}>
 
-<Link  to="/services" as={RouteLink} >
+
           <Testimonial>
+            
+           
             <Text textAlign={'center'}
               _hover={{
                 cursor: "pointer",
@@ -134,25 +137,26 @@ function FdSuport() {
 
               <TestimonialAvatar
                 src={ "../../assets/Suport/Imagem1.png" }
-                name={t("name1")}/>
-            </Text>
+                name={t("name1")} /> 
+            </Text> 
           </Testimonial>
-          </Link>
+        
 
-          <Link  to="/services" as={RouteLink} >
+         
 
-          <Testimonial>
-            <Text  _hover={{ cursor: "pointer", color: "gray.400", transform: "scale(1.1)",
+          <Testimonial>  
+           
+            <Text  _hover={{ cursor: "pointer", color: "gray.400", transform: "scale(1.1)"
               }}>
               <TestimonialAvatar
                 src={ "../../assets/Suport/sp-2.webp" }
                 name={t("name2")}/>
-            </Text>
+            </Text>   
           </Testimonial>
-</Link>
-<Link  to="/services" as={RouteLink} >
+  
 
           <Testimonial>
+         
             <Text
               _hover={{cursor: "pointer",
                 color: "gray.400",
@@ -162,18 +166,22 @@ function FdSuport() {
                 src={ "../../assets/Suport/sp-3.webp" }
                 name={t("name3")}/>
             </Text>
-          </Testimonial>
-          </Link>
-          <Link  to="/services" as={RouteLink} >
+            
 
-          <Testimonial>
-            <Text _hover={{cursor: "pointer", color: "gray.400", transform: "scale(1.1)",}}>
+          </Testimonial>
+         
+         
+          <Testimonial> 
+         
+            <Text _hover={{cursor: "pointer", color: "gray.400", transform: "scale(1.1)"}}>
+
               <TestimonialAvatar
                 src={ "../../assets/Suport/sp-4.webp" }
                 name={t("name4")}/>
-            </Text>
+            </Text>  
+          
           </Testimonial>
-          </Link>
+       
         </Stack>
       </Container>
     </Box>
