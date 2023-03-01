@@ -149,7 +149,6 @@ function Server() {
         </Text>
       </Stack>
 
-
           <Box pt={10} pb={10} className='server7' visibility={'hidden'}>
         <SimpleGrid columns={ { base: 1, md: 3 } } spacing={ 5 }>
           { serversProducts3.map((server, key) => (

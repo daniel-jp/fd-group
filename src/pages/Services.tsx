@@ -262,7 +262,7 @@ function Services() {
                   fontFamily={ 'body' }>
                   {t("ServiceSubH2")}
                 </Heading>
-                <Text color={ 'gray.600' } pb={ 8 }>
+                <Text color={ 'gray.600' } pb={ 8 } textAlign={ 'justify' }>
                   {t("ServiText3")}
                 </Text>
               </Stack>
@@ -311,7 +311,7 @@ function Services() {
                   fontFamily={ 'body' } >
                   {t("ServiceSubH3")}
                 </Heading>
-                <Text color={ 'gray.600' }>
+                <Text color={'gray.600'} textAlign={ 'justify' }>
                   {t("ServiText4")}
                 </Text>
               </Stack>
@@ -423,7 +423,7 @@ const StatsText = ({ children }: { children: ReactNode }) => (
 const stats = [
   {
     id:1,
-    title: 'Preços $',
+    title: 'Preços $', 
     subtitle:'ServiTextCaerd1'
   },
   {
