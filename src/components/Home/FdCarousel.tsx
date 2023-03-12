@@ -146,7 +146,7 @@ function FdCarousel() {
                 align={"center"}
                 p={"10"}>
                   
-       <Box sx={innerBoxStyles} textAlign={'center'} backdropFilter='auto' backdropContrast='60%'>
+       <Box sx={innerBoxStyles} textAlign={'center'} backdropFilter='auto' backdropContrast='20%'>
                 <Heading bg={'transparent'}  textTransform={'uppercase'} fontFamily={"'Inter', sans-serif"} fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} color="white">
                   {t(card.title)}
                 </Heading>

@@ -142,12 +142,15 @@ function About() {
   const {t} = useTranslation();
 
   return (
-    <Box bg={"gray.200"}>
+    <Box bg={"gray.200"} pt={10} >
       <Layout>
+
         <Box overflowY={"hidden"} overflowX={"hidden"}  fontFamily={"'Inter', sans-serif"} color={"gray.600"}>
+        <Box textAlign="center"    bg={ useColorModeValue('white', 'gray.900') }>
+
           <Flex 
-              mt={ 20 }
-              h={ "70px" }p={4}
+            
+              h={ "70px" } p={4}
               w={260}              
               maxW={ "full" }
               bg={"red.800"}
@@ -157,17 +160,19 @@ function About() {
               fontWeight={ "bold" }
               boxShadow={"8px 0px"}
               className="about1" visibility={"hidden"}>
-      <Text color={"white"}  m={4} textTransform={'uppercase'}> 
-      {t("heaAboutUs")} </Text> 
+      <Text color={"white"}  m={4} textTransform={'uppercase'}> {t("heaAboutUs")} </Text> 
       </Flex>
-      <Box as={ "section" } mt={28}>
-            <Stack className={"about2"} align={'center'}   visibility={"hidden"}>
+        <Stack  py={6}  className={"about2"} align={'center'}   visibility={"hidden"} mt={20} >
               <Text display={'flex'} fontWeight={'bold'}>
                {t("WhoWe")}  <CircleWavyQuestion size={ 20 } />
               </Text>
               <Text textAlign={'center'}  fontSize="sm" color={"gray.800"}
                 fontWeight={'bord'} w={{base: 350, sm: 300, md: 400, lg: 900}}>{t("QualityText")}</Text>
             </Stack>
+       </Box>
+    
+      <Box as={ "section" }>
+           
 
 
         <Box  mt={12}>

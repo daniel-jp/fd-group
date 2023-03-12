@@ -102,14 +102,14 @@ function Products() {
 
   return (
     <>
-     <Box bg={"gray.200"}>
+     <Box bg={"gray.200"} pt={10}>
     <Layout>
 
-        <Box p={2} fontFamily={"'Inter', sans-serif"} color={"gray.600"}
+        <Box  fontFamily={"'Inter', sans-serif"} color={"gray.600"}
           h="full" w="full" 
           overflowY={'hidden'} overflowX={'hidden'} justifyContent={'center'}>
 
-            <Flex className='product1'   mt={ 20 }
+            <Flex className='product1'  
               h={ "70px" }
               p={4}
               w={300}              

@@ -110,13 +110,13 @@ function Services() {
 
 
 
-      <Box pb={ 100 } mt={ 20 } bg={"gray.200"} fontFamily={"'Inter', sans-serif"} color={"gray.600"}>
+      <Box pb={ 100 } pt={10} bg={"gray.200"} fontFamily={"'Inter', sans-serif"} color={"gray.600"}>
 
       <SimpleLayout>
       
-        <Box textAlign="center" py={ 10 } px={ 6 }>
+        <Box textAlign="center"  bg={ useColorModeValue('white', 'gray.900') }>
           <Flex boxShadow={ "8px 0px 0px" }
-            mt={ 20 }
+            mt={ 32 }
             p={ 2 }
             h={ "70px" }
             w={260}
@@ -131,7 +131,8 @@ function Services() {
             <Text color={"white"} textTransform={'uppercase'}>  {t("ServiceH1")}</Text>
             <LineSegments size={ 40 } color='#1A202C' />
           </Flex>
-          <Stack className='service2' visibility={'hidden'} align={'center'} mt={28}>
+
+          <Stack py={6} className='service2' visibility={'hidden'} align={'center'} mt={20}>
             <Text  fontWeight={'bold'}>
             {t("ServiceH0")} 
           </Text>

@@ -2,7 +2,7 @@
     "translation": {
         "home0": "Início",
         "home1": "Sobre Nós",
-        "home2": "Productos",
+        "home2": "Produtos",
         "home3": "Categoria",
         "home4": "Serviços",
         "home5": "Contacto",
@@ -53,7 +53,7 @@
         "Corporation": "Corporação",
 
         "prodCard0": "Encontre aqui os nossos melhores produtos",
-        "prodCard1": "Temos trabalhado com clientes nas 30 países de Africa, vendendo equipamentos de TI e fornecendo suporte técnico",
+        "prodCard1": "Trabalhamos com clientes em 30 países de Africa, vendendo equipamentos de TI e fornecendo suporte técnico",
 
         "Server1": "Servidores & Compart de armazenamento",
         "Server2": "Equipamentos de rede",
@@ -66,7 +66,7 @@
         "btView": "Ver mais",
 
         "swip1": "Nossos productos",
-        "swip2": "Dê uma olhada aos nossos productos",
+        "swip2": "Por favor, olhe para os nossos produtos",
 
         "Head0": "Nossos Clientes Falam",
         "Head1": "Cliente satisfeito",
@@ -76,24 +76,24 @@
 
         "Testm0": "Testemunhas que trabalham conosco e que deram suas opiniões dos nossos seviços.",
 
-        "Testm1": "Faz tempo que tenho adiquirido os serviços da FD z, realmente, gosto da perfomance, os meus productos chegam a tempo e hora. Recomendo à quem quer adquir equipamento de TI para sua empresa a FD Groupo é a preferencia.",
+        "Testm1": "Faz tempo que tenho adiquirido os serviços da FD z, realmente, gosto da perfomance, os meus productos chegam a tempo e hora. Recomendo à quem quer adquir equipamento de TI para sua empresa a FD Group é a preferencia.",
 
-        "Testm2": "Faz tempo que tenho adiquirido os serviços da FD Groupo, realmente, gosto da perfomance, os meus productos chegam a tempo e hora. Recomendo à quem quer adquir equipamento de TI para sua empresa a FD Groupo é a preferencia.",
-        "Testm3": "Faz tempo que tenho adiquirido os serviços da FD Groupo, realmente, gosto da perfomance, os meus productos chegam a tempo e hora. Recomendo à quem quer adquir equipamento de TI para sua empresa a FD Groupo é a preferencia.",
+        "Testm2": "Faz tempo que tenho adiquirido os serviços da FD Group, realmente, gosto da perfomance, os meus productos chegam a tempo e hora. Recomendo à quem quer adquir equipamento de TI para sua empresa a FD Group é a preferencia.",
+        "Testm3": "Faz tempo que tenho adiquirido os serviços da FD Group, realmente, gosto da perfomance, os meus productos chegam a tempo e hora. Recomendo à quem quer adquir equipamento de TI para sua empresa a FD Group é a preferencia.",
         "Title1": "Engº de dados & Softwares.",
 
         "Maques": "Marcas comercializadas",
 
         "CarousTitle0": "FD GRUPO",
         "CarousTitle1": "Sua Equipa",
-        "CarousTitle2": "Qualidades",
+        "CarousTitle2": "Qualidade",
 
         "CarousSubTitle0": "Trust IT Power",
         "CarousSubTitle1": "Deixe sua equipe motivada com equipamentod e qualidade.",
         "CarousSubTitle2": "Opte pela qualidade dos nossos produtos",
 
         "CarousText0": "O quadro do projeto é um recurso exclusivo para o trabalho contratado. É perfeito para freelancers, agências e clandestinos",
-        "CarousText1": "A FD Groupo oferece material para fortalecer sua equipe para criar um ambiente mais dinâmico em sua empresa.",
+        "CarousText1": "A FD Group oferece material para fortalecer sua equipe para criar um ambiente mais dinâmico em sua empresa.",
         "CarousText2": "A qualidade dos produtos consiste em nossas marcas registradas.",
 
         "CarousBtn0": "Aprender mais sobre nós",
@@ -107,10 +107,11 @@
 
         "SubHead0": "use em todos os lugares!",
 
-        "TextProd0": "Encontre aqui os nossos modelos de servidores. Apresentamos-lhe os seguintes modelos: Servidores Rackmount, Servidores tours, Servidores Power Edge e Baie de stockage. Clique no botão abaixo para saber",
+        "TextProd0": "Encontre aqui os nossos modelos de servidores. Apresentamos-lhe os seguintes modelos: Servidores Rackmount, Servidores Torres, Servidores Power Edge e Stockage. Clique no botão abaixo para saber",
 
         "TextProd1": "Encontre aqui os nossos modelos de dispositivos de rede. Apresentamos a você os seguintes modelos: Switches, Roteadores, Telefones IP e SFP. Clique no botão abaixo para descobrir.",
-        "TextProd2": "Encontre nossos modelos de dispositivos de rede aqui. Apresentamos a você os seguintes modelos: Drives, RAM, Bateria, Motherboards e CPU. Clique no botão abaixo para descobrir.",
+
+        "TextProd2": "Encontre nossos modelos de dispositivos de rede aqui. Apresentamos a você os seguintes modelos: Drives, RAM, Bateria, Placa Mãe e CPU. Clique no botão abaixo para descobrir.",
 
         "TextProd3": "Encontre os nossos produtos audiovisual e conferência em diversos modelos das seguintes marcas: Logitech, Cisco, Jabra,Polycom, Ibm, Hp, Dell...",
 

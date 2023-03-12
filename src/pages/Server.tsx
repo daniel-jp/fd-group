@@ -95,7 +95,7 @@ function Server() {
   const serversProducts4 = ServerProductsServer4();
 
   return (  
-  <Box bg={"gray.200"} >
+  <Box bg={"gray.200"} pt={10} >
     <Layout>
 
     <Box pb={20} overflowY={'hidden'} overflowX={'hidden'} fontFamily={"'Inter', sans-serif"}>

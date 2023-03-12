@@ -1,5 +1,6 @@
 {
     "translation": {
+
         "home0": "Accueil",
         "home1": "À propos de nous",
         "home2": "Produits",
@@ -55,7 +56,7 @@
         "Corporation": "Corporation",
 
         "prodCard0": "Retrouvez ici nos meilleurs produits",
-        "prodCard1": "Nous avons travaillé avec nos clients dans 30 pays d'Afrique, vendant du matériel informatique et fournissant un support technique.",
+        "prodCard1": " Nous avons des clients dans plus de 30 pays d'Afrique, vendant du matériel informatique et fournissant un support technique.",
 
         "Server1": "Serveurs & Baie de stockage",
         "Server2": "Équipements Réseau",
@@ -69,7 +70,7 @@
         "btView": "Voir plus",
 
         "swip1": "Nos produits",
-        "swip2": "Jetez un œil à nos produits.",
+        "swip2": "Veuillez regarder nos produits",
 
         "Head0": "Nos clients parlent",
         "Head1": "Client satisfait",
@@ -78,24 +79,24 @@
         "Head4": "Client satisfait",
 
         "Testm0": "Des témoins qui travaillent avec nous et qui ont donné leur avis sur nos services.",
-        "Testm1": "J'achète depuis longtemps des équipements du FD groupe, j'aime beaucoup les performances, mes produits arrivent à temps. Je recommande FD Groupo à tous ceux qui souhaitent acquérir du matériel informatique pour leur entreprise.",
+        "Testm1": "J'achète depuis longtemps des équipements du FD Group, j'aime beaucoup les performances, mes produits arrivent à temps. Je recommande FD Group à tous ceux qui souhaitent acquérir du matériel informatique pour leur entreprise.",
 
-        "Testm2": "J'achète depuis longtemps des équipements du FD groupe, j'aime beaucoup la performance, mes produits arrivent à temps. Je recommande FD Groupo à tous ceux qui souhaitent acquérir du matériel informatique pour leur entreprise.",
+        "Testm2": "J'achète depuis longtemps des équipements du FD Group, j'aime beaucoup la performance, mes produits arrivent à temps. Je recommande FD Group à tous ceux qui souhaitent acquérir du matériel informatique pour leur entreprise.",
 
-        "Testm3": "J'achète depuis longtemps des équipements du FD groupe, j'aime beaucoup la performance, mes produits arrivent à temps. Je recommande FD Groupo à tous ceux qui souhaitent acquérir du matériel informatique pour leur entreprise.",
+        "Testm3": "J'achète depuis longtemps des équipements du FD Group, j'aime beaucoup la performance, mes produits arrivent à temps. Je recommande FD Group à tous ceux qui souhaitent acquérir du matériel informatique pour leur entreprise.",
 
         "Title1": "Ingénieur de Données et Logiciels.",
         "Maques": "Marques commercialisées",
 
         "CarousTitle0": "FD GROUP",
         "CarousTitle1": "Ton Equipe",
-        "CarousTitle2": "Qualités",
+        "CarousTitle2": "Qualité",
         "CarousSubTitle0": "Trust IT Power",
         "CarousSubTitle1": "Laissez votre équipe motivée avec du matériel de qualité.",
         "CarousSubTitle2": "Optez pour la qualité de nos produits",
         "CarousText0": "Le comité de projet est une ressource exclusive pour les travaux contractuels. Il est parfait pour les indépendants, les agences et les travailleurs au noir",
 
-        "CarousText1": "A Fd-Group propose du matériel pour renforcer votre équipe afin de créer un environnement plus dynamique dans votre entreprise.",
+        "CarousText1": "A Fd Group propose du matériel pour renforcer votre équipe afin de créer un environnement plus dynamique dans votre entreprise.",
         "CarousText2": "La qualité des produits est constituée de nos marques de fabrique.",
         "CarousBtn0": "Apprendre encore plus",
         "CarousBtn1": "Voir plus",

@@ -113,7 +113,7 @@ function FdSuport() {
         <Stack mb={6} className='stack' visibility={'hidden'} textAlign={'center'}  align={"center"}>
           
           <Heading color={"gray.600"} fontFamily={"'Inter', sans-serif"}>{t("suport1")}</Heading>
-          <Text>{t("suport2")}</Text>
+          {/* <Text>{t("suport2")}</Text> */}
         </Stack>
 
 
