@@ -176,14 +176,14 @@ function About() {
 
 
         <Box  mt={12}>
-          <Box bg={"white"} p={2}
+          <Box bg={"white"} p={3}
             marginTop={ { base: "1", sm: "8" } } 
             display="flex"
             flexDirection={ { base: "column", sm: "row" } }
             justifyContent="space-between">
 
              <Box className={"about3"} visibility={"hidden"}h={500}
-              display="flex" mx={4} 
+              display="flex" mx={1} 
               flex="1"
               flexDirection="column"
               justifyContent="center"
@@ -240,7 +240,7 @@ function About() {
 
 
           {/* // Futer 2 */ }
-         <Box  bg={"white"} p={2}
+         <Box  bg={"white"} p={3}
             marginTop={ { base: "1", sm: "8" } }
             display="flex"
             flexDirection={ { base: "column", sm: "row" } }
@@ -259,9 +259,10 @@ function About() {
                 </Link>
               </Box>
             </Box>
+
             <Box 
               className="about6" visibility={"hidden"}
-              display="flex"  mx={4} 
+              display="flex"  ml={2} 
               flex="1"
               flexDirection="column"
               justifyContent="center"
@@ -293,11 +294,12 @@ function About() {
             display="flex"
             flexDirection={ { base: "column", sm: "row" } }>
              <Box className="about7" visibility={"hidden"} h={500} p={2}py={20}
-              display="flex" mx={4} 
+              display="flex" mx={2} 
               flex="1"
               flexDirection="column"
               justifyContent="center"
               marginTop={ { base: "3", sm: "0" } }>
+
               <Flex alignItems={ "center" } gap={ 2 }>
                 <BlogTags tags={ ["Our Solutions"] } />
                 <Eye color={ "#1A202C" } size={ 32 } />
@@ -316,7 +318,7 @@ function About() {
                 {t("About3")} 
               </Text>
             </Box>
-                <Box
+                <Box p={3}
                   className="about8" visibility={"hidden"}
                   display="flex" flex="1"  position="relative" alignItems="center">
                   <Box width={{base: "100%", sm: "85%", md: "100%", lg: "100%"}} zIndex="2"
