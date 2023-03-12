@@ -4,12 +4,14 @@ import '@fontsource/raleway/700.css';
 import '@fontsource/righteous/400.css';
 import '@fontsource/roboto/700.css';
 
+import { AddIcon, CheckCircleIcon, PhoneIcon, WarningIcon } from '@chakra-ui/icons';
 import {
   Box,
   Button,
   Flex,
   Heading,
   HStack,
+  Icon,
   Image,
   Link,
   SpaceProps,
@@ -289,11 +291,10 @@ function About() {
 
           {/* // Futer 3 */ }
 
-          <Box bg={"white"} 
-            marginTop={ { base: "1", sm: "8" } }
-            display="flex"
+          <Box bg={"white"} marginTop={ { base: "1", sm: "8" } }display="flex"
             flexDirection={ { base: "column", sm: "row" } }>
-             <Box className="about7" visibility={"hidden"} h={500} p={2}py={20}
+              
+             <Box className="about7" visibility={"hidden"} h={500} p={2} 
               display="flex" mx={2} 
               flex="1"
               flexDirection="column"
@@ -318,7 +319,8 @@ function About() {
                 {t("About3")} 
               </Text>
             </Box>
-                <Box p={3}
+            
+            <Box pr={3} pl={3} mb={4}
                   className="about8" visibility={"hidden"}
                   display="flex" flex="1"  position="relative" alignItems="center">
                   <Box width={{base: "100%", sm: "85%", md: "100%", lg: "100%"}} zIndex="2"
@@ -336,34 +338,37 @@ function About() {
             </Box>
           </Box>
 
+          
+
         <VStack  h={'full'} mt={8} mb={14} p={6} bg={"blue.800"}  
              spacing="2" alignItems="flex-start" className="about9" visibility={"hidden"}> 
             <Box mb={14}>
             <Flex gap={ 4 } fontWeight={'bold'} alignItems={ "center" }>
-              <Text color={"gray.200"} fontSize={'lg'}> {t("Text0")} </Text>
+              <Text color={"gray.200"} fontSize={'lg'}> {t("Text0")}  </Text>
               <Logo />
             </Flex>
 
             <Box color={"gray.200"} fontSize="sm">
-              {t("Text1")}
-              <Text fontSize={20} color="red.400">
+              {t("Text1")} {t("TextIn")}
+
+              <Text  fontSize="sm" pt={4} >
                     {t("Text2")}
               </Text>
+            
             </Box>
 
-            <Text color={"gray.200"} fontSize="sm">
-              {t("Text3")}
-            </Text>
-            <Text color={"gray.200"} fontSize="sm">
-              {t("Text4")}
-            </Text></Box>
+            <Text pt={2} fontSize={20} color="red.400"> <CheckCircleIcon/> {t("TextList1")} </Text>
+            <Text fontSize={20} color="red.400"><CheckCircleIcon/> {t("TextList2")}</Text>
+            <Text fontSize={20} color="red.400"><CheckCircleIcon/> {t("TextList3")}</Text>
+            <Text fontSize={20} color="red.400"><CheckCircleIcon/> {t("TextList4")}</Text>
+            <Text color={"gray.200"} pt={2}  fontSize="sm">{t("Text4")}</Text>
+            </Box>
         </VStack>
         
         </Box>
-          </Box>
-        </Box>
+       </Box>
+      </Box>
 
-        
       </Layout>
     </Box>
   );

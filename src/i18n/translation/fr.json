@@ -37,13 +37,21 @@
 
         "About3": "La mission de FD GROUP est de vous offrir des solutions adapté à vos besoins, vous fournir et assurer la qualité des vos infrastructure avec nos produits et nos services avant et après vente, vous assister en toute efficacité et efficience, vous livrer en toute rapidité et vous FIDÉLISER.",
 
+
+
         "Text0": "Pourquoi choisir",
-        "Text1": "FD GROUP aide les entreprises africaines à répondre à leurs demandes et attentes en matière d'infrastructure informatique évolutive et rentable. Aujourd'hui, nous servons des clients dans plus de 30 pays et offrons une large gamme de matériel de stockage, de conférence, de matériel réseau, de téléphonie de fabricants leaders tels que",
+        "Text1": "FD GROUP aide les entreprises africaines à répondre à leurs demandes et attentes en matière d'infrastructure informatique évolutive et rentable. Aujourd'hui, nous servons des clients dans plus de 30 pays et proposons une large gamme de d'équipements de stockage, de conferencing, matériel réseau, téléphonie de grands fabricants tels qu'",
+        "TextIn": "IBM, APC, HP, LOGITECH, CISCO, TP-LINK et plus encore",
 
-        "Text2": "IBM, APC, HP, LOGITECH, CISCO, TP-LINK et plus",
-        "Text3": "Chez FD GROUP, nous recherchons – et respectons – la qualité des produits que nous commercialisons et croyons qu'un excellent service client est au cœur de l'expérience d'achat.",
+        "Text2": "Chez FD GROUP, nous recherchons - et respectons - la qualité des produits que nous commercialisons et croyons qu'un excellent service client est au cœur de l'expérience d'achat",
 
-        "Text4": " ● Des prix compétitifs sur le marché ● Des délais de livraison des cours ● Des services avant et après-vente Un service client à votre écoute 24h/24 et 7j/7 Grâce à nos partenaires transporteurs et transitaires, nous vous proposons différentes options d'expédition en fonction de vos besoins.",
+        "TextList1": "Prix compétitifs sur le marché",
+        "TextList2": "Cours délais de livraison",
+        "TextList3": "Services avant et après vente",
+        "TextList4": "Service client à votre écoute 24h/24 & 7j/7",
+
+        "Text4": "Grâce à nos partenaires transporteurs et transitaires, nous vous offrons une variété d'options d'expédition en fonction de vos besoins.",
+
 
         "suport1": "La Réféence Africaine en IT",
         "suport2": "Nous avons travaillé avec des clients partout en Afrique, fournissant un support technique",

@@ -84,7 +84,7 @@ function Others() {
         <Box pb={20} overflowY={'hidden'} overflowX={'hidden'}>
 
 
-          <Flex className='other1' visibility={'hidden'} justify={'flex-end'} align={'center'} py={10} px={6}>
+          <Flex className='other1' visibility={'hidden'} justify={'flex-end'} align={'center'} px={6}>
         <Heading mt={ 6 } mb={ 2 } fontSize={ { base: 18, sm: 20, md: 22, lg: 32 } }>
             {t("headOther")}
         </Heading>
